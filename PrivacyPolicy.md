@@ -1,3 +1,3 @@
 layout: page
-title: "Rock Paper Scissors Privacy Policy"
+title: "PrivacyPolicy"
 permalink: /RockPaperScissors/PrivacyPolicy/
