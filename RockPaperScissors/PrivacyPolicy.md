@@ -25,9 +25,13 @@ Usage Data: We collect data on how you use the Game, including user interactions
 We use the information collected to:
 
 a. Improve the Game's performance, features, and content.
+
 b. Provide customer support and address user inquiries or issues.
+
 c. Personalize your gaming experience and offer relevant in-game content.
+
 d. Analyze user behavior and trends to make informed decisions on future updates and improvements.
+
 e. Ensure the security and integrity of the Game.
 
 4\. Data Sharing and Disclosure
