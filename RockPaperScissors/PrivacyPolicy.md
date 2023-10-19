@@ -1,3 +1,4 @@
+```
 Last Updated: October 19, 2023
 
 1. Introduction
@@ -55,3 +56,4 @@ We may update this Privacy Policy from time to time, and any changes will be pos
 If you have any questions or concerns regarding this Privacy Policy or your privacy rights, please contact us at kristygames@mail.com
 
 By using the Game, you agree to the terms and conditions outlined in this Privacy Policy. If you do not agree with these terms, please uninstall the Game and discontinue its use.
+```
