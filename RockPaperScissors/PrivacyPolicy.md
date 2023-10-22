@@ -8,17 +8,15 @@ Welcome to Rock Paper Scissors ("the Game"). This Privacy Policy outlines how we
 
 2\. Information We Collect
 
-2.1. Personal Information
-
 We do not collect any personally identifiable information (PII) such as your name, address, or contact details.
-
-2.2. Non-Personal Information
 
 Device Information: We may collect information about the device you are using to play the Game, including device type, operating system, and unique device identifiers.
 
 Game Progress: We may collect data related to your in-game progress, such as scores, achievements, and in-game purchases.
 
 Usage Data: We collect data on how you use the Game, including user interactions, gameplay statistics, and error reports.
+
+Please be aware that the Game integrates third-party services and features provided by Unity Technologies for enhanced functionality and user experience. These third-party services may have their own privacy policies and data handling practices that are distinct from ours. We encourage you to review their privacy policy at [unity.com/legal/developer-privacy-policy](https://unity.com/legal/developer-privacy-policy) to understand how they collect, use, and protect your data.
 
 3\. How We Use Your Information
 
