@@ -16,7 +16,9 @@ Game progress: We may collect data related to your in-game progress, such as sco
 
 Usage data: We collect data on how you use the Game, including user interactions, gameplay statistics, and error reports.
 
-Please be aware that the Game integrates third-party services and features provided by Unity Technologies for enhanced functionality and user experience. These third-party services may have their own privacy policies and data handling practices that are distinct from ours. We encourage you to review their privacy policy at [unity.com/legal/developer-privacy-policy](https://unity.com/legal/developer-privacy-policy) to understand how they collect, use, and protect your data.
+Please be aware that the Game integrates services and features provided by third parties for enhanced functionality and user experience. These third-party services may have their own privacy policies and data handling practices that are distinct from ours. We encourage you to review their privacy policies to understand how they collect, use, and protect your data:
+
+a. [Unity Technologies](https://unity.com/legal/developer-privacy-policy)
 
 3\. How We Use Your Information
 
