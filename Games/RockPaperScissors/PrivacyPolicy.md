@@ -1,6 +1,6 @@
 Privacy Policy for Rock Paper Scissors
 
-Last Updated: October 21, 2023
+Last Updated: TBD
 
 1\. Introduction
 
@@ -19,6 +19,8 @@ Usage data: We collect data on how you use the Game, including user interactions
 Please be aware that the Game integrates services and features provided by third parties for enhanced functionality and user experience. These third-party services may have their own privacy policies and data handling practices that are distinct from ours. We encourage you to review their privacy policies to understand how they collect, use, and protect your data:
 
 a. [Unity Technologies](https://unity.com/legal/developer-privacy-policy)
+
+b. [Google AdMob](TBD)
 
 3\. How We Use Your Information
 

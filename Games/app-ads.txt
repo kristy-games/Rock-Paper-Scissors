@@ -164,3 +164,5 @@ yandex.com, 40427798, RESELLER
 yandex.com, 95746987, RESELLER
 yandex.com, 97539269, RESELLER
 yeahmobi.com, 5135195, RESELLER
+adsyield.com, 1233, RESELLER
+onetag.com, 7d9af0b85b5070e, RESELLER
