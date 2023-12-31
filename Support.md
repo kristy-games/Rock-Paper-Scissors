@@ -1,1 +1,1 @@
-For any questions or concerns, please email us at [kristygames@mail.com](mailto:kristygames@mail.com)
+For any support or feature requests, please contact [kristygames@mail.com](mailto:kristygames@mail.com)

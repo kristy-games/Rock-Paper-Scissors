@@ -1,6 +1,6 @@
-Privacy Policy for Rock Paper Scissors
+KristyGames Privacy Policy
 
-Last Updated: TBD
+Last Updated: December 31, 2023
 
 1\. Introduction
 
