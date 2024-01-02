@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://kristy-games.github.io/Images/Logo/favicon.png" type="image/x-icon">
     <title>Games</title>
-    <script src="path/to/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -17,14 +17,23 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            text-align: center;
             padding: 50px;
         }
 
-        .container {
+        .page-container {
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        .horizontal-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 600px;
+            padding-bottom: 30px;
+            gap: 20px;
         }
 
         .image {
@@ -33,19 +42,11 @@
         }
 
         .game-title-text {
+            text-align: center;
             font-weight: bold;
             font-size: 40px;
             color: #000000;
             margin: 0;
-            padding: 10px;
-        }
-
-        .button-container {
-            display: flex;
-            justify-content: space-around;
-            width: 80%;
-            max-width: 550px;
-            padding: 15px;
         }
 
         .download-button {
@@ -54,19 +55,17 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="page-container">
 
         <img class = "image" src="https://kristy-games.github.io/Images/AppIcons/RPS_Icon.png">
 
+        <div class="horizontal-container">
         <p class="game-title-text">Rock Paper Scissors</p>
 
         <div class="image" id="rps-qr-code"></div>
+        </div>
 
-        <!--
-        <img class = "image" src="https://kristy-games.github.io/Images/QRCodes/DownloadRPS.png">
-        -->
-
-        <div class="button-container">
+        <div class="horizontal-container">
 
             <a href="https://www.example.com" target="_blank">
                 <img class = "download-button" src="https://kristy-games.github.io/Images/StoreIcons/Apple.png">
@@ -79,12 +78,16 @@
         </div>
     </div>
 
-    <script>
-        var url = "https://kristy-games.github.io/Download/RPS/Redirect";
-        var qrcode = new QRCode(document.getElementById("rps-qr-code"), {
-            text: url,
+    <script type="text/javascript">
+        var url = "https://kristy-games.github.io/Download/RPS";
+        var qrcode = new QRCode(document.getElementById("rps-qr-code"), 
+        {
+            text: "https://kristy-games.github.io/Download/RPS/Redirect",
             width: 128,
             height: 128,
+            colorDark : '#000',
+            colorLight : '#fff',
+            correctLevel : QRCode.CorrectLevel.H
         });
     </script>
 

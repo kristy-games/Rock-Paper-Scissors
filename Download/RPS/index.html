@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://kristy-games.github.io/Images/Logo/favicon.png" type="image/x-icon">
     <title>Download RPS</title>
+    <script>
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        
+        if (/android/i.test(userAgent)) {
+            window.location.href = "https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors";
+        } else if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream) {
+            window.location.href = "https://apps.apple.com/us/app/plague-inc/id525818839";
+        }
+    </script>
     <style>
         * {
             margin: 0;
@@ -20,13 +29,21 @@
             padding: 50px;
         }
 
-        .container {
+        .page-container {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        .game-icon-image {
+        .horizontal-container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            max-width: 550px;
+            padding: 15px;
+        }
+
+        .image {
             max-width: 100%;
             height: auto;
         }
@@ -39,27 +56,19 @@
             padding: 10px;
         }
 
-        .button-container {
-            display: flex;
-            justify-content: space-around;
-            width: 80%;
-            max-width: 550px;
-            padding: 15px;
-        }
-
         .download-button {
             display: inline-block;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="page-container">
 
-        <img class = "game-icon-image" src="https://kristy-games.github.io/Images/AppIcons/RPS_Icon.png">
+        <img class = "image" src="https://kristy-games.github.io/Images/AppIcons/RPS_Icon.png">
 
         <p class="game-title-text">Rock Paper Scissors</p>
 
-        <div class="button-container">
+        <div class="horizontal-container">
 
             <a href="https://www.example.com" target="_blank">
                 <img class = "download-button" src="https://kristy-games.github.io/Images/StoreIcons/Apple.png">
