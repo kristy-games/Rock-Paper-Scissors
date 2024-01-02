@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="icon" href="https://kristy-games.github.io/Images/Logo/favicon.png" type="image/x-icon">
     <title>Download RPS</title>
+
+    <script>
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        
+        if (/android/i.test(userAgent)) {
+            window.location.href = "https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors";
+        } else if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream) {
+            window.location.href = "https://www.example.com";
+        }
+    </script>
+
     <style>
         * {
             padding: 0;
@@ -74,16 +85,5 @@
 
         </div>
     </div>
-
-    <script>
-        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-        
-        if (/android/i.test(userAgent)) {
-            window.location.href = "https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors";
-        } else if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream) {
-            window.location.href = "https://www.example.com";
-        }
-    </script>
-
 </body>
 </html>
