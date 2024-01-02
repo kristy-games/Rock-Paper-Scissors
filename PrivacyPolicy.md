@@ -1,4 +1,4 @@
-KristyGames Privacy Policy
+Privacy Policy
 
 Last Updated: December 31, 2023
 

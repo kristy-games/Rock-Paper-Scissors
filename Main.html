@@ -1,7 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://kristy-games.github.io/Images/Logo/favicon.png" type="image/x-icon">
+    <title>Main</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+        body {
+            text-align: center;
+            box-sizing: border-box;
+            padding: 50px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button-container {
+            width: 60%;
+            max-width: 300px;
+            max-height: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .button {
+        	display: inline-block;
+            padding: 10px 20px;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            font-size: 30px;
+            background: wheat;
+            border-radius: 5px;
+            border-style: solid;
+  			border-width: medium;
+            color: black;
+            cursor: pointer;
+            transition: background-color 0.1s;
+        }
+
+        .button:hover {
+        	background: darkseagreen;
+        }
+
+        .button:focus {
+        	background: powderblue;
+        }
+
+        .button:active {
+        	background: indianred;
+        }
+
+    </style>
+</head>
 <body>
-<h1>Main</h1>
-<p></p>
+    <div class="container">
+
+        <div class="button-container">
+
+            <a href="https://kristy-games.github.io/Games" target="_blank">
+                <button class="button">Games</button>
+            </a>
+
+            <a href="https://kristy-games.github.io/Support" target="_blank">
+                <button class="button">Support</button>
+            </a>
+
+            <a href="https://kristy-games.github.io/PrivacyPolicy" target="_blank">
+                <button class="button">Privacy Policy</button>
+            </a>
+
+        </div>
+    </div>
 </body>
 </html>
