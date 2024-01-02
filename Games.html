@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://kristy-games.github.io/Images/Logo/favicon.png" type="image/x-icon">
     <title>Games</title>
+    <script src="path/to/qrcode.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -59,7 +60,11 @@
 
         <p class="game-title-text">Rock Paper Scissors</p>
 
+        <div id="rps-qr-code"></div>
+
+        <!--
         <img class = "image" src="https://kristy-games.github.io/Images/QRCodes/DownloadRPS.png">
+        -->
 
         <div class="button-container">
 
@@ -73,5 +78,15 @@
 
         </div>
     </div>
+
+    <script>
+        var url = "https://kristy-games.github.io/Download/RPS/Redirect";
+        var qrcode = new QRCode(document.getElementById("rps-qr-code"), {
+            text: url,
+            width: 128,
+            height: 128,
+        });
+    </script>
+
 </body>
 </html>
