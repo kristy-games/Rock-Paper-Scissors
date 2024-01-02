@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://kristy-games.github.io/Images/Logo/favicon.png" type="image/x-icon">
+    <title>Games</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .game-icon-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .game-title-text {
+            font-weight: bold;
+            font-size: 40px;
+            color: #000000;
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
 <body>
-    <a href="https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors" target="_blank" style="display: block; margin-top: 50px; margin-bottom: 20px; padding: 10px;">
-        <img src="https://kristy-games.github.io/Images/StoreIcons/Google.png" alt="Google Play Store (url)" style="max-width: 50%; height: auto;">
-    </a>
-    <a href="https://www.example.com" target="_blank" style="display: block; padding: 10px;">
-        <img src="https://kristy-games.github.io/Images/StoreIcons/Apple.png" alt="Apple App Store (url)" style="max-width: 50%; height: auto;">
-    </a>
+    <div class="container">
+
+        <img class = "game-icon-image" src="https://kristy-games.github.io/Images/AppIcons/RPS_Icon.png">
+
+        <p class="game-title-text">Rock Paper Scissors</p>
+
+        <div class="button-container">
+
+            <a href="https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors" target="_blank">
+                <img class = "download-button" src="https://kristy-games.github.io/Images/DownloadIcons/Google.png">
+            </a>
+
+            <a href="https://www.example.com" target="_blank">
+                <img class = "download-button" src="https://kristy-games.github.io/Images/DownloadIcons/Apple.png">
+            </a>
+
+        </div>
+    </div>
 </body>
 </html>
