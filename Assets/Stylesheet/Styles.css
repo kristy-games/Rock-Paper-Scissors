@@ -18,7 +18,47 @@ body {
 }
 
 .container {
-    display: flex;
+    display: inline-flex;
     align-items: center;
+}
+
+.container.vertical {
+    flex-direction: column;
+}
+
+.container.horizontal {
+    gap: 20px;
+    padding: 15px 0;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.image.game-icon {
+    padding: 0 70px;
+}
+
+.image.download-icon {
+    vertical-align: bottom;
+}
+
+.game-title-text {
+    font-size: 40px;
+}
+
+.button {
     width: 100%;
+    padding: 10px 30px;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: ghostwhite;
+    background: black;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: medium;
+    border-color: darkgrey;
+    transition: background-color 0.1s;
 }
