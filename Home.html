@@ -4,84 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="icon" href="https://kristy-games.github.io/Images/Logo/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap">
     <title>Home</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-        
-    	* {
+        * {
             padding: 0;
             margin: 0;
             border: 0;
             box-sizing: border-box;
             text-align: center;
-            font-family: 'Roboto', sans-serif;
-            font-weight: bold;
+            font-family: "Roboto", sans-serif;
+            text-decoration: none;
         }
 
-        body{
-            padding: 50px;
-        }
-
-        .page-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        body {
+            min-width: 400px;
+            padding: 50px 20px;
         }
 
         .vertical-container {
-            display: flex;
+            display: inline-flex;
             flex-direction: column;
-            max-width: 300px;
-            max-height: 500px;
-            gap: 30px;
+            gap: 50px;
         }
 
         .button {
-        	display: inline-block;
-            padding: 10px 20px;
             width: 100%;
-            font-size: 30px;
-            background: wheat;
-            border-radius: 5px;
+            padding: 10px 30px;
+            font-size: 40px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: ghostwhite;
+            background: black;
+            border-radius: 10px;
             border-style: solid;
-  			border-width: medium;
-            color: black;
+            border-width: medium;
+            border-color: darkgrey;
             cursor: pointer;
             transition: background-color 0.1s;
-        }
-
-        .button:hover {
-        	background: darkseagreen;
-        }
-
-        .button:focus {
-        	background: powderblue;
-        }
-
-        .button:active {
-        	background: indianred;
         }
 
     </style>
 </head>
 <body>
-    <div class="page-container">
+    <div class="vertical-container">
 
-        <div class="vertical-container">
+                TODO COMBINE A + BUTTON
 
-            <a href="https://kristy-games.github.io/Games" target="_blank">
-                <button class="button">Games</button>
-            </a>
+        <a href="https://kristy-games.github.io/Games" target="_blank">
+            <button class="button" title="Games">Games</button>
+        </a>
 
-            <a href="https://kristy-games.github.io/Support" target="_blank">
-                <button class="button">Support</button>
-            </a>
+        <a href="https://kristy-games.github.io/Support" target="_blank">
+            <button class="button" title="Support">Support</button>
+        </a>
 
-            <a href="https://kristy-games.github.io/PrivacyPolicy" target="_blank">
-                <button class="button">Privacy Policy</button>
-            </a>
+        <a href="https://kristy-games.github.io/PrivacyPolicy" target="_blank">
+            <button class="button" title="Privacy Policy">Privacy Policy</button>
+        </a>
 
-        </div>
     </div>
 </body>
 </html>

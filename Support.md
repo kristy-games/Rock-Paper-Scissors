@@ -1,1 +1,3 @@
-For any support or feature requests, please contact [kristygames@mail.com](mailto:kristygames@mail.com)
+Support Inquiries [kristygames@mail.com](mailto:kristygames@mail.com)
+
+Try different mailto's (iOS)
