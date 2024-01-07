@@ -23,7 +23,7 @@ body {
         /*  top right bottom left
             top/bottom right/left   */
 
-        padding: 20px 50px;
+        padding: 20px 100px;
     }
 }
 
@@ -36,9 +36,12 @@ body {
     flex-direction: column;
 }
 
+.container.vertical.spaced {
+    gap: 30px;
+}
+
 .container.horizontal {
     gap: 20px;
-    padding: 15px 0;
 }
 
 .image {
@@ -65,11 +68,12 @@ body {
     font-size: 30px;
     font-weight: 500;
     letter-spacing: 1px;
-    color: ghostwhite;
-    background: black;
+    color: black;
+    border: ;
+    background: white;
     border-radius: 10px;
     border-style: solid;
     border-width: medium;
-    border-color: darkgrey;
+    border-color: black;
     transition: background-color 0.1s;
 }

@@ -9,12 +9,9 @@
     <title>Home</title>
     <style>
 
-        .container.vertical {
-            gap: 30px;
-        }
-
         .image {
-            width: 200px;
+            /* EXPORT FINAL LOGO SIZE */
+            width: 150px; 
             height: auto;
         }
 
@@ -24,17 +21,44 @@
 
     <div class="container vertical">
 
-        <!-- logo smaller -->
-        <!-- image, then vertical button container with gaps, less gap between logo and buttons -->
+        <img id="Logo" style="padding-bottom: 30px;" alt="KristyGames Logo">
 
-        <img class="image" src="https://kristy-games.github.io/Assets/Images/Logo/Logo.png" title="KristyGames" alt="KristyGames Logo">
+        <div class="container vertical spaced">
 
-        <a href="https://kristy-games.github.io/Games" target="_blank" class="button" title="Games">Games</a>
+            <a id="Games"></a>
 
-        <a href="https://kristy-games.github.io/Support" target="_blank" class="button" title="Support">Support</a>
+            <a id="Support"></a>
 
-        <a href="https://kristy-games.github.io/PrivacyPolicy" target="_blank" class="button" title="Privacy Policy">Privacy Policy</a>
+            <a id="Privacy Policy"></a>
 
+        </div>
     </div>
+
+    <script>
+        var baseUrl = "https://kristy-games.github.io/"; 
+        var logoPath = "Assets/Images/Logo/Logo.png";
+        var logoUrl = `${baseUrl}${logoPath}`;
+
+        var logo = document.getElementById("Logo");
+        logo.className = "image";
+        logo.src = logoUrl;
+
+        var buttons = ["Games", "Support", "Privacy Policy"];
+
+        buttons.forEach(function(id) {
+            setButtonProperties(id);
+        });
+
+        function setButtonProperties(id) {
+          var button = document.getElementById(id);
+          button.textContent = id;
+          button.title = id;
+          button.className = "button";
+          button.target = "_blank";
+          button.href = `${baseUrl}${id.split(' ').join('')}`;
+      }
+
+  </script>
+
 </body>
 </html>
