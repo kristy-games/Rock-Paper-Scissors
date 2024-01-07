@@ -17,11 +17,6 @@ body {
     font-weight: 700;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    padding: 20px;
-}
-
 .container {
     display: inline-flex;
     align-items: center;
