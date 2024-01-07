@@ -8,28 +8,21 @@
     <!-- <link rel="stylesheet" href="C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/Assets/Stylesheet/Styles.css"> -->
     <title>Home</title>
     <style>
-
-        .image {
-            /* EXPORT FINAL LOGO SIZE */
-            width: 150px; 
-            height: auto;
-        }
-
     </style>
 </head>
 <body>
 
     <div class="container vertical">
 
-        <img id="Logo" style="padding-bottom: 30px;" alt="KristyGames Logo">
+        <img id="Logo" class="image" style="padding-bottom: 30px;" alt="KristyGames Logo">
 
         <div class="container vertical spaced">
 
-            <a id="Games"></a>
+            <a id="Games" class="button pink"></a> 
 
-            <a id="Support"></a>
+            <a id="Support" class="button purple"></a>
 
-            <a id="Privacy Policy"></a>
+            <a id="Privacy Policy" class="button blue"></a>
 
         </div>
     </div>
@@ -40,20 +33,18 @@
         var logoUrl = `${baseUrl}${logoPath}`;
 
         var logo = document.getElementById("Logo");
-        logo.className = "image";
         logo.src = logoUrl;
 
-        var buttons = ["Games", "Support", "Privacy Policy"];
+        var buttons = document.getElementsByClassName("button");
 
-        buttons.forEach(function(id) {
-            setButtonProperties(id);
-        });
+        Array.from(buttons).forEach(function(button) {
+          setButtonProperties(button.id);
+      });
 
         function setButtonProperties(id) {
           var button = document.getElementById(id);
           button.textContent = id;
           button.title = id;
-          button.className = "button";
           button.target = "_blank";
           button.href = `${baseUrl}${id.split(' ').join('')}`;
       }
