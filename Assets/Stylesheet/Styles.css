@@ -13,13 +13,17 @@
 
 body {
     min-width: 400px;
-    padding: 50px 20px;
+    padding: 50px;
     font-weight: 700;
 }
 
 @media only screen and (max-width: 600px) {
     body {
-        padding: 20px;
+
+        /*  top right bottom left
+            top/bottom right/left   */
+
+        padding: 20px 50px;
     }
 }
 
