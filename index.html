@@ -16,7 +16,7 @@
 
         <img id="Logo" class="image logo" alt="KristyGames Logo">
 
-        <div class="container vertical spaced">
+        <div class="container vertical gap">
 
             <a id="Games" class="button pink"></a> 
 
@@ -26,8 +26,6 @@
 
             <!-- TODO buton text -->
 
-            <div id="Test"></div>
-
         </div>
     </div>
 
@@ -35,7 +33,6 @@
         var baseUrl = "https://kristy-games.github.io/";
         var logoPath = "Assets/Images/Logo/Logo.png";
         var logoUrl = `${baseUrl}${logoPath}`;
-
         var logo = document.getElementById("Logo");
         logo.src = logoUrl;
 
@@ -52,9 +49,6 @@
           button.target = "_blank";
           button.href = `${baseUrl}${id.split(' ').join('')}`;
       }
-
-      var test = document.getElementById("Test");
-      test.textContent = `${window.innerWidth} x ${window.innerHeight}`
 
   </script>
 
