@@ -77,6 +77,14 @@ body {
     transition: background-color 0.1s;
 }
 
+/*.button:hover {
+    color: white;
+}
+
+.button:focus {
+    color: white;
+}*/
+
 .button.pink:hover {
     background-color: #fb83ff;
 }
