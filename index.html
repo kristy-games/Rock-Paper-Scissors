@@ -8,6 +8,7 @@
     <!-- <link rel="stylesheet" href="C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/Assets/Stylesheet/Styles.css"> -->
     <title>Home</title>
     <style>
+
     </style>
 </head>
 <body>
@@ -28,12 +29,15 @@
     </div>
 
     <script>
-        var baseUrl = "https://kristy-games.github.io/"; 
+        var baseUrl = "https://kristy-games.github.io/";
+        var localPath = "C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/";
         var logoPath = "Assets/Images/Logo/Logo.png";
         var logoUrl = `${baseUrl}${logoPath}`;
+        var localUrl = `${localPath}${logoPath}`;
 
         var logo = document.getElementById("Logo");
-        logo.src = logoUrl;
+        //logo.src = logoUrl;
+        logo.src = localUrl;
 
         var buttons = document.getElementsByClassName("button");
 
