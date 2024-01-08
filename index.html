@@ -8,14 +8,13 @@
     <!-- <link rel="stylesheet" href="C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/Assets/Stylesheet/Styles.css"> -->
     <title>Home</title>
     <style>
-
     </style>
 </head>
 <body>
 
     <div class="container vertical">
 
-        <img id="Logo" class="image" style="padding-bottom: 30px;" alt="KristyGames Logo">
+        <img id="Logo" class="image logo" alt="KristyGames Logo">
 
         <div class="container vertical spaced">
 
@@ -25,7 +24,9 @@
 
             <a id="Privacy Policy" class="button blue"></a>
 
-            todo text
+            <!-- TODO buton text -->
+
+            <div id="Test"></div>
 
         </div>
     </div>
@@ -51,6 +52,9 @@
           button.target = "_blank";
           button.href = `${baseUrl}${id.split(' ').join('')}`;
       }
+
+      var test = document.getElementById("Test");
+      test.textContent = `${window.innerWidth} x ${window.innerHeight}`
 
   </script>
 
