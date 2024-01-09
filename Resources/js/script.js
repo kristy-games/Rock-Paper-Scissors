@@ -1,43 +1,49 @@
-var main = "https://kristy-games.github.io/";
-var images = "Resources/Images/";
+var mainUrl = "https://kristy-games.github.io/";
+var imagePath = "Resources/Images/";
 
-var appleDownload = "https://apps.apple.com/app/";
-var googleDownload = "https://play.google.com/store/apps/details?id=com."
+var applePath = "https://apps.apple.com/app/";
+var googlePath = "https://play.google.com/store/apps/details?id="
 
-var rpsAppleDownload = `${appleDownload}TODO`;
-var rpsGoogleDownload = `${googleDownload}KristyGames.RockPaperScissors`;
+var rpsAppleUrl = `${appleDownload}TODO`;
+var rpsGoogleUrl = `${googleDownload}com.KristyGames.RockPaperScissors`;
 
 var logoImage = "Logo/Logo.png";
 var rpsImage = "AppIcons/RPS_Icon.png";
 var appleImage = "StoreIcons/Apple_Icon.png";
 var googleImage = "StoreIcons/Google_Icon.png";
 
-var logoImageUrl = `${baseUrl}${imagePath}${logoImagePath}`;
-var rpsImageUrl = `${baseUrl}${rpsImagePath}`;
-var appleImageUrl = `${baseUrl}${rpsImagePath}`;
-var googleImageUrl = `${baseUrl}${rpsImagePath}`;
+var logoImageUrl = `${mainUrl}${imagePath}${logoImage}`;
+var rpsImageUrl = `${mainUrl}${imagePath}${rpsImage}`;
+var appleImageUrl = `${mainUrl}${imagePath}${appleImage}`;
+var googleImageUrl = `${mainUrl}${imagePath}${googleImage}`;
 
-function setLogo() {
-    var logo = document.getElementById("Logo");
-    logo.src = logoImageUrl;
+export function setLogo() {
+	var logo = document.getElementById("Logo");
+	logo.src = logoImageUrl;
 }
 
-function setButtons() {
+export function setMainButtons() {
 	var buttons = document.getElementsByClassName("button");
 
-    Array.from(buttons).forEach(function(button) {
-        button.textContent = button.id;
-        button.title = button.id;
-        button.target = "_blank";
-        button.href = `${baseUrl}${button.id.split(' ').join('')}`;
-    });
+	Array.from(buttons).forEach(function(button) {
+		setButton(button.id);
+	});
 }
 
-function setDownloadLinks() {
-
+export function setHomeButton() {
+	setButton("Home");
 }
 
-export { setLogo, setButtons };
+function setButton(id) {
+	var button = document.getElementById(id);
+    button.textContent = id; //todo remove, image
+    button.title = id;
+    button.target = "_blank";
 
-// Apple/google store icons
-// apple/google download pageURLs
+    if (id === "Home") button.href = mainUrl;
+    else button.href = `${mainUrl}${id.split(' ').join('')}`;
+}
+
+export function setDownloadLinks() {
+
+}
