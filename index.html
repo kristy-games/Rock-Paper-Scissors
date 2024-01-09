@@ -29,11 +29,15 @@
         </div>
     </div>
 
-    <script type="module">
-        import { logoUrl, setButtonProperties } from "./script.js";
+    <script type="module" src="Resources/js/script.js">
 
+        console.log("1");
+        import { logoUrl, setButtonProperties } from "./script.js";
+        console.log("2");
         var logo = document.getElementById("Logo");
+        console.log("3");
         logo.src = logoUrl;
+        console.log("4");
 
         var buttons = document.getElementsByClassName("button");
 
