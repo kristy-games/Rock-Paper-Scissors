@@ -38,7 +38,7 @@ function setHomeButton() {
 
 function setButton(id) {
 	var button = document.getElementById(id);
-    button.textContent = id; //todo remove, image
+    button.textContent = `${id} Test`; //todo remove, image
     button.title = id;
     button.target = "_blank";
 
