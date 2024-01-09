@@ -2,8 +2,8 @@
 
 * {
     padding: 0;
-    border: 0;
     margin: 0;
+    border: 0;
     box-sizing: border-box;
     align-items: center;
     text-align: center;
@@ -14,101 +14,63 @@
 }
 
 body {
-    min-width: 350px;
-    height: 100vh;
-    padding: 50px;
+    min-width: 400px;
+    padding: 50px 20px 20px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding-top: 20px;
+    }
 }
 
 .container {
-    width: 80%;
     display: inline-flex;
     flex-direction: column;
 }
 
 .container.vertical {
-    display: inline-flex;
-    flex-direction: column;
     gap: 30px;
 }
 
-@media only screen and (max-width: 768px) {
-    body {
-        padding: 20px;
-    }
-
-    .container.vertical {
-        gap: 20px;
-    }
-}
-
 .container.horizontal {
-    max-width: 100%;
-    display: inline-flex;
     flex-direction: row;
     gap: 20px;
 }
 
 .image {
-    max-width: 100%;
+    max-width: 200px;
     height: auto;
 }
 
 .image.logo {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
     padding-bottom: 30px;
 }
 
 .image.game {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
     padding-bottom: 10px;
 }
 
 .image.download {
+    max-width: 100%;
     vertical-align: bottom;
 }
 
 .title {
-    font-size: 2em;
+    font-size: 40px;
 }
 
 .button {
     width: 250px;
-    height: 2em;
-    line-height: 2em;
-    font-size: 2em;
+    height: 70px;
+    line-height: 70px;
+    font-size: 30px;
     letter-spacing: 1px;
+    color: black;
     background: white;
     border-radius: 10px;
     border-style: solid;
     border-width: medium;
     border-color: black;
     transition: background-color 0.1s;
-}
-
-.button.pink:hover {
-    background-color: #fb83ff;
-}
-
-.button.pink:focus {
-    background-color: #9d50a0;
-}
-
-.button.purple:hover {
-    background-color: #b9a3ee;
-}
-
-.button.purple:focus {
-    background-color: #7b68a9;
-}
-
-.button.blue:hover {
-    background-color: #44ddd1;
-}
-
-.button.blue:focus {
-    background-color: #35978f;
 }

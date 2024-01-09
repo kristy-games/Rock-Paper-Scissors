@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://kristy-games.github.io/Assets/Images/Logo/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://kristy-games.github.io/Assets/Stylesheet/Styles.css">
-    <!-- <link rel="stylesheet" href="C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/Assets/Stylesheet/Styles.css"> -->
+    <link rel="icon" href="https://kristy-games.github.io/Resources/Images/Logo/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://kristy-games.github.io/Resources/css/style.css">
+    <!-- <link rel="stylesheet" href="C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/Resources/css/style.css"> -->
     <title>Home</title>
     <style>
     </style>
@@ -18,39 +18,30 @@
 
         <div class="container vertical">
 
-            <a id="Games" class="button pink"></a>
+            <a id="Games" class="button"></a>
 
-            <a id="Support" class="button purple"></a>
+            <a id="Support" class="button"></a>
 
-            <a id="Privacy Policy" class="button blue"></a>
+            <a id="Privacy Policy" class="button"></a>
 
-            <!-- TODO button text -->
+            <!-- TODO button text, stroke font images? -->
 
         </div>
     </div>
 
-    <script>
-        var baseUrl = "https://kristy-games.github.io/";
-        var logoPath = "Assets/Images/Logo/Logo.png";
-        var logoUrl = `${baseUrl}${logoPath}`;
+    <script type="module">
+        import { logoUrl, setButtonProperties } from "./script.js";
+
         var logo = document.getElementById("Logo");
         logo.src = logoUrl;
 
         var buttons = document.getElementsByClassName("button");
 
         Array.from(buttons).forEach(function(button) {
-          setButtonProperties(button.id);
-      });
+            setButtonProperties(button.id);
+        });
 
-        function setButtonProperties(id) {
-          var button = document.getElementById(id);
-          button.textContent = id;
-          button.title = id;
-          button.target = "_blank";
-          button.href = `${baseUrl}${id.split(' ').join('')}`;
-      }
-
-  </script>
+    </script>
 
 </body>
 </html>
