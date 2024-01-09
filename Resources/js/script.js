@@ -17,12 +17,12 @@ var rpsImageUrl = `${mainUrl}${imagePath}${rpsImage}`;
 var appleImageUrl = `${mainUrl}${imagePath}${appleImage}`;
 var googleImageUrl = `${mainUrl}${imagePath}${googleImage}`;
 
-export function setLogo() {
+function setLogo() {
 	var logo = document.getElementById("Logo");
 	logo.src = logoImageUrl;
 }
 
-export function setMainButtons() {
+function setMainButtons() {
 	var buttons = document.getElementsByClassName("button");
 
 	Array.from(buttons).forEach(function(button) {
@@ -30,7 +30,7 @@ export function setMainButtons() {
 	});
 }
 
-export function setHomeButton() {
+function setHomeButton() {
 	setButton("Home");
 }
 
@@ -44,6 +44,8 @@ function setButton(id) {
     else button.href = `${mainUrl}${id.split(' ').join('')}`;
 }
 
-export function setDownloadLinks() {
+function setDownloadLinks() {
 
 }
+
+export { setLogo, setMainButtons, setHomeButton };
