@@ -25,7 +25,7 @@ function setLogo() {
 }
 
 function setMainButtons() {
-	var buttons = document.getElementsByClassName("button");
+	var buttons = document.getElementsByClassName("button main");
 
 	Array.from(buttons).forEach(function(button) {
 		setButton(button.id);
