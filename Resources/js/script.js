@@ -1,5 +1,5 @@
 var baseUrl = "https://kristy-games.github.io/";
-var logoPath = "Assets/Images/Logo/Logo.png";
+var logoPath = "Resources/Images/Logo/Logo.png";
 var logoUrl = `${baseUrl}${logoPath}`;
 
 function setButtonProperties(id) {
