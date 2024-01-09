@@ -4,8 +4,8 @@ var imagePath = "Resources/Images/";
 var applePath = "https://apps.apple.com/app/";
 var googlePath = "https://play.google.com/store/apps/details?id="
 
-var rpsAppleUrl = `${appleDownload}TODO`;
-var rpsGoogleUrl = `${googleDownload}com.KristyGames.RockPaperScissors`;
+var rpsAppleUrl = `${applePath}TODO`;
+var rpsGoogleUrl = `${googlePath}com.KristyGames.RockPaperScissors`;
 
 var logoImage = "Logo/Logo.png";
 var rpsImage = "AppIcons/RPS_Icon.png";
