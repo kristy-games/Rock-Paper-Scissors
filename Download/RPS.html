@@ -13,12 +13,10 @@
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
         if (/android/i.test(userAgent)) {
-            window.open("https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors", "_blank");
-            // window.location.href = "https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors";
+            window.location.href = "https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors";
         } 
         else if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream) {
-            window.open("https://apps.apple.com/us/app/xcode/id497799835", "_blank");
-            //window.location.href = "https://apps.apple.com/us/app/xcode/id497799835";
+            window.location.href = "https://apps.apple.com/us/app/xcode/id497799835";
         }
     </script>
 
