@@ -20,6 +20,7 @@ var googleImageUrl = `${mainUrl}${imagePath}${googleImage}`;
 function setLogo() {
 	var logo = document.getElementById("Logo");
 	logo.src = logoImageUrl;
+	logo.className = "image logo"
 	logo.setAttribute("alt", "KristyGames Logo");
 }
 
