@@ -29,16 +29,8 @@
         </div>
     </div>
 
-    <script type="module">
-        import { logoUrl, setButtonProperties } from "/Resources/js/script.js";
-        var logo = document.getElementById("Logo");
-        logo.src = logoUrl;
-
-        var buttons = document.getElementsByClassName("button");
-
-        Array.from(buttons).forEach(function(button) {
-            setButtonProperties(button.id);
-        });
+    <script src="https://kristy-games.github.io/Resources/js/script.js">
+        setLogo();
 
     </script>
 
