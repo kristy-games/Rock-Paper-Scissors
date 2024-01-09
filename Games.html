@@ -14,7 +14,9 @@
     </style>
 </head>
 <body>
-    <div class="container">        
+    <div class="container">
+
+        <a id="Home Button"></a>
 
         <img class="image game" src="https://kristy-games.github.io/Assets/Images/AppIcons/RPS_Icon.png" title="Rock Paper Scissors" alt="Rock Paper Scissors Icon">
 
@@ -30,7 +32,7 @@
 
             <div class="container horizontal">
 
-                <a href="https://www.example.com" target="_blank" title="Download on the Apple App Store">
+                <a id="" href="https://www.example.com" target="_blank" title="Download on the Apple App Store">
                     <img class="image download" src="https://kristy-games.github.io/Assets/Images/StoreIcons/Apple.png" alt="Apple App Store Icon">
                 </a>
 
@@ -44,8 +46,12 @@
         </div>
     </div>
 
-    <script>
-        var rpsUrl = "https://kristy-games.github.io/Download/RPS";
+    <script type="module">
+        import { setHomeButton } from "https://kristy-games.github.io/Resources/js/script.js";
+
+        setHomeButton();
+
+        var rpsUrl = "https://kristy-games.github.io/Download/RPS"; //TODO get url from js
 
         var qrcode = new QRCode(document.getElementById("rps-qr-code"), 
         {

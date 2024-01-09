@@ -1,53 +1,64 @@
 var mainUrl = "https://kristy-games.github.io/";
-var imagePath = "Resources/Images/";
-
-var applePath = "https://apps.apple.com/app/";
-var googlePath = "https://play.google.com/store/apps/details?id="
-
-var rpsAppleUrl = `${applePath}TODO`;
-var rpsGoogleUrl = `${googlePath}com.KristyGames.RockPaperScissors`;
+var imagePath = `${mainUrl}Resources/Images/`;
 
 var logoImage = "Logo/Logo.png";
 var rpsImage = "AppIcons/RPS_Icon.png";
 var appleImage = "StoreIcons/Apple_Icon.png";
 var googleImage = "StoreIcons/Google_Icon.png";
 
-var logoImageUrl = `${mainUrl}${imagePath}${logoImage}`;
-var rpsImageUrl = `${mainUrl}${imagePath}${rpsImage}`;
-var appleImageUrl = `${mainUrl}${imagePath}${appleImage}`;
-var googleImageUrl = `${mainUrl}${imagePath}${googleImage}`;
+var logoImageUrl = `${imagePath}${logoImage}`;
+var rpsImageUrl = `${imagePath}${rpsImage}`;
+var appleImageUrl = `${imagePath}${appleImage}`;
+var googleImageUrl = `${imagePath}${googleImage}`;
 
-function setLogo() {
+var applePath = "https://apps.apple.com/app/";
+var googlePath = "https://play.google.com/store/apps/details?id="
+
+var rpsApple = "block-your-friends/id1611839181";
+var rpsGoogle = "com.KristyGames.RockPaperScissors";
+
+export function setLogo() {
 	var logo = document.getElementById("Logo");
 	logo.src = logoImageUrl;
 	logo.className = "image logo"
 	logo.setAttribute("alt", "KristyGames Logo");
 }
 
-function setMainButtons() {
-	var buttons = document.getElementsByClassName("button main");
+export function setMainButtons() {
+	var mainButtons = document.getElementsByClassName("button main");
 
-	Array.from(buttons).forEach(function(button) {
-		setButton(button.id);
+	Array.from(mainButtons).forEach(function(button) {
+		button.textContent = button.id;
+		button.classList.add('button', 'text');
+		button.href = `${mainUrl}${button.id.split(' ').join('')}`;
+		buttonSetup(button);
 	});
 }
 
 function setHomeButton() {
-	setButton("Home");
+	var button = document.getElementById("HomeButton");
+	button.href = mainUrl;
+	logo.src = logoImageUrl;
+	logo.className = "image logo"
+	logo.setAttribute("alt", "Home Button");
+	//src = home image
+	buttonSetup(button);
 }
 
-function setButton(id) {
-	var button = document.getElementById(id);
-    button.textContent = `${id} Test`; //todo remove, image
-    button.title = id;
-    button.target = "_blank";
-
-    if (id === "Home") button.href = mainUrl;
-    else button.href = `${mainUrl}${id.split(' ').join('')}`;
+function buttonSetup(button) {
+	button.title = button.id;
+	button.target = "_blank";
 }
 
-function setDownloadLinks() {
+export function setDownloadButtons() {
+
+	//get class button download
+	//foreach download button
+
+	//title = "Download on the Apple App Store"
+	var rpsAppleUrl = `${applePath}${rpsApple}`; //set href
+	var rpsGoogleUrl = `${googlePath}${rpsGoogle}`;
 
 }
 
-export { setLogo, setMainButtons, setHomeButton };
+//export { setLogo, setMainButtons, setHomeButton, setDownloadButtons };
