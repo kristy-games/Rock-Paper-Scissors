@@ -29,8 +29,8 @@ export function setMainButtons() {
 	var mainButtons = document.getElementsByClassName("button main");
 
 	Array.from(mainButtons).forEach(function(button) {
-		button.textContent = button.id;
 		button.classList.add("text");
+		button.textContent = button.id;
 		button.href = `${mainUrl}${button.id.split(' ').join('')}`;
 		buttonSetup(button);
 	});
