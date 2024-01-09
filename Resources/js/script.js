@@ -30,7 +30,7 @@ export function setMainButtons() {
 
 	Array.from(mainButtons).forEach(function(button) {
 		button.textContent = button.id;
-		button.classList.add("button text");
+		button.classList.add("text");
 		button.href = `${mainUrl}${button.id.split(' ').join('')}`;
 		buttonSetup(button);
 	});
