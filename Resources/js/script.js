@@ -1,10 +1,11 @@
 var mainUrl = "https://kristy-games.github.io/";
 var imagePath = `${mainUrl}Resources/Images/`;
 
-var logoImage = "Logo/Logo.png";
-var rpsImage = "AppIcons/RPS_Icon.png";
-var appleImage = "StoreIcons/Apple_Icon.png";
-var googleImage = "StoreIcons/Google_Icon.png";
+var logoIconUrl = `${imagePath}Logo/Logo.png`;
+var homeIUrl = `${imagePath}Shapes/Home.png`;
+var rpsIconUrl = `${imagePath}AppIcons/.png`;
+var appleImageUrl = "StoreIcons/Apple_Icon.png";
+var googleImageUrl = "StoreIcons/Google_Icon.png";
 
 var logoImageUrl = `${imagePath}${logoImage}`;
 var rpsImageUrl = `${imagePath}${rpsImage}`;
@@ -36,11 +37,12 @@ export function setMainButtons() {
 }
 
 function setHomeButton() {
-	var button = document.getElementById("HomeButton");
+	var id = "Home Button"
+	var button = document.getElementById(id);
 	button.href = mainUrl;
 	logo.src = logoImageUrl;
 	logo.className = "image logo"
-	logo.setAttribute("alt", "Home Button");
+	logo.setAttribute("alt", id);
 	//src = home image
 	buttonSetup(button);
 }
@@ -56,9 +58,8 @@ export function setDownloadButtons() {
 	//foreach download button
 
 	//title = "Download on the Apple App Store"
-	var rpsAppleUrl = `${applePath}${rpsApple}`; //set href
+	var rpsAppleUrl = `${applePath}${rpsApple}`; //set href, src = qrcode
 	var rpsGoogleUrl = `${googlePath}${rpsGoogle}`;
-
 }
 
 //export { setLogo, setMainButtons, setHomeButton, setDownloadButtons };
