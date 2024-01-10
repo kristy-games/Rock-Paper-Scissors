@@ -32,7 +32,7 @@ export function setMainButtons() {
 	});
 }
 
-function setHomeButton() {
+export function setHomeButton() {
 	var id = "HomeButton"
 	var button = document.getElementById(id);
 
@@ -54,4 +54,12 @@ export function setDownloadButtons() {
 	var rpsGoogleUrl = `${googlePath}${rpsGoogle}`;
 }
 
-//export { setLogo, setMainButtons, setHomeButton, setDownloadButtons };
+export function redirect(gameName)
+{
+	switch (gameName)
+	{
+		case "RPS"
+			console.log("RPS");
+			break;
+	}
+}
