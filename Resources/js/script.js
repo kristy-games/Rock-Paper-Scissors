@@ -59,12 +59,12 @@ export function setDownloadButtons() {
 
 export function redirect(gameName)
 {
-	switch (gameName)
-	{
-	case "RPS"
-		console.log("RPS");
-		break;
-	}
+	// switch (gameName)
+	// {
+	// case "RPS"
+	// 	console.log("RPS");
+	// 	break;
+	// }
 
 	// var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
