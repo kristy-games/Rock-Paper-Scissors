@@ -10,11 +10,24 @@
     <title>Download RPS</title>
     <style>
     </style>
+
+        <script>
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        if (/android/i.test(userAgent)) {
+            window.location.href = "https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors"; TODO TEST REDIRECT
+        } 
+        else if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream) {
+            window.location.href = "https://apps.apple.com/us/app/xcode/id497799835";
+        }
+    </script>
+
 </head>
 <body>
-    <div class="container">
 
-        <a id="HomeButton"></a>
+    <a id="HomeButton"></a>
+
+    <div class="container">
 
         <img class="image game" src="https://kristy-games.github.io/Resources/Images/AppIcons/RPS_Icon.png" title="Rock Paper Scissors" alt="Rock Paper Scissors Icon">
 
@@ -22,7 +35,7 @@
 
             <div class="container horizontal">
 
-                <p class="title">Rock Paper Scissors</p>
+                <p class="text title">Rock Paper Scissors</p>
 
             </div>
 
@@ -39,15 +52,5 @@
             </div>
         </div>
     </div>
-    <script>
-        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-        if (/android/i.test(userAgent)) {
-            window.location.href = "https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors";
-        } 
-        else if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream) {
-            window.location.href = "https://apps.apple.com/us/app/xcode/id497799835";
-        }
-    </script>
 </body>
 </html>

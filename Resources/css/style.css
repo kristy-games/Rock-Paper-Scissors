@@ -5,22 +5,24 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
+    justify-content: center;
     align-items: center;
     text-align: center;
     text-decoration: none;
-}
-
-body {
-    min-width: 400px;
-    padding: 50px 20px 20px 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: black;
 }
 
+body {
+    padding: 20px;
+    padding-top: 50px;
+}
+
 .container {
     display: inline-flex;
     flex-direction: column;
+    max-width: 100%;
 }
 
 .container.vertical {
@@ -33,7 +35,8 @@ body {
 }
 
 .image {
-    max-width: 200px;
+    width: 100%;
+    max-width: 250px;
     height: auto;
 }
 
@@ -46,51 +49,66 @@ body {
 }
 
 .image.qr {
-    max-width: 128px;
+    width: 128px;
 }
 
 .image.download {
-    max-width: 100%;
     vertical-align: bottom;
 }
 
-.title {
-    font-size: 40px;
+.text {
+
+}
+
+.text.title {
+    font-size: 2.5rem;
 }
 
 .button {
-    width: 250px;
-    height: 60px;
+    display: flex;
+    width: 100%;
     background: white;
     border-radius: 10px;
     border: 3px solid black;
+    padding: 5px;
 }
 
 .button.text {
-    line-height: 60px;
-    font-size: 30px;
-    letter-spacing: 1px;
-    color: black;
+    font-size: 2rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     body {
         padding-top: 20px;
     }
 
     .container.vertical {
-        gap: 20px;
+        gap: 15px;
     }
 
     .container.horizontal {
-        gap: 10px;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .image {
-        max-width: 150px;
+        max-width: 200px;
     }
 
-    .title {
-        font-size: 30px;
+    .image.logo {
+        padding-bottom: 20px;
+    }
+
+    .text.title {
+        font-size: clamp(1.5rem, 15vw, 2rem);
+    }
+/*
+    .button {
+        width: 250px;
+        height: 60px;
+    }*/
+
+    .button.text {
+        font-size: clamp(1.5rem, 12vw, 2rem);
     }
 }
