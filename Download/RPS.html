@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://kristy-games.github.io/Resources/Images/Logo/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://kristy-games.github.io/Resources/css/style.css">
-    <script type="module">
+    <!-- <script type=module>
         import { redirect } from "https://kristy-games.github.io/Resources/js/script.js";
+    </script> -->
+    <script type=module>
+        function redirect(){
+            import { redirect } from "https://kristy-games.github.io/Resources/js/script.js";
+            redirect('RPS');
+        }
     </script>
     <title>Download RPS</title>
     <style>
     </style>
 </head>
-<body onload="redirect('RPS')">
+<body onload="redirect()">
 
     <a id="HomeButton"></a>
 
