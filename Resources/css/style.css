@@ -11,12 +11,16 @@
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    color: black;
 }
 
 body {
     padding: 20px;
     padding-top: 50px;
+    color: black;
+}
+
+a {
+    color: inherit;
 }
 
 .container {
@@ -68,21 +72,21 @@ body {
 .button {
     display: flex;
     width: 100%;
-/*    background: white;*/
-border-radius: 10px;
-border: 3px solid black;
-padding: 5px;
+    border-radius: 10px;
+    border: 3px solid black;
+    padding: 5px;
 }
 
 .button.text {
+    color: inherit;
     font-size: 2rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  /** {
+/*@media (prefers-color-scheme: dark) {
+  *{
     color: black;
-}*/
 }
+}*/
 
 @media only screen and (max-width: 600px) {
     body {
@@ -109,11 +113,6 @@ padding: 5px;
     .text.title {
         font-size: clamp(1.5rem, 15vw, 2rem);
     }
-/*
-    .button {
-        width: 250px;
-        height: 60px;
-    }*/
 
     .button.text {
         font-size: clamp(1rem, 12vw, 2rem);
