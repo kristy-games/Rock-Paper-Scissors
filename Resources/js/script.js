@@ -32,6 +32,9 @@ export function setMainButtons() {
 	});
 }
 
+//SET HOME PAGE = setLogo, setHomeButtons
+//HTML onload SetHomePage
+
 export function setHomeButton() {
 	var id = "HomeButton"
 	var button = document.getElementById(id);
@@ -58,8 +61,17 @@ export function redirect(gameName)
 {
 	switch (gameName)
 	{
-		case "RPS"
-			console.log("RPS");
-			break;
+	case "RPS"
+		console.log("RPS");
+		break;
 	}
+
+	// var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+	// if (/android/i.test(userAgent)) {
+	// 	window.location.href = "https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors";
+	// } 
+	// else if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream) {
+	// 	window.location.href = "https://apps.apple.com/us/app/xcode/id497799835";
+	// }
 }
