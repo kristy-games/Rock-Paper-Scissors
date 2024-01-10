@@ -82,7 +82,15 @@ body {
         gap: 20px;
     }
 
+    .container.horizontal {
+        gap: 10px;
+    }
+
     .image {
         max-width: 150px;
+    }
+
+    .title {
+        font-size: 30px;
     }
 }
