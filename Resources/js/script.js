@@ -75,3 +75,8 @@ export function redirect(gameName)
 	// 	window.location.href = "https://apps.apple.com/us/app/xcode/id497799835";
 	// }
 }
+
+export function logTest(testString)
+{
+	console.log(testString);
+}
