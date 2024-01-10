@@ -36,20 +36,21 @@ body {
 
 .image {
     width: 100%;
-    max-width: 250px;
     height: auto;
 }
 
 .image.logo {
+    max-width: 200px;
     padding-bottom: 30px;
 }
 
 .image.game {
+    max-width: 250px;
     padding-bottom: 10px;
 }
 
 .image.qr {
-    width: 128px;
+    max-width: 128px;
 }
 
 .image.download {
@@ -78,9 +79,9 @@ padding: 5px;
 }
 
 @media (prefers-color-scheme: dark) {
-  * {
-    color: white;
-}
+  /** {
+    color: black;
+}*/
 }
 
 @media only screen and (max-width: 600px) {
@@ -97,12 +98,12 @@ padding: 5px;
         gap: 15px;
     }
 
-    .image {
-        max-width: 200px;
-    }
-
     .image.logo {
         padding-bottom: 20px;
+    }
+
+    .image.game {
+        max-width: 200px;
     }
 
     .text.title {
@@ -115,6 +116,6 @@ padding: 5px;
     }*/
 
     .button.text {
-        font-size: clamp(1.5rem, 12vw, 2rem);
+        font-size: clamp(1rem, 12vw, 2rem);
     }
 }
