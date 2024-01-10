@@ -11,12 +11,12 @@
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    color: black;
 }
 
 body {
     padding: 20px;
     padding-top: 50px;
-    color: black;
 }
 
 .container {
@@ -78,9 +78,9 @@ padding: 5px;
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
+  * {
     color: white;
-  }
+}
 }
 
 @media only screen and (max-width: 600px) {
