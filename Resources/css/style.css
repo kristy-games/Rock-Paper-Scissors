@@ -101,16 +101,9 @@ a {
     }
 }
 
-/*@media (prefers-color-scheme: light) {
-
-  .button img {
-    filter: invert(0) !important;
-}
-}*/
-
 @media (prefers-color-scheme: dark) {
 
   .button img {
-    filter: invert(1);
+    filter: invert(1) !important;
 }
 }
