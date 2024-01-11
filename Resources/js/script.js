@@ -2,7 +2,7 @@ var mainUrl = "https://kristy-games.github.io/";
 var imagePath = `${mainUrl}Resources/Images/`;
 
 var logoImageUrl = `${imagePath}Logo/Logo.png`;
-var homeImageUrl = `${imagePath}Shapes/Home.png`;
+var homeImageUrl = `${imagePath}Shapes/Home.svg`;
 var rpsIconUrl = `${imagePath}AppIcons/RPS_Icon.png`;
 var appleIconUrl = `${imagePath}StoreIcons/Apple_Icon.png`;
 var googleIconUrl = `${imagePath}StoreIcons/Google_Icon.png`;

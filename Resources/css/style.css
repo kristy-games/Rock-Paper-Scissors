@@ -86,7 +86,6 @@ a {
 
     width: 90%;
     height: 90%;
-/*    filter: none;*/
 }
 
 .text.title {
@@ -104,11 +103,3 @@ a {
         border-width: 2.5px;
     }
 }
-
-/*@media (prefers-color-scheme: dark) {
-
-  .button img {
-    filter: invert(1);
-}
-}
-*/
