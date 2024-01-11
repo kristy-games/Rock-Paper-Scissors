@@ -37,13 +37,13 @@ export function setHomeButton() {
 	var id = "Home Button"
 	var button = document.getElementById(id);
 	button.href = mainUrl;
-	button.className = "button";
+	button.classList.add("button", "home");
 	button.title = "Home";
 
 	var image = document.createElement("img");
 	image.src = homeImageUrl;
 	image.setAttribute("alt", id);
-	
+
 	button.appendChild(image);
 }
 
