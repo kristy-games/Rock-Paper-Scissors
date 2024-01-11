@@ -78,4 +78,6 @@ export function download(gameName)
 	else if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream) {
 		window.location.href = appleLink;
 	}
+
+	console.log("Test1");
 }
