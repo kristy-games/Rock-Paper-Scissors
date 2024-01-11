@@ -38,11 +38,6 @@ export function headerTest() {
 }
 
 export function setHomeButton() {
-
-	var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-	var timestamp = new Date().toLocaleString();
-	console.log(`[${timestamp}] Dark mode ${isDarkMode}`);
-
 	var id = "Home Button"
 	var button = document.getElementById(id);
 	button.href = mainUrl;
