@@ -86,7 +86,7 @@ a {
 
     width: 90%;
     height: 90%;
-    filter: none !important;
+    filter: invert(0) !important;
 }
 
 .text.title {
@@ -104,7 +104,7 @@ a {
 @media (prefers-color-scheme: light) {
 
   .button img {
-    filter: none !important;
+    filter: invert(0) !important;
 }
 }
 
