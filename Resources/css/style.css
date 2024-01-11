@@ -86,7 +86,7 @@ a {
 
     width: 90%;
     height: 90%;
-    filter: invert(0) !important;
+/*    filter: none;*/
 }
 
 .text.title {
@@ -99,11 +99,16 @@ a {
         flex-direction: column;
         gap: 15px;
     }
+
+    .button {
+        border-width: 2.5px;
+    }
 }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
 
   .button img {
-    filter: invert(1) !important;
+    filter: invert(1);
 }
 }
+*/
