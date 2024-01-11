@@ -32,6 +32,11 @@ export function setHomePage() {
 	});
 }
 
+export function headerTest() {
+	var timestamp = new Date().toLocaleString();
+	console.log(`[${timestamp}]`);
+}
+
 export function setHomeButton() {
 
 	var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
