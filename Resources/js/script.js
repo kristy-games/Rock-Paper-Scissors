@@ -13,18 +13,18 @@ var googleStorePath = "https://play.google.com/store/apps/details?id="
 var rpsApple = "xcode/id497799835";
 var rpsGoogle = "com.KristyGames.RockPaperScissors";
 
-export function setLogo() {
-	var logo = document.getElementById("Logo");
-	logo.src = logoImageUrl;
-	logo.className = "image logo";
-	logo.title = "KristyGames";
-	logo.setAttribute("alt", "KristyGames Logo");
-}
+export function setHomePage() {
 
-export function setMainButtons() {
-	var mainButtons = document.getElementsByClassName("button main");
+	var id = "KristyGames Logo";
+	var image = document.getElementById(id);
+	image.src = logoImageUrl;
+	image.className = "image logo";
+	image.title = id;
+	image.setAttribute("alt", id);
 
-	Array.from(mainButtons).forEach(function(button) {
+	var buttons = document.getElementsByClassName("button");
+
+	Array.from(buttons).forEach(function(button) {
 		button.classList.add("text");
 		button.textContent = button.id;
 		button.title = button.id;
@@ -32,18 +32,19 @@ export function setMainButtons() {
 	});
 }
 
-//SET HOME PAGE = setLogo, setHomeButtons
-//HTML onload SetHomePage
-
 export function setHomeButton() {
-	var id = "HomeButton"
-	var button = document.getElementById(id);
 
+	var id = "Home Button"
+	var button = document.getElementById(id);
 	button.href = mainUrl;
-	button.src = homeImageUrl;
 	button.className = "button";
 	button.title = "Home";
-	button.setAttribute("alt", "Home Button");
+
+	var image = document.createElement("img");
+	image.src = homeImageUrl;
+	image.setAttribute("alt", id);
+	
+	button.appendChild(image);
 }
 
 export function setDownloadButtons() {
