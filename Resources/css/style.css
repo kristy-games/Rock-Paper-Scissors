@@ -86,6 +86,7 @@ a {
 
     width: 90%;
     height: 90%;
+    filter: invert(0);
 }
 
 .text.title {
