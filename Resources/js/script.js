@@ -62,21 +62,30 @@ export function download(gameName)
 	var appleLink;
 	var googleLink;
 
+	var a = document.createElement("a");
+	a.target = "_blank";
+	document.body.appendChild(a);
+
 	switch (gameName)
 	{
 	case "RPS":
 		appleLink = "http://apps.apple.com/us/app/xcode/id497799835";
-		// googleLink = "http://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors";
-		googleLink = "market://details?id=com.KristyGames.RockPaperScissors";
+		googleLink = "http://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors";
 		break;
 	}
 
 	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
 	if (/android/i.test(userAgent)) {
-		window.location.href = googleLink;
+		// window.location.href = googleLink;
+		a.href = googleLink;
+		a.click();
 	} 
 	else if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream) {
-		window.location.href = appleLink;
+		//window.location.href = appleLink;
+		a.href = appleLink;
+		a.click();
 	}
+
+	document.body.removeChild(a);
 }
