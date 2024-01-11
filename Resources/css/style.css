@@ -79,6 +79,7 @@ a {
 .button.home {
     width: clamp(30px, 15vw, 50px);
     height: clamp(30px, 15vw, 50px);
+    padding: 5px;
 }
 
 .button img {
@@ -103,13 +104,13 @@ a {
 @media (prefers-color-scheme: light) {
 
   .button img {
-    filter: invert(0);
+    filter: invert(0) !important;
 }
 }
 
 @media (prefers-color-scheme: dark) {
 
   .button img {
-    filter: invert(1);
+    filter: invert(1) !important;
 }
 }
