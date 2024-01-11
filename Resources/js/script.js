@@ -35,8 +35,8 @@ export function setHomePage() {
 export function setHomeButton() {
 
 	var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-	console.log('Dark mode:', isDarkMode);
+	var timestamp = new Date().toLocaleString();
+	console.log(`[${timestamp}] Dark mode ${isDarkMode}`);
 
 	var id = "Home Button"
 	var button = document.getElementById(id);
