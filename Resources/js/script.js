@@ -59,12 +59,12 @@ export function setDownloadButtons() {
 
 export function redirect(gameName)
 {
-	// switch (gameName)
-	// {
-	// case "RPS"
-	// 	console.log("RPS");
-	// 	break;
-	// }
+	switch (gameName)
+	{
+	case "RPS":
+		console.log("RPS");
+		break;
+	}
 
 	// var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
@@ -74,9 +74,4 @@ export function redirect(gameName)
 	// else if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream) {
 	// 	window.location.href = "https://apps.apple.com/us/app/xcode/id497799835";
 	// }
-}
-
-export function logTest(testString)
-{
-	console.log(testString);
 }
