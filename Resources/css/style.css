@@ -76,6 +76,17 @@ a {
 
 }
 
+.button.home {
+    width: clamp(30px, 15vw, 50px);
+    height: clamp(30px, 15vw, 50px);
+    padding: 5px;
+}
+
+.button.home img {
+    width: 90%;
+    height: 90%;
+}
+
 .text.title {
 
 }
@@ -85,9 +96,5 @@ a {
     .container.horizontal {
         flex-direction: column;
         gap: 15px;
-    }
-
-    .button {
-        border-width: 2.5px;
     }
 }
