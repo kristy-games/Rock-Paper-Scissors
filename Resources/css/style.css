@@ -79,14 +79,12 @@ a {
 .button.home {
     width: clamp(30px, 15vw, 50px);
     height: clamp(30px, 15vw, 50px);
-    padding: 5px;
 }
 
 .button img {
 
     width: 90%;
     height: 90%;
-    filter: none;
 }
 
 .text.title {
@@ -99,6 +97,13 @@ a {
         flex-direction: column;
         gap: 15px;
     }
+}
+
+@media (prefers-color-scheme: light) {
+
+  .button img {
+    filter: none;
+}
 }
 
 @media (prefers-color-scheme: dark) {
