@@ -65,8 +65,8 @@ export function download(gameName)
 	switch (gameName)
 	{
 	case "RPS":
-		appleLink = "https://apps.apple.com/us/app/xcode/id497799835";
-		googleLink = "https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors";
+		appleLink = "http://apps.apple.com/us/app/xcode/id497799835";
+		googleLink = "http://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors";
 		break;
 	}
 
@@ -78,6 +78,4 @@ export function download(gameName)
 	else if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream) {
 		window.location.href = appleLink;
 	}
-
-	console.log("Test1");
 }
