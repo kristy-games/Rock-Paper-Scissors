@@ -2,7 +2,9 @@ var mainUrl = "https://kristy-games.github.io/";
 var imagePath = `${mainUrl}Resources/Images/`;
 
 var logoImageUrl = `${imagePath}Logo/Logo.png`;
-var homeButtonUrl = `${imagePath}Buttons/HomeButton.png`;
+// var homeButtonUrl = `${imagePath}Buttons/HomeButton.png`;
+var squareButtonUrl = `${imagePath}Buttons/SquareButton.png`;
+var rectangleButtonUrl = `${imagePath}Buttons/RectangleButton.png`;
 var rpsIconUrl = `${imagePath}AppIcons/RPS_Icon.png`;
 var appleIconUrl = `${imagePath}StoreIcons/Apple_Icon.png`;
 var googleIconUrl = `${imagePath}StoreIcons/Google_Icon.png`;
@@ -32,7 +34,8 @@ export function setHomePage() {
 
 		var image = document.createElement("img");
 		image.className = "image button";
-		image.src = `${imagePath}Buttons/${idJoined}Button.png`;
+		image.src = rectangleButtonUrl;
+		// image.src = `${imagePath}Buttons/${idJoined}Button.png`;
 		image.setAttribute("alt", `${id} Button`);
 		button.appendChild(image);
 	});
@@ -47,7 +50,7 @@ export function setHomeButton() {
 
 	var image = document.createElement("img");
 	image.className = "image button";
-	image.src = homeButtonUrl;
+	image.src = squareButtonUrl;
 	image.setAttribute("alt", id);
 	button.appendChild(image);
 }
