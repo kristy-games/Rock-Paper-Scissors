@@ -2,7 +2,7 @@ var mainUrl = "https://kristy-games.github.io/";
 var imagePath = `${mainUrl}Resources/Images/`;
 
 var logoImageUrl = `${imagePath}Logo/Logo.png`;
-var homeImageUrl = `${imagePath}Shapes/Home.png`;
+var homeButtonUrl = `${imagePath}Buttons/HomeButton.png`;
 var rpsIconUrl = `${imagePath}AppIcons/RPS_Icon.png`;
 var appleIconUrl = `${imagePath}StoreIcons/Apple_Icon.png`;
 var googleIconUrl = `${imagePath}StoreIcons/Google_Icon.png`;
@@ -36,11 +36,11 @@ export function setHomeButton() {
 	var id = "Home Button"
 	var button = document.getElementById(id);
 	button.href = mainUrl;
-	button.classList.add("button", "home");
+	image.className = "button";
 	button.title = "Home";
 
 	var image = document.createElement("img");
-	image.src = homeImageUrl;
+	image.src = homeButtonUrl;
 	image.setAttribute("alt", id);
 
 	button.appendChild(image);
