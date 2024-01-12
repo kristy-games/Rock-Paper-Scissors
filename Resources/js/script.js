@@ -22,13 +22,17 @@ export function setHomePage() {
 	image.title = id;
 	image.setAttribute("alt", id);
 
-	var buttons = document.getElementsByClassName("button");
+	var buttons = document.getElementsByClassName("homeButton");
 
 	Array.from(buttons).forEach(function(button) {
-		button.classList.add("text");
-		button.textContent = button.id;
-		button.title = button.id;
-		button.href = `${mainUrl}${button.id.split(' ').join('')}`;
+		var id = button.id;
+		button.href = `${mainUrl}${id.split(' ').join('')}`;
+		button.title = id;
+
+		var image = document.createElement("img");
+		image.className = "image button";
+		//image.src = id..
+		image.setAttribute("alt", id);
 	});
 }
 
@@ -36,10 +40,10 @@ export function setHomeButton() {
 	var id = "Home Button"
 	var button = document.getElementById(id);
 	button.href = mainUrl;
-	button.className = "button";
 	button.title = "Home";
 
 	var image = document.createElement("img");
+	image.className = "image button home";
 	image.src = homeButtonUrl;
 	image.setAttribute("alt", id);
 
@@ -50,7 +54,7 @@ export function setDownloadButtons() {
 
 	//get class button download
 	//foreach download button
-
+	//	button.className = "image button";
 	//title/alt = "Download on the Apple App Store"
 
 	var rpsAppleUrl = `${applePath}${rpsApple}`; //set href, src = qrcode
