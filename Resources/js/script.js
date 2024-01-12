@@ -22,7 +22,7 @@ export function setHomePage() {
 	image.title = id;
 	image.setAttribute("alt", id);
 
-	var buttons = document.getElementsByClassName("button");
+	var buttons = document.getElementsByClassName("button main");
 
 	Array.from(buttons).forEach(function(button) {
 		var id = button.id;
