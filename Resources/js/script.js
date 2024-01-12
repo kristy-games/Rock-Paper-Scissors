@@ -36,7 +36,7 @@ export function setHomeButton() {
 	var id = "Home Button"
 	var button = document.getElementById(id);
 	button.href = mainUrl;
-	image.className = "button";
+	button.className = "button";
 	button.title = "Home";
 
 	var image = document.createElement("img");
