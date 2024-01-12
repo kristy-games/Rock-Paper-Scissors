@@ -28,9 +28,9 @@ export function setHomePage() {
 		var id = button.id;
 		button.href = `${mainUrl}${id.split(' ').join('')}`;
 		button.title = id;
+		//replace class name button..
 
 		var image = document.createElement("img");
-		image.className = "image button";
 		//image.src = id..
 		image.setAttribute("alt", id);
 	});
@@ -39,11 +39,12 @@ export function setHomePage() {
 export function setHomeButton() {
 	var id = "Home Button"
 	var button = document.getElementById(id);
+	button.className = "button home";
 	button.href = mainUrl;
 	button.title = "Home";
 
 	var image = document.createElement("img");
-	image.className = "image button home";
+	image.className = "image button";
 	image.src = homeButtonUrl;
 	image.setAttribute("alt", id);
 

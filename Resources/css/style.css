@@ -64,12 +64,13 @@ a {
     vertical-align: bottom;
 }
 
-.image.button.home {
-    max-width: 50px;
+.button {
+    display: flex;
+    width: 100%;
 }
 
-.text.title {
-
+.button.home {
+    max-width: 50px;
 }
 
 @media only screen and (max-width: 300px) {
