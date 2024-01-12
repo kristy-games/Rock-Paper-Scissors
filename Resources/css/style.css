@@ -47,7 +47,7 @@ a {
 .image.logo {
     min-width: 150px;
     max-width: 250px;
-    padding: 30px 20px;
+    padding: 10px 30px 20px;
 }
 
 .image.game {
