@@ -70,7 +70,7 @@ a {
 }
 
 .button.home {
-    max-width: 50px;
+    width: clamp(30px, 15vw, 50px);
 }
 
 @media only screen and (max-width: 300px) {
