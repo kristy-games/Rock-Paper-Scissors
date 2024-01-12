@@ -31,8 +31,10 @@ export function setHomePage() {
 		button.href = `${mainUrl}${idJoined}`;
 
 		var image = document.createElement("img");
+		image.className = "image button";
 		image.src = `${imagePath}Buttons/${idJoined}Button.png`;
 		image.setAttribute("alt", `${id} Button`);
+		button.appendChild(image);
 	});
 }
 
@@ -47,12 +49,7 @@ export function setHomeButton() {
 	image.className = "image button";
 	image.src = homeButtonUrl;
 	image.setAttribute("alt", id);
-
 	button.appendChild(image);
-}
-
-export function setGameIcons() {
-	
 }
 
 export function setDownloadButtons() {
