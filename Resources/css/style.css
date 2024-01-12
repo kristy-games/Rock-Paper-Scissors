@@ -31,7 +31,7 @@ a {
 }
 
 .container.vertical {
-    gap: 30px;
+    gap: 20px;
 }
 
 .container.horizontal {
@@ -45,15 +45,15 @@ a {
 }
 
 .image.logo {
+    min-width: 150px;
     max-width: 250px;
-    padding-inline: 30px;
-    padding-bottom: 30px;
+    padding: 0 30px 20px;
 }
 
 .image.game {
+    min-width: 150px;
     max-width: 250px;
-    padding-inline: 30px;
-    padding-bottom: 10px;
+    padding: 10px 30px;
 }
 
 .image.qr {
@@ -64,23 +64,24 @@ a {
     vertical-align: bottom;
 }
 
-.button {
+.button {    
     display: flex;
     width: 100%;
+    max-width: 250px;
 }
 
 .button.home {
     width: clamp(30px, 15vw, 50px);
 }
 
-@media only screen and (max-width: 300px) {
+.text.title {
+    padding-inline: 20px;
+}
+
+@media only screen and (max-width: 400px) {
 
     .container.horizontal {
         flex-direction: column;
         gap: 15px;
     }
-
-/*    .button {
-        border-width: 2.5px;
-    }*/
 }

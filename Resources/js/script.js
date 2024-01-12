@@ -22,17 +22,17 @@ export function setHomePage() {
 	image.title = id;
 	image.setAttribute("alt", id);
 
-	var buttons = document.getElementsByClassName("homeButton");
+	var buttons = document.getElementsByClassName("button");
 
 	Array.from(buttons).forEach(function(button) {
 		var id = button.id;
-		button.href = `${mainUrl}${id.split(' ').join('')}`;
 		button.title = id;
-		//replace class name button..
+		var idJoined = id.split(' ').join('');
+		button.href = `${mainUrl}${idJoined}`;
 
 		var image = document.createElement("img");
-		//image.src = id..
-		image.setAttribute("alt", id);
+		image.src = `${imagePath}Buttons/${idJoined}Button.png`;
+		image.setAttribute("alt", `${id} Button`);
 	});
 }
 
@@ -49,6 +49,10 @@ export function setHomeButton() {
 	image.setAttribute("alt", id);
 
 	button.appendChild(image);
+}
+
+export function setGameIcons() {
+	
 }
 
 export function setDownloadButtons() {
