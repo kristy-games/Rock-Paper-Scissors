@@ -1,5 +1,6 @@
 var homeUrl = "https://kristy-games.github.io/";
 var localPath = "C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/";
+
 var imagePath = `${homeUrl}Resources/Images/`;
 
 var logoImageUrl = `${imagePath}Logo/Logo.png`;
@@ -18,7 +19,7 @@ var googleStorePath = "https://play.google.com/store/apps/details?id="
 var rpsApple = "xcode/id497799835";
 var rpsGoogle = "com.KristyGames.RockPaperScissors";
 
-document.addEventListener("DOMContentLoaded", function () {
+export function documentSetup() {
 
 	//add link for favicon
 
@@ -39,9 +40,31 @@ document.addEventListener("DOMContentLoaded", function () {
 	stylesheetLink.rel = "stylesheet";
 	stylesheetLink.href = `${stylesheetPath}Resources/css/style.css`;
 	document.head.appendChild(stylesheetLink);
-});
+}
 
-// SEE THIS IN INSPECT?
+// document.addEventListener("DOMContentLoaded", function () {
+
+// 	//add link for favicon
+
+// 	var faviconLink = document.createElement("link");
+
+// 	var stylesheetPath;
+// 	var stylesheetLink = document.createElement("link");
+
+// 	if (window.location.protocol === "file:") {
+// 		stylesheetPath = localPath;
+// 		setDarkButton();
+// 	} 
+
+// 	else if (window.location.protocol === "https:") {
+// 		stylesheetPath = homeUrl;
+// 	}
+
+// 	stylesheetLink.rel = "stylesheet";
+// 	stylesheetLink.href = `${stylesheetPath}Resources/css/style.css`;
+// 	document.head.appendChild(stylesheetLink);
+// });
+
 function setDarkButton() {
 	var homeButton = document.createElement("button");
 	homeButton.className = "button dark";
