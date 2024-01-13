@@ -27,16 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		setHomePage();
 
 	if (pageType === "Redirect")
-	{
-		var locationPath = window.location.href;
-		var pageName = locationPath.substring(locationPath.lastIndexOf("/") + 1);
-
-		if (window.location.protocol === "file:") {
-			pageName = pageName.replace(".html", "");
-		}
-
-		redirect(pageName);
-	}
+		redirect();
 
 	var stylesheet = document.getElementById("stylesheet");
 
@@ -109,18 +100,19 @@ function setDownloadButtons() {
 	var rpsGoogleUrl = `${googlePath}${rpsGoogle}`;
 }
 
-function redirect(pageName)
+function redirect()
 {
 	var appleLink;
 	var googleLink;
 
-	var a = document.createElement("a");
-	a.target = "_blank";
-	document.body.appendChild(a);
+	var id = "redirect";
+	var anchor = document.getElementById(id);
+	var gameName = anchor.getAttribute("data-gameName");
 
-	switch (pageName)
+	switch (gameName)
 	{
 	case "RPS":
+		console.log("Redirect RPS");
 		appleLink = "http://apps.apple.com/us/app/xcode/id497799835";
 		googleLink = "http://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors";
 		break;
@@ -130,21 +122,19 @@ function redirect(pageName)
 
 	if (/android/i.test(userAgent)) {
 		// window.location.href = googleLink;
-		a.href = googleLink;
-		a.click();
+		anchor.href = googleLink;
+		anchor.click();
 	} 
 	else if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream) {
 		//window.location.href = appleLink;
-		a.href = appleLink;
-		a.click();
+		anchor.href = appleLink;
+		anchor.click();
 	}
 	
 	// REMOVE
 
 	else {
-		a.href = "https://example.com";
-		a.click();
+		anchor.href = "https://example.com";
+		anchor.click();
 	}
-
-	document.body.removeChild(a);
 }
