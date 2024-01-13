@@ -105,9 +105,11 @@ function redirect()
 	var appleLink;
 	var googleLink;
 
-	var id = "redirect";
-	var anchor = document.getElementById(id);
-	var gameName = anchor.getAttribute("data-gameName");
+	// var id = "redirect";
+	// var anchor = document.getElementById(id);
+	// var gameName = anchor.getAttribute("data-gameName");
+
+	var gameName = "RPS";
 
 	switch (gameName)
 	{
@@ -121,20 +123,15 @@ function redirect()
 	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
 	if (/android/i.test(userAgent)) {
-		// window.location.href = googleLink;
-		anchor.href = googleLink;
-		anchor.click();
+		window.location.href = googleLink;
 	} 
 	else if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream) {
-		//window.location.href = appleLink;
-		anchor.href = appleLink;
-		anchor.click();
+		window.location.href = appleLink;
 	}
 	
 	// REMOVE
 
 	else {
-		anchor.href = "https://example.com";
-		anchor.click();
+		window.location.href = "https://example.com";
 	}
 }
