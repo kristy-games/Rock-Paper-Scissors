@@ -3,9 +3,12 @@ var localPath = "C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/";
 var imagePath = `${homeUrl}Resources/Images/`;
 
 var logoImageUrl = `${imagePath}Logo/Logo.png`;
+
 var squareButtonUrl = `${imagePath}Buttons/SquareButton.png`;
 var rectangleButtonUrl = `${imagePath}Buttons/RectangleButton.png`;
+
 var rpsIconUrl = `${imagePath}AppIcons/RPS_Icon.png`;
+
 var appleIconUrl = `${imagePath}StoreIcons/Apple_Icon.png`;
 var googleIconUrl = `${imagePath}StoreIcons/Google_Icon.png`;
 
