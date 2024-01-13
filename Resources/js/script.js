@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		stylesheetPath = homeUrl;
 	}
 
-	stylesheetLink.href = `${stylesheetPath}Resources/css/style.css`;
 	stylesheetLink.rel = "stylesheet";
+	stylesheetLink.href = `${stylesheetPath}Resources/css/style.css`;
 	document.head.appendChild(stylesheetLink);
 });
 
