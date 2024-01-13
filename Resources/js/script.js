@@ -28,13 +28,13 @@ export function documentSetup() {
 	var stylesheetPath;
 	var stylesheetLink = document.createElement("link");
 
-	if (window.location.protocol === "file:") {
+	if (window.location.protocol === "https:") {
+		stylesheetPath = homeUrl;
+	}
+
+	else if (window.location.protocol === "file:") {
 		stylesheetPath = localPath;
 		setDarkButton();
-	} 
-
-	else if (window.location.protocol === "https:") {
-		stylesheetPath = homeUrl;
 	}
 
 	stylesheetLink.rel = "stylesheet";
