@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	var pageType = document.documentElement.getAttribute("data-pageType");
 	console.log(pageType);
 
+	console.log("Test");
+	
 	var stylesheet = document.getElementById("stylesheet");
 
 	if (window.location.protocol === "file:") {
