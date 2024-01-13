@@ -132,7 +132,6 @@ function redirect()
 	// REMOVE
 
 	else {
-		// window.location.href = "https://example.com";
-		window.open("https://example.com", "_blank");
+		window.location.href = "https://example.com";
 	}
 }
