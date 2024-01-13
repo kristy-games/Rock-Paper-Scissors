@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	var stylesheetLink = document.createElement("link");
 
 	if (window.location.protocol === "file:") {
-		path = localPath;
+		stylesheetPath = localPath;
 		setDarkButton();
 	} 
 
