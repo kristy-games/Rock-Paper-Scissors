@@ -121,7 +121,6 @@ function redirect(pageName)
 	switch (pageName)
 	{
 	case "RPS":
-		console.log("Redirect RPS");
 		appleLink = "http://apps.apple.com/us/app/xcode/id497799835";
 		googleLink = "http://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors";
 		break;
@@ -137,6 +136,13 @@ function redirect(pageName)
 	else if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream) {
 		//window.location.href = appleLink;
 		a.href = appleLink;
+		a.click();
+	}
+	
+	// REMOVE
+
+	else {
+		a.href = "https://example.com";
 		a.click();
 	}
 
