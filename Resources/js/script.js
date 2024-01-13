@@ -19,51 +19,19 @@ var googleStorePath = "https://play.google.com/store/apps/details?id="
 var rpsApple = "xcode/id497799835";
 var rpsGoogle = "com.KristyGames.RockPaperScissors";
 
-export function documentSetup() {
+document.addEventListener("DOMContentLoaded", function () {
 
-	//add link for favicon
+	var pageType = document.documentElement.getAttribute("data-pageType");
+	if (pageType) console.log(pageType);
 
-	var faviconLink = document.createElement("link");
+	var stylesheet = document.getElementById("stylesheet");
 
-	var stylesheetPath;
-	var stylesheetLink = document.createElement("link");
+	if (window.location.protocol === "file:") {
+		stylesheet.href = `${localPath}Resources/css/style.css`;
 
-	if (window.location.protocol === "https:") {
-		stylesheetPath = homeUrl;
-	}
-
-	else if (window.location.protocol === "file:") {
-		stylesheetPath = localPath;
 		setDarkButton();
 	}
-
-	stylesheetLink.rel = "stylesheet";
-	stylesheetLink.href = `${stylesheetPath}Resources/css/style.css`;
-	document.head.appendChild(stylesheetLink);
-}
-
-// document.addEventListener("DOMContentLoaded", function () {
-
-// 	//add link for favicon
-
-// 	var faviconLink = document.createElement("link");
-
-// 	var stylesheetPath;
-// 	var stylesheetLink = document.createElement("link");
-
-// 	if (window.location.protocol === "file:") {
-// 		stylesheetPath = localPath;
-// 		setDarkButton();
-// 	} 
-
-// 	else if (window.location.protocol === "https:") {
-// 		stylesheetPath = homeUrl;
-// 	}
-
-// 	stylesheetLink.rel = "stylesheet";
-// 	stylesheetLink.href = `${stylesheetPath}Resources/css/style.css`;
-// 	document.head.appendChild(stylesheetLink);
-// });
+});
 
 function setDarkButton() {
 	var homeButton = document.createElement("button");
@@ -77,7 +45,7 @@ function setDarkButton() {
 
 // MOVE ALL INTO ONLOADED, if id exists..
 
-export function setHomePage() {
+function setHomePage() {
 
 	var id = "KristyGames Logo";
 	var image = document.getElementById(id);
@@ -102,7 +70,7 @@ export function setHomePage() {
 	});
 }
 
-export function setHomeButton() {
+function setHomeButton() {
 	var id = "Home Button"
 	var button = document.getElementById(id);
 	button.className = "button home";
@@ -116,7 +84,7 @@ export function setHomeButton() {
 	button.appendChild(image);
 }
 
-export function setDownloadButtons() {
+function setDownloadButtons() {
 
 	//get class button download
 	//foreach download button
@@ -127,7 +95,7 @@ export function setDownloadButtons() {
 	var rpsGoogleUrl = `${googlePath}${rpsGoogle}`;
 }
 
-export function download(gameName)
+function redirect(gameName)
 {
 	var appleLink;
 	var googleLink;
