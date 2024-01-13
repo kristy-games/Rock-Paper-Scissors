@@ -29,8 +29,11 @@ export function setHomePage() {
 	Array.from(buttons).forEach(function(button) {
 		var id = button.id;
 		button.title = id;
-		var idJoined = id.split(' ').join('');
-		button.href = `${mainUrl}${idJoined}`;
+		button.textContent = id;
+		button.href = `${mainUrl}${id.split(' ').join('')}`;
+		
+		// var idJoined = id.split(' ').join('');
+		// button.href = `${mainUrl}${idJoined}`;
 
 		var image = document.createElement("img");
 		image.className = "image button";
