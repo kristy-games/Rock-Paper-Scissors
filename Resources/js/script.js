@@ -22,7 +22,7 @@ var rpsGoogle = "com.KristyGames.RockPaperScissors";
 document.addEventListener("DOMContentLoaded", function () {
 
 	var pageType = document.documentElement.getAttribute("data-pageType");
-	if (pageType) console.log(pageType);
+	console.log(pageType);
 
 	var stylesheet = document.getElementById("stylesheet");
 
