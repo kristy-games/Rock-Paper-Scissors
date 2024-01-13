@@ -14,6 +14,33 @@ var googleStorePath = "https://play.google.com/store/apps/details?id="
 var rpsApple = "xcode/id497799835";
 var rpsGoogle = "com.KristyGames.RockPaperScissors";
 
+document.addEventListener("DOMContentLoaded", function () {
+
+	var stylesheetLink = document.createElement("link");
+
+	if (window.location.protocol === "file:") {
+		stylesheetLink.href = "C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/Resources/css/style.css";
+
+		var homeButton = document.createElement("button");
+		homeButton.className = "button dark";
+		homeButton.textContent = "Dark";
+		homeButton.onclick = function() {
+			document.body.classList.toggle("dark");
+		};
+		document.body.appendChild(homeButton);
+	} 
+
+	else if (window.location.protocol === "https:") {
+		stylesheetLink.href = "https://kristy-games.github.io/Resources/css/style.css";
+	}
+
+	stylesheetLink.rel = "stylesheet";
+
+	document.head.appendChild(stylesheetLink);
+});
+
+// MOVE ALL INTO ONLOADED, if id exists..
+
 export function setHomePage() {
 
 	var id = "KristyGames Logo";
@@ -96,3 +123,5 @@ export function download(gameName)
 
 	document.body.removeChild(a);
 }
+
+
