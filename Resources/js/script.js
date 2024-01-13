@@ -28,11 +28,12 @@ export function setHomePage() {
 	Array.from(buttons).forEach(function(button) {
 		var id = button.id;
 		button.title = id;
+		button.textContent = id;
 		button.href = `${mainUrl}${id.split(' ').join('')}`;
 
-		var span = document.createElement("span");
-		span.textContent = id;
-		button.appendChild(span);
+		// var span = document.createElement("span");
+		// span.textContent = id;
+		// button.appendChild(span);
 
 		var image = document.createElement("img");
 		image.className = "image button";
