@@ -31,10 +31,6 @@ export function setHomePage() {
 		button.setAttribute("data-text", id);
 		button.href = `${mainUrl}${id.split(' ').join('')}`;
 
-		// var span = document.createElement("span");
-		// span.textContent = id;
-		// button.appendChild(span);
-
 		var image = document.createElement("img");
 		image.className = "image button";
 		image.src = rectangleButtonUrl;

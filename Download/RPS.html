@@ -12,32 +12,41 @@
 </head>
 <body>
 
-    <a id="Home Button"></a>
+    <button class="button dark" onclick="toggleDarkMode()">Dark</button>
 
-    <div class="container">
+    <div class="header">
 
-        <img class="image game" src="https://kristy-games.github.io/Resources/Images/AppIcons/RPS_Icon.png" title="Rock Paper Scissors" alt="Rock Paper Scissors Icon">
+        <a id="Home Button"></a>
 
-        <div class="container vertical">
+    </div>
 
-            <div class="container horizontal">
+    <div class="container body">
 
-                <p class="text title">Rock Paper Scissors</p>
+        <div class="container game">
 
-            </div>
+            <img class="image game" src="https://kristy-games.github.io/Resources/Images/AppIcons/RPS_Icon.png" title="Rock Paper Scissors" alt="Rock Paper Scissors Icon">
 
-            <div class="container horizontal">
+            <div class="container vertical">
 
-                <a id="" href="https://www.example.com" target="_blank" title="Download on the Apple App Store">
-                    <img class="image button" src="https://kristy-games.github.io/Resources/Images/StoreIcons/Apple_Icon.png" alt="Apple App Store Icon">
-                </a>
+                <div class="container horizontal">
 
-                <!-- all stuff from games (QR code) -->
+                    <p class="text title">Rock Paper Scissors</p>
 
-                <a href="https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors" target="_blank" title="Download on the Google Play Store" >
-                    <img class="image button" src="https://kristy-games.github.io/Resources/Images/StoreIcons/Google_Icon.png" alt="Google Play Store Icon">
-                </a>
+                </div>
 
+                <div class="container horizontal">
+
+                    <a id="" href="https://www.example.com" target="_blank" title="Download on the Apple App Store">
+                        <img class="image button" src="https://kristy-games.github.io/Resources/Images/StoreIcons/Apple_Icon.png" alt="Apple App Store Icon">
+                    </a>
+
+                    <!-- all stuff from games (QR code) -->
+
+                    <a href="https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors" target="_blank" title="Download on the Google Play Store" >
+                        <img class="image button" src="https://kristy-games.github.io/Resources/Images/StoreIcons/Google_Icon.png" alt="Google Play Store Icon">
+                    </a>
+
+                </div>
             </div>
         </div>
     </div>
@@ -48,6 +57,12 @@
         setHomeButton();
         download("RPS");
 
+    </script>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark");
+        }
     </script>
 
 </body>

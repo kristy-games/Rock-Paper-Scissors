@@ -12,26 +12,34 @@
 </head>
 <body>
 
-    <div class="container">
+    <button class="button dark" onclick="toggleDarkMode()">Dark</button>
 
-        <img id="KristyGames Logo">
+    <div class="container body">
 
         <div class="container vertical">
 
-            <a id="Games" class="button"></a>
+            <img id="KristyGames Logo">
 
-            <a id="Support" class="button"></a>
+            <a id="Games" class="button text"></a>
 
-            <a id="Privacy Policy" class="button"></a>
+            <a id="Support" class="button text"></a>
+
+            <a id="Privacy Policy" class="button text"></a>
 
         </div>
     </div>
 
     <script type="module">
-        
+
         import { setHomePage } from "https://kristy-games.github.io/Resources/js/script.js";
         setHomePage();
 
+    </script>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark");
+        }
     </script>
 
 </body>

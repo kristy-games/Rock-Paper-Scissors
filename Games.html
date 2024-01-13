@@ -4,49 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://kristy-games.github.io/Resources/Images/Logo/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://kristy-games.github.io/Resources/css/style.css">
-    <!-- <link rel="stylesheet" href="C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/Resources/css/style.css"> -->
+    <!-- <link rel="stylesheet" href="https://kristy-games.github.io/Resources/css/style.css"> -->
+    <link rel="stylesheet" href="C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/Resources/css/style.css">
     <title>Games</title>
     <style>
+        .home.roof {
+            width: 0;
+            height: 0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 30px solid black;
+            position: absolute;
+            top: 0;
+            left: 15px;
+        }
+
+        .home.body {
+            width: 60px;
+            height: 30px;
+            background-color: black;
+            position: absolute;
+            top: 30px;
+        }
+
+        .home.door {
+            width: 15px;
+            height: 30px;
+            background-color: black;
+            position: absolute;
+            top: 30px;
+            left: 22.5px;
+        }
     </style>
 </head>
 <body>
 
-    <a id="Home Button"></a> 
-
     <!-- how much offload to js, what to keep in html -->
 
-    <div class="container">
+    <button class="button dark" onclick="toggleDarkMode()">Dark</button>
 
-        <img class="image game" src="https://kristy-games.github.io/Resources/Images/AppIcons/RPS_Icon.png" title="Rock Paper Scissors" alt="Rock Paper Scissors Icon">
-        <!-- get  -->
+    <div class="header">
 
-        <div class="container vertical">
+        <a id="Home Button">
+<!--             <div class="home roof"></div>
+            <div class="home body"></div>
+            <div class="home door"></div> -->
+        </a>
 
-            <div class="container horizontal">
+    </div>
 
-                <p class="text title">Rock Paper Scissors</p>
+    <div class="container body">
 
-                <img class="image qr" src="https://kristy-games.github.io/Resources/Images/QRCodes/RPS_QR.png" title="Download RPS" alt="Download RPS QR Code"> 
-<!-- 
-                <a href="https://play.google.com/store/apps/details?id=your_game_package_name">
-                    <img src="google-play-button.png" alt="Download on Google Play">
-                </a> -->
+        <div class="container game">
 
-                <!-- <div class="image" id="rps-qr-code"></div> -->
+            <img class="image game" src="https://kristy-games.github.io/Resources/Images/AppIcons/RPS_Icon.png" title="Rock Paper Scissors" alt="Rock Paper Scissors Icon">
 
-            </div>
+            <div class="container vertical">
 
-            <div class="container horizontal">
+                <div class="container horizontal">
 
-                <a id="" href="https://www.example.com" target="_blank" title="Download on the Apple App Store">
-                    <img class="image button" src="https://kristy-games.github.io/Resources/Images/StoreIcons/Apple_Icon.png" alt="Apple App Store Icon">
-                </a>
+                    <p class="text title" title="Rock Paper Scissors">Rock Paper Scissors</p>
 
-                <a href="https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors" target="_blank" title="Download on the Google Play Store" >
-                    <img class="image button" src="https://kristy-games.github.io/Resources/Images/StoreIcons/Google_Icon.png" alt="Google Play Store Icon">
-                </a>
+                    <img class="image qr" src="https://kristy-games.github.io/Resources/Images/QRCodes/RPS_QR.png" title="Download RPS" alt="Download RPS QR Code">
 
+                </div>
+
+                <div class="container horizontal">
+
+                    <a id="" href="https://www.example.com" target="_blank" title="Download on the Apple App Store">
+                        <img class="image button" src="https://kristy-games.github.io/Resources/Images/StoreIcons/Apple_Icon.png" alt="Apple App Store Icon">
+                    </a>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors" target="_blank" title="Download on the Google Play Store">
+                        <img class="image button" src="https://kristy-games.github.io/Resources/Images/StoreIcons/Google_Icon.png" alt="Google Play Store Icon">
+                    </a>
+
+                </div>
             </div>
         </div>
     </div>
@@ -56,6 +89,12 @@
         import { setHomeButton } from "https://kristy-games.github.io/Resources/js/script.js";
         setHomeButton();
 
+    </script>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark");
+        }
     </script>
 
 </body>

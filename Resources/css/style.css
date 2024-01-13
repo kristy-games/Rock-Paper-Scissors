@@ -17,11 +17,21 @@ body {
     color: black;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: clamp(1rem, 8vw, 2rem);
+}
+
+body.dark {
+    background-color: #202020;
+    color: #e5e0d8;
 }
 
 a {
     color: inherit;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
 }
 
 .container {
@@ -30,30 +40,37 @@ a {
     max-width: 100%;
 }
 
+.container.body {
+    gap: 100px;
+}
+
 .container.vertical {
     gap: 20px;
 }
 
 .container.horizontal {
     flex-direction: row;
-    gap: 20px;
+    gap: 15px;
+}
+
+.container.game {
+
 }
 
 .image {
     width: 100%;
+    max-width: 250px;
     height: auto;
 }
 
 .image.logo {
     min-width: 150px;
-    max-width: 250px;
-    padding: 10px 30px 20px;
+    padding-inline: 30px;
 }
 
 .image.game {
     min-width: 150px;
-    max-width: 250px;
-    padding: 10px 30px;
+    padding: 0 20px 10px;
 }
 
 .image.qr {
@@ -64,24 +81,57 @@ a {
     vertical-align: bottom;
 }
 
-.button {    
+.button {
     display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.button.text::before {
+    content: attr(data-text);
+    position: absolute;
+    font-size: clamp(0.8em, 10vw, 2em);
+}
+
+.button img {
     width: 100%;
     max-width: 250px;
+    height: auto;
 }
 
 .button.home {
-    width: clamp(30px, 15vw, 50px);
+    width: clamp(40px, 15vw, 50px);
+    /* DRAW HOUSE   */
+}
+
+.button.dark {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .text.title {
     padding-inline: 20px;
+    font-size: clamp(1.25em, 10vw, 2em);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 350px) {
+
+    .container.body {
+        gap: 75px;
+    }
 
     .container.horizontal {
         flex-direction: column;
-        gap: 15px;
+    }
+
+    .image {
+        max-width: 200px;
     }
 }
