@@ -29,16 +29,15 @@ export function setHomePage() {
 	Array.from(buttons).forEach(function(button) {
 		var id = button.id;
 		button.title = id;
-		button.textContent = id;
 		button.href = `${mainUrl}${id.split(' ').join('')}`;
-		
-		// var idJoined = id.split(' ').join('');
-		// button.href = `${mainUrl}${idJoined}`;
+
+		var span = document.createElement("span");
+		span.textContent = id;
+		button.appendChild(span);
 
 		var image = document.createElement("img");
 		image.className = "image button";
 		image.src = rectangleButtonUrl;
-		// image.src = `${imagePath}Buttons/${idJoined}Button.png`;
 		image.setAttribute("alt", `${id} Button`);
 		button.appendChild(image);
 	});
