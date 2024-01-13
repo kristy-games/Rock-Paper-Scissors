@@ -16,6 +16,9 @@ var rpsGoogle = "com.KristyGames.RockPaperScissors";
 
 document.addEventListener("DOMContentLoaded", function () {
 
+	//add link for favicon
+	console.log("Test1");
+
 	var stylesheetLink = document.createElement("link");
 
 	if (window.location.protocol === "file:") {
@@ -37,6 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	stylesheetLink.rel = "stylesheet";
 
 	document.head.appendChild(stylesheetLink);
+
+	console.log("Test2");
 });
 
 // MOVE ALL INTO ONLOADED, if id exists..
