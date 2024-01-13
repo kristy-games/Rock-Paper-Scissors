@@ -25,11 +25,18 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 	if (pageType === "Home")
 		setHomePage();
-	// if (pageType === "Redirect")
-	var locationPath = location.pathname;
-	console.log(locationPath);
-	var pageName = locationPath.substring(locationPath.lastIndexOf("/") + 1);
-	console.log(pageName);
+
+	if (pageType === "Redirect")
+	{
+		var locationPath = window.location.href;
+		var pageName = locationPath.substring(locationPath.lastIndexOf("/") + 1);
+
+		if (window.location.protocol === "file:") {
+			pageName = pageName.replace(".html", "");
+		}
+
+		redirect(pageName);
+	}
 
 	var stylesheet = document.getElementById("stylesheet");
 
@@ -102,7 +109,7 @@ function setDownloadButtons() {
 	var rpsGoogleUrl = `${googlePath}${rpsGoogle}`;
 }
 
-function redirect(gameName)
+function redirect(pageName)
 {
 	var appleLink;
 	var googleLink;
@@ -111,9 +118,10 @@ function redirect(gameName)
 	a.target = "_blank";
 	document.body.appendChild(a);
 
-	switch (gameName)
+	switch (pageName)
 	{
 	case "RPS":
+		console.log("Redirect RPS");
 		appleLink = "http://apps.apple.com/us/app/xcode/id497799835";
 		googleLink = "http://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors";
 		break;
@@ -134,5 +142,3 @@ function redirect(gameName)
 
 	document.body.removeChild(a);
 }
-
-
