@@ -1,5 +1,6 @@
-var mainUrl = "https://kristy-games.github.io/";
-var imagePath = `${mainUrl}Resources/Images/`;
+var homeUrl = "https://kristy-games.github.io/";
+var localPath = "C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/";
+var imagePath = `${homeUrl}Resources/Images/`;
 
 var logoImageUrl = `${imagePath}Logo/Logo.png`;
 var squareButtonUrl = `${imagePath}Buttons/SquareButton.png`;
@@ -17,32 +18,36 @@ var rpsGoogle = "com.KristyGames.RockPaperScissors";
 document.addEventListener("DOMContentLoaded", function () {
 
 	//add link for favicon
-	console.log("Test1");
 
+	var faviconLink = document.createElement("link");
+
+	var stylesheetPath;
 	var stylesheetLink = document.createElement("link");
 
 	if (window.location.protocol === "file:") {
-		stylesheetLink.href = "C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/Resources/css/style.css";
-
-		var homeButton = document.createElement("button");
-		homeButton.className = "button dark";
-		homeButton.textContent = "Dark";
-		homeButton.onclick = function() {
-			document.body.classList.toggle("dark");
-		};
-		document.body.appendChild(homeButton);
+		path = localPath;
+		setDarkButton();
 	} 
 
 	else if (window.location.protocol === "https:") {
-		stylesheetLink.href = "https://kristy-games.github.io/Resources/css/style.css";
+		stylesheetPath = homeUrl;
 	}
 
+	stylesheetLink.href = `${stylesheetPath}Resources/css/style.css`;
 	stylesheetLink.rel = "stylesheet";
-
 	document.head.appendChild(stylesheetLink);
-
-	console.log("Test2");
 });
+
+// SEE THIS IN INSPECT?
+function setDarkButton() {
+	var homeButton = document.createElement("button");
+	homeButton.className = "button dark";
+	homeButton.textContent = "Dark";
+	homeButton.onclick = function() {
+		document.body.classList.toggle("dark");
+	};
+	document.body.appendChild(homeButton);
+}
 
 // MOVE ALL INTO ONLOADED, if id exists..
 
@@ -61,7 +66,7 @@ export function setHomePage() {
 		var id = button.id;
 		button.title = id;
 		button.setAttribute("data-text", id);
-		button.href = `${mainUrl}${id.split(' ').join('')}`;
+		button.href = `${homeUrl}${id.split(' ').join('')}`;
 
 		var image = document.createElement("img");
 		image.className = "image button";
@@ -75,7 +80,7 @@ export function setHomeButton() {
 	var id = "Home Button"
 	var button = document.getElementById(id);
 	button.className = "button home";
-	button.href = mainUrl;
+	button.href = homeUrl;
 	button.title = "Home";
 
 	var image = document.createElement("img");
