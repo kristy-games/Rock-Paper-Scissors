@@ -92,6 +92,7 @@ function setHomeButton(button) {
 
 	var id = "Home Button";
 	button.className = "button home";
+	// insert home unicode
 	button.href = homeUrl;
 	button.title = "Home";
 
@@ -127,6 +128,7 @@ function createDarkButton() {
 function redirect(element) {
 
 	// timeout
+	// https://apps.apple.com/us/app/xcode/id497799835
 
 	var gameName = element.getAttribute("data-gameName");
 	var appScheme = `${removeSpaces(gameName)}://`;

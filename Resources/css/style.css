@@ -89,10 +89,13 @@ a {
     overflow: hidden;
 }
 
-.button.text::before {
-    content: attr(data-text);
+.button.text {
     position: absolute;
     font-size: clamp(0.8em, 10vw, 2em);
+}
+
+.button.text::before {
+    content: attr(data-text);
 }
 
 .button img {
