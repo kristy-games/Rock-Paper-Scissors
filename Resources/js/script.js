@@ -48,10 +48,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	var stylesheet = document.getElementById("stylesheet");
 
-	if (window.location.protocol === "file:") {
+	if (stylesheet)
+	{
+		if (window.location.protocol === "file:") {
 
-		stylesheet.href = `${localPath}${stylePath}`;
-		createDarkButton();
+			stylesheet.href = `${localPath}${stylePath}`;
+			createDarkButton();
+		}
 	}
 });
 
