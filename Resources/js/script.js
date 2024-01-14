@@ -92,10 +92,10 @@ function setHomeButton(button) {
 
 	var id = "Home Button";
 	button.className = "button home";
-	// insert home unicode
+
 	button.href = homeUrl;
 	button.title = "Home";
-
+	// button.setAttribute("data-text", id); //append image
 	var image = document.createElement("img");
 	image.className = "image button";
 	image.src = squareButtonUrl;
