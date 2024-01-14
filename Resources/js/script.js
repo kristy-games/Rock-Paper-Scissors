@@ -124,6 +124,7 @@ function createDarkButton() {
 	document.body.appendChild(button);
 }
 
+//EXPORT, CALL FROM HEADER?
 function redirect(element) {
 
 	var gameName = element.getAttribute("data-gameName");
@@ -136,7 +137,7 @@ function redirect(element) {
 	if (/android/i.test(userAgent))
 		redirectGoogle(gameName);
 
-	console.log(`Redirect ${gameName}`);
+	redirectApple(gameName);
 }
 
 function redirectApple(gameName) {
@@ -144,7 +145,8 @@ function redirectApple(gameName) {
 	switch (gameName)
 	{
 	case "RPS":
-		window.location.href = `${appleStorePath}${rpsApple}`;
+		// window.location.href = `${appleStorePath}${rpsApple}`;
+		console.log(`${appleStorePath}${rpsApple}`);
 		break;
 	}
 }
