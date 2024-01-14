@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
 			// case "GameSection":
 			// 	setGameSection(element);
 			// 	break;
-			// case "Redirect":
-			// 	redirect(element);
-			// 	break;
+			case "Redirect":
+				redirect(element);
+				break;
 			}
 		});
 	}
@@ -79,7 +79,7 @@ function setPageButton(button) {
 	button.title = id;
 	button.className = "button text";
 	button.setAttribute("data-text", id);
-	button.href = `${mainUrl}${id.split(' ').join('')}`;
+	button.href = `${mainUrl}${removeSpaces(id)}`;
 
 	var image = document.createElement("img");
 	image.className = "image button";
@@ -124,31 +124,25 @@ function createDarkButton() {
 	document.body.appendChild(button);
 }
 
-// function redirect(element) {
+function redirect(element) {
 
-// 	var gameName = element.getAttribute("data-gameName");
+	// timeout
 
-// 	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+	var gameName = element.getAttribute("data-gameName");
+	var appScheme = `${removeSpaces(gameName)}://`;
 
-// 	if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream)
-// 		redirectApple(gameName);
+	// var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-// 	else if (/android/i.test(userAgent))
-// 		redirectGoogle(gameName);
-// }
+	// if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream)
+	// 	redirectApple(gameName);
 
-export function redirect(gameName) {
-
-	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-	if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream)
-		redirectApple(gameName);
-
-	else if (/android/i.test(userAgent))
-		redirectGoogle(gameName);
+	// else if (/android/i.test(userAgent))
+	// 	redirectGoogle(gameName);
 }
 
 function redirectApple(gameName) {
+
+	// window.location.replace
 
 	switch (gameName)
 	{
@@ -166,4 +160,8 @@ function redirectGoogle(gameName) {
 		window.location.href = `${googleStorePath}${rpsGoogle}`;
 		break;
 	}
+}
+
+function removeSpaces (string) {
+	return string.split(' ').join('');
 }
