@@ -42,6 +42,12 @@ document.addEventListener("DOMContentLoaded", function () {
 			case "HomeButton":
 				setHomeButton(element);
 				break;
+			// case "GameSection":
+			// 	setGameSection(element);
+			// 	break;
+			case "Redirect":
+				redirect(element);
+				break;
 			}
 		});
 	}
@@ -96,12 +102,12 @@ function setHomeButton(button) {
 	button.appendChild(image);
 }
 
-function setDownloadButton(button) {
+function setGameSection(gameSection)
+{
 
-	//get class button download
-	//foreach download button
-	//	button.className = "image button";
-	//title/alt = "Download on the Apple App Store"
+}
+
+function setDownloadButton(button) {
 
 	// var rpsAppleUrl = `${applePath}${rpsApple}`; //set href, src = qrcode
 	// var rpsGoogleUrl = `${googlePath}${rpsGoogle}`;
@@ -118,10 +124,9 @@ function createDarkButton() {
 	document.body.appendChild(button);
 }
 
-function redirect() {
+function redirect(element) {
 
-	var redirect = document.getElementById("redirect");
-	var gameName = redirect.getAttribute("data-gameName");
+	var gameName = element.getAttribute("data-gameName");
 
 	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 

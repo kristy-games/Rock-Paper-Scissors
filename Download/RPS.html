@@ -21,30 +21,29 @@
 
         <div class="container body">
 
-            <div class="container game">
+            <div class="container game" data-type="Game" data-gameName="Rock Paper Scissors">
 
-                <img class="image game" src="https://kristy-games.github.io/Resources/Images/AppIcons/RPS_Icon.png" title="Rock Paper Scissors" alt="Rock Paper Scissors Icon">
+                <!-- add class image gameIcon, gameTitle, image qrCode (Games), image button -->
+
+                <img data-type="GameIcon" src="https://kristy-games.github.io/Resources/Images/AppIcons/RPS_Icon.png" title="Rock Paper Scissors" alt="Rock Paper Scissors Icon">
 
                 <div class="container vertical">
 
                     <div class="container horizontal">
 
-                        <p class="text title">Rock Paper Scissors</p>
+                        <p data-type="GameTitle">Rock Paper Scissors</p>
 
                     </div>
 
                     <div class="container horizontal">
 
-                        <a id="" href="https://www.example.com" target="_blank" title="Download on the Apple App Store">
+                        <a data-type="DownloadButton" href="https://www.example.com" target="_blank" title="Download on the Apple App Store">
                             <img class="image button" src="https://kristy-games.github.io/Resources/Images/StoreIcons/Apple_Icon.png" alt="Apple App Store Icon">
                         </a>
 
-                        <!-- all stuff from games (QR code) -->
-
-                        <a href="https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors" target="_blank" title="Download on the Google Play Store" >
+                        <a data-type="DownloadButton" href="https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors" target="_blank" title="Download on the Google Play Store" >
                             <img class="image button" src="https://kristy-games.github.io/Resources/Images/StoreIcons/Google_Icon.png" alt="Google Play Store Icon">
                         </a>
-
                     </div>
                 </div>
             </div>

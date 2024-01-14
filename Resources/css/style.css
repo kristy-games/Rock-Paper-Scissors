@@ -68,12 +68,12 @@ a {
     padding-inline: 30px;
 }
 
-.image.game {
+.image.gameIcon {
     min-width: 150px;
     padding: 0 20px 10px;
 }
 
-.image.qr {
+.image.qrCode {
     max-width: 128px;
 }
 
@@ -116,7 +116,7 @@ a {
     font-weight: 700;
 }
 
-.text.title {
+.gameTitle {
     padding-inline: 20px;
     font-size: clamp(1.25em, 10vw, 2em);
 }
