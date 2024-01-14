@@ -121,27 +121,15 @@ function createDarkButton() {
 function redirect() {
 
 	var redirect = document.getElementById("redirect");
-
-	var pageName = redirect.getAttribute("data-pageName");
 	var gameName = redirect.getAttribute("data-gameName");
 
-	if (pageName)
-	{
-		if (pageName === "Home")
-			window.location.href = homeUrl;
-		else window.location.href = `${mainUrl}${pageName}`
-	}
+	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-	else if (gameName)
-	{
-		var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+	if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream)
+		redirectApple(gameName);
 
-		if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream)
-			redirectApple(gameName);
-
-		if (/android/i.test(userAgent))
-			redirectGoogle(gameName);
-	}
+	if (/android/i.test(userAgent))
+		redirectGoogle(gameName);
 }
 
 function redirectApple(gameName) {
