@@ -86,7 +86,7 @@ function setHomeButton(button) {
 
 	var id = "Home Button";
 	button.className = "button home";
-	button.href = Url;
+	button.href = homeUrl;
 	button.title = "Home";
 
 	var image = document.createElement("img");
