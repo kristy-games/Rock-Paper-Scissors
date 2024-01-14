@@ -134,10 +134,8 @@ function redirect(element) {
 	if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream)
 		redirectApple(gameName);
 
-	if (/android/i.test(userAgent))
+	else if (/android/i.test(userAgent))
 		redirectGoogle(gameName);
-
-	redirectApple(gameName);
 }
 
 function redirectApple(gameName) {
@@ -145,8 +143,7 @@ function redirectApple(gameName) {
 	switch (gameName)
 	{
 	case "RPS":
-		// window.location.href = `${appleStorePath}${rpsApple}`;
-		console.log(`${appleStorePath}${rpsApple}`);
+		window.location.href = `${appleStorePath}${rpsApple}`;
 		break;
 	}
 }
