@@ -15,8 +15,8 @@ var rpsIconUrl = `${imagePath}AppIcons/RPS_Icon.png`; //maybe don't need up here
 var appleIconUrl = `${imagePath}StoreIcons/Apple_Icon.png`;
 var googleIconUrl = `${imagePath}StoreIcons/Google_Icon.png`;
 
-var appleStorePath = "https://apps.apple.com/app/";
-var googleStorePath = "https://play.google.com/store/apps/details?id="
+var appleStorePath = "http://apps.apple.com/app/";
+var googleStorePath = "http://play.google.com/store/apps/details?id="
 
 var rpsApple = "xcode/id497799835";
 var rpsGoogle = "com.KristyGames.RockPaperScissors";
