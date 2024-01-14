@@ -32,8 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				dataTypes.push(dataType);
 		});
 
-		dataTypes.forEach(function (dataType))
-		{
+		dataTypes.forEach(function (dataType) {
 			switch (dataType)
 			{
 			case "Logo":
@@ -43,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				console.log("TextButton");
 				break;
 			}
-		}
+		});
 	}
 
 	var stylesheet = document.getElementById("stylesheet");
