@@ -18,31 +18,29 @@ var googleStorePath = "https://play.google.com/store/apps/details?id="
 
 document.addEventListener("DOMContentLoaded", function () {
 
-	var dataTypeElements = document.querySelectorAll("[data-type]");
+	var dataTypes = document.querySelectorAll("[data-type]");
 
-	if (dataTypeElements.length > 0) {
-
-		var dataTypes = [];
-
-		dataTypeElements.forEach(function (element) {
-			
-			var dataType = element.getAttribute("data-type");
-
-			if (!dataTypes.includes(dataType))
-				dataTypes.push(dataType);
-		});
+	if (dataTypes.length > 0) {
 
 		dataTypes.forEach(function (dataType) {
-			switch (dataType)
-			{
-			case "Logo":
-				console.log("Logo");
-				break;
-			case "TextButton":
-				console.log("TextButton");
-				break;
-			}
+			
+			var dataTypeValue = element.getAttribute("data-type");
+
+			console.log(dataTypeValue);
 		});
+
+		// dataTypes.forEach(function (dataType) {
+
+		// 	switch (dataType)
+		// 	{
+		// 	case "Logo":
+		// 		setLogo();
+		// 		break;
+		// 	case "TextButton":
+		// 		setTextButtons();
+		// 		break;
+		// 	}
+		// });
 	}
 
 	var stylesheet = document.getElementById("stylesheet");
@@ -72,6 +70,9 @@ function setLogo() {
 	image.className = "image logo";
 	image.title = id;
 	image.setAttribute("alt", id);
+}
+
+function setTextButtons() {
 
 	var buttons = document.getElementsByClassName("button text");
 
@@ -88,31 +89,6 @@ function setLogo() {
 		button.appendChild(image);
 	});
 }
-
-// function setHomePage() {
-
-// 	var id = "KristyGames Logo";
-// 	var image = document.getElementById(id);
-// 	image.src = logoImageUrl;
-// 	image.className = "image logo";
-// 	image.title = id;
-// 	image.setAttribute("alt", id);
-
-// 	var buttons = document.getElementsByClassName("button text");
-
-// 	Array.from(buttons).forEach(function(button) {
-// 		var id = button.id;
-// 		button.title = id;
-// 		button.setAttribute("data-text", id);
-// 		button.href = `${homeUrl}${id.split(' ').join('')}`;
-
-// 		var image = document.createElement("img");
-// 		image.className = "image button";
-// 		image.src = rectangleButtonUrl;
-// 		image.setAttribute("alt", `${id} Button`);
-// 		button.appendChild(image);
-// 	});
-// }
 
 function setHomeButton(button) {
 	var id = "Home Button";
