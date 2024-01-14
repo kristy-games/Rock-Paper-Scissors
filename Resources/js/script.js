@@ -135,6 +135,8 @@ function redirect(element) {
 
 	if (/android/i.test(userAgent))
 		redirectGoogle(gameName);
+
+	console.log(`Redirect ${gameName}`);
 }
 
 function redirectApple(gameName) {
