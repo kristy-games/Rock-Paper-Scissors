@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
 			// case "GameSection":
 			// 	setGameSection(element);
 			// 	break;
-			case "Redirect":
-				redirect(element);
-				break;
+			// case "Redirect":
+			// 	redirect(element);
+			// 	break;
 			}
 		});
 	}
@@ -124,10 +124,20 @@ function createDarkButton() {
 	document.body.appendChild(button);
 }
 
-//EXPORT, CALL FROM HEADER?
-function redirect(element) {
+// function redirect(element) {
 
-	var gameName = element.getAttribute("data-gameName");
+// 	var gameName = element.getAttribute("data-gameName");
+
+// 	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+// 	if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream)
+// 		redirectApple(gameName);
+
+// 	else if (/android/i.test(userAgent))
+// 		redirectGoogle(gameName);
+// }
+
+export function redirect(gameName) {
 
 	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
