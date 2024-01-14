@@ -8,7 +8,7 @@ var logoImageUrl = `${imagePath}Logo/Logo.png`;
 var squareButtonUrl = `${imagePath}Buttons/SquareButton.png`;
 var rectangleButtonUrl = `${imagePath}Buttons/RectangleButton.png`;
 
-var rpsIconUrl = `${imagePath}AppIcons/RPS_Icon.png`;
+var rpsIconUrl = `${imagePath}AppIcons/RPS_Icon.png`; //maybe don't need up here
 
 var appleIconUrl = `${imagePath}StoreIcons/Apple_Icon.png`;
 var googleIconUrl = `${imagePath}StoreIcons/Google_Icon.png`;
@@ -16,18 +16,18 @@ var googleIconUrl = `${imagePath}StoreIcons/Google_Icon.png`;
 var appleStorePath = "https://apps.apple.com/app/";
 var googleStorePath = "https://play.google.com/store/apps/details?id="
 
-var rpsApple = "xcode/id497799835";
-var rpsGoogle = "com.KristyGames.RockPaperScissors";
-
 document.addEventListener("DOMContentLoaded", function () {
 
-	var pageType = document.documentElement.getAttribute("data-pageType");
-	
-	if (pageType === "Home")
-		setHomePage();
+	var types = document.querySelectorAll("[data-type]");
 
-	if (pageType === "Redirect")
-		redirect();
+	if (types.length === 0) {
+		console.log("No types found");
+	} 
+	else {
+		types.forEach(function (type) {
+			console.log("Type:", type);
+		});
+	}
 
 	var stylesheet = document.getElementById("stylesheet");
 
@@ -48,9 +48,7 @@ function setDarkButton() {
 	document.body.appendChild(homeButton);
 }
 
-// MOVE ALL INTO ONLOADED, if id exists..
-
-function setHomePage() {
+function setLogo() {
 
 	var id = "KristyGames Logo";
 	var image = document.getElementById(id);
@@ -75,9 +73,33 @@ function setHomePage() {
 	});
 }
 
-function setHomeButton() {
-	var id = "Home Button"
-	var button = document.getElementById(id);
+// function setHomePage() {
+
+// 	var id = "KristyGames Logo";
+// 	var image = document.getElementById(id);
+// 	image.src = logoImageUrl;
+// 	image.className = "image logo";
+// 	image.title = id;
+// 	image.setAttribute("alt", id);
+
+// 	var buttons = document.getElementsByClassName("button text");
+
+// 	Array.from(buttons).forEach(function(button) {
+// 		var id = button.id;
+// 		button.title = id;
+// 		button.setAttribute("data-text", id);
+// 		button.href = `${homeUrl}${id.split(' ').join('')}`;
+
+// 		var image = document.createElement("img");
+// 		image.className = "image button";
+// 		image.src = rectangleButtonUrl;
+// 		image.setAttribute("alt", `${id} Button`);
+// 		button.appendChild(image);
+// 	});
+// }
+
+function setHomeButton(button) {
+	var id = "Home Button";
 	button.className = "button home";
 	button.href = homeUrl;
 	button.title = "Home";
@@ -96,42 +118,40 @@ function setDownloadButtons() {
 	//	button.className = "image button";
 	//title/alt = "Download on the Apple App Store"
 
-	var rpsAppleUrl = `${applePath}${rpsApple}`; //set href, src = qrcode
-	var rpsGoogleUrl = `${googlePath}${rpsGoogle}`;
+	// var rpsAppleUrl = `${applePath}${rpsApple}`; //set href, src = qrcode
+	// var rpsGoogleUrl = `${googlePath}${rpsGoogle}`;
 }
 
-function redirect()
-{
-	var appleLink;
-	var googleLink;
+function redirect() {
 
-	// var id = "redirect";
-	// var anchor = document.getElementById(id);
-	// var gameName = anchor.getAttribute("data-gameName");
+	var redirect = document.getElementById("redirect");
+	var gameName = redirect.getAttribute("data-gameName");
 
-	var gameName = "RPS";
+	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+	if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream)
+		redirectApple(gameName);
+
+	if (/android/i.test(userAgent))
+		redirectGoogle(gameName);
+}
+
+function redirectApple(gameName) {
 
 	switch (gameName)
 	{
 	case "RPS":
-		console.log("Redirect RPS");
-		appleLink = "http://apps.apple.com/us/app/xcode/id497799835";
-		googleLink = "http://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors";
+		window.location.href = `${appleStorePath}xcode/id497799835`;
 		break;
 	}
+}
 
-	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+function redirectGoogle(gameName) {
 
-	if (/android/i.test(userAgent)) {
-		window.location.href = googleLink;
-	} 
-	else if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream) {
-		window.location.href = appleLink;
-	}
-	
-	// REMOVE
-
-	else {
-		window.location.href = "https://example.com";
+	switch (gameName)
+	{
+	case "RPS":
+		window.location.href = `${googleStorePath}com.KristyGames.RockPaperScissors`;
+		break;
 	}
 }
