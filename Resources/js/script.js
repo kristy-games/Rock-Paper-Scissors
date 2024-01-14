@@ -20,12 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	var types = document.querySelectorAll("[data-type]");
 
-	if (types.length === 0) {
-		console.log("No types found");
-	} 
-	else {
+	if (types.length > 0) {
+
 		types.forEach(function (type) {
-			console.log("Type:", type);
+			console.log("Type:", type.getAttribute("data-type"));
 		});
 	}
 
