@@ -1,8 +1,9 @@
-var homeUrl = "https://kristy-games.github.io/";
+var mainUrl = "https://kristy-games.github.io/";
+var homeUrl = `${mainUrl}Home`
 var localPath = "C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/";
 
 var stylePath = "Resources/css/style.css";
-var imagePath = `${homeUrl}Resources/Images/`;
+var imagePath = `${mainUrl}Resources/Images/`;
 
 var logoImageUrl = `${imagePath}Logo/Logo.png`;
 
@@ -50,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	if (window.location.protocol === "file:") {
 
 		stylesheet.href = `${localPath}${stylePath}`;
-		setDarkButton();
+		createDarkButton();
 	}
 });
 
@@ -69,7 +70,7 @@ function setPageButton(button) {
 	button.title = id;
 	button.className = "button text";
 	button.setAttribute("data-text", id);
-	button.href = `${homeUrl}${id.split(' ').join('')}`;
+	button.href = `${mainUrl}${id.split(' ').join('')}`;
 
 	var image = document.createElement("img");
 	image.className = "image button";
@@ -82,7 +83,7 @@ function setHomeButton(button) {
 
 	var id = "Home Button";
 	button.className = "button home";
-	button.href = homeUrl;
+	button.href = Url;
 	button.title = "Home";
 
 	var image = document.createElement("img");
@@ -103,8 +104,8 @@ function setDownloadButton(button) {
 	// var rpsGoogleUrl = `${googlePath}${rpsGoogle}`;
 }
 
-function setDarkButton() {
-	
+function createDarkButton() {
+
 	var button = document.createElement("button");
 	button.className = "button dark";
 	button.textContent = "Dark";
@@ -117,15 +118,27 @@ function setDarkButton() {
 function redirect() {
 
 	var redirect = document.getElementById("redirect");
+
+	var pageName = redirect.getAttribute("data-pageName");
 	var gameName = redirect.getAttribute("data-gameName");
 
-	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+	if (pageName)
+	{
+		if (pageName === "Home")
+			window.location.href = homeUrl;
+		else window.location.href = `${mainUrl}${pageName}`
+	}
 
-	if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream)
-		redirectApple(gameName);
+	else if (gameName)
+	{
+		var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-	if (/android/i.test(userAgent))
-		redirectGoogle(gameName);
+		if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream)
+			redirectApple(gameName);
+
+		if (/android/i.test(userAgent))
+			redirectGoogle(gameName);
+	}
 }
 
 function redirectApple(gameName) {
