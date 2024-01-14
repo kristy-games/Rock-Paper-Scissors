@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		dataTypes.forEach(function (dataType) {
 			
-			var dataTypeValue = element.getAttribute("data-type");
+			var dataTypeValue = dataType.getAttribute("data-type");
 
 			console.log(dataTypeValue);
 		});
