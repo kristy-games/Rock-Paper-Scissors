@@ -18,13 +18,32 @@ var googleStorePath = "https://play.google.com/store/apps/details?id="
 
 document.addEventListener("DOMContentLoaded", function () {
 
-	var types = document.querySelectorAll("[data-type]");
+	var dataTypeElements = document.querySelectorAll("[data-type]");
 
-	if (types.length > 0) {
+	if (dataTypeElements.length > 0) {
 
-		types.forEach(function (type) {
-			console.log("Type:", type.getAttribute("data-type"));
+		var dataTypes = [];
+
+		dataTypeElements.forEach(function (element) {
+			
+			var dataType = element.getAttribute("data-type");
+
+			if (!dataTypes.includes(dataType))
+				dataTypes.push(dataType);
 		});
+
+		dataTypes.forEach(function (dataType))
+		{
+			switch (dataType)
+			{
+			case "Logo":
+				console.log("Logo");
+				break;
+			case "TextButton":
+				console.log("TextButton");
+				break;
+			}
+		}
 	}
 
 	var stylesheet = document.getElementById("stylesheet");
