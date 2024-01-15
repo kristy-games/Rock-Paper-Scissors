@@ -1,9 +1,11 @@
 <!-- <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
-
-    <image id='Home' href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIUAAACICAQAAABjTeBpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfoAQ8HOzalh2aNAAAEiUlEQVR42u2cTWhcZRSGn8nYsY60QSWKGIqRWCoYFBSDP1VaiuLCCi6EUFDRjQWpKCjVhYiI4kZxoxYLFbQuLCKNrcXiWBV/qYvWQqEUFSzWWhXqTx1jfo6LSU+Jmcl8986937mTnOfdDIHLnPchmRwu95sylgywkmX8wr+mU5hzMR8gCMLfPMMZ1uPYMchP0yIa2U7FeiQbLuLwDBGC8DaLrMeKTy/fzBIhCG9Rth4tLlU+bCpCEN5cSDLKbG8pQhBeWygySmyaU4QgbKZkPWYMnm0rQhBenv8yHggSIQgvzm8Z65gKViE8bz1ufqxhLIEIQXjOeuR8GOZkQhGC8JT12NlzKcdTiBCEJ6xHz5Z+jqQUIQgbrcfPjlZLdngetq6QDVW+7FCEIDxoXaNz2i3ZoZlivXWVzijxeiYiGjLus67TCWFLdmgmuce6UFoezVSEIEywzrpUGpIt2eEy7rQulpS1iZfs0Ixzh3W5JKRbskMzxm3WBUMZ4tccRTRk3GpdMoTOluzQ1LnZumg7+jgYQYQgnGS1ddm5yGbJDpdxo3XhVlTYFVGEIPzBddalm1HijcgiBOEE11gXn80LBiIaMq6yrj6TjUYiBOE3rrSuf5p7c1myw3OcIWsFDdYyYSpCEH7mMmsNsDLXJTs8R1luK2KIE+YSTuUIg3YiBqIs2eH5gQEbEX1Nnpuxzvcsiy9iadQlOzyH6Y8rokLNvHSrHOLCeCLKbDUvPFcOcn4sFS+Zl22XA/TFEPG4edGQ7OO8vEWsNy8Zmq/pzVPE7QVYssPzVX4yVud2Sz+vfMaSPEQUackOzydUsxYxmPq5GevsyVZGEZfs8OxmcVYietlvXqezvJfNAYsiL9nhGe1cRpl3zGtkk45PmxR/yQ5PR6dNnjYfP9tsTSuje5bs8GyhJ7mIka5assOT+LRJ9y3Z4Wl52qTZX88wOzg7/UdMwbmac3g/TMUgNc61njdXhlnC7vYq+qnFvlVqwLUspja3il5qrLCeMwo30MNHrVVU2VHEJxZy4iaEj5urKLONW6zni8oqxvh0tooSmxixni06a/iTL/7/w2wfTu+eTLFhpogN5iNZyrj/tIh8Hk7vnkyfNilxOXuzu+XVpYxzPXt7eGzBi4BFPAkljnGB9SQFoE61RN1/KwCo9HDAeoZC8C3jPbxqPUUh2AJQ4l3zf2fW+ZxKY/HeBlyxYD8x6rzCXfyD3tw6kxUtv7Hsd6b09So2W88eyCgP6etKy7tykxyi3nh5qv4Y+4PeoACPEAfyF98luyDFzfD5iqtQXIXiKhRXobgKxVUorkJxFYqrUFyF4ioUV6G4CsVVKK5CcRWKq1BcheIqFFehuArFVSiuQnEViqtQXIXiKhRXobgKxVUorkJxFYqrUFyF4ioUV6G4CsVVKK5CcRWKq1BcheIqFFehuArFVSiuQnEViqtQXIXiKhRXocxfFRNJL0iq4ph1w2COJr0gqYp9XSNjV/5vcbf5CfKQjMbx/Ujhv3dxJ0uT10r47ZPTXMIIyzkrjvlETPIjO9mT5tL/AIPZcfIvfHgTAAAAAElFTkSuQmCC'/>
-
+   <path id='Home' d='M132.041,75.232 L68.823,10.663 L10.016,75.232 L33.698,75.105 L33.698,135.652 L108.627,135.652 L108.627,75.105 L132.041,75.232 Z'/>
 </svg> -->
 
-<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
-   <path id='Home' d='M132.041,75.232 L68.823,10.663 L10.016,75.232 L33.698,75.105 L33.698,135.652 L108.627,135.652 L108.627,75.105 L132.041,75.232 Z'/>
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="148px" height="151px">
+<path id='Home' fill-rule="evenodd"  stroke="rgb(0, 0, 0)" stroke-width="10px" stroke-linecap="square" stroke-linejoin="round" fill="rgb(0, 0, 0)"
+ d="M132.041,75.232 L68.823,10.663 L10.016,75.232 L33.698,75.105 L33.698,135.652 L108.627,135.652 L108.627,75.105 L132.041,75.232 Z"/>
 </svg>
