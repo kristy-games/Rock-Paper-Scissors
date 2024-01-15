@@ -3,6 +3,7 @@ var homeUrl = `${mainUrl}Home`
 var localPath = "C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/";
 
 var homeSvg = `${mainUrl}Resources/svg/Home.svg`;
+var svgUrl = `${mainUrl}Resources/svg/SVG.svg`;
 
 var stylePath = "Resources/css/style.css";
 var imagePath = `${mainUrl}Resources/Images/`;
@@ -102,8 +103,13 @@ function setHomeButton(anchor) {
 	var object = document.createElement("object");
 	object.data = homeSvg;
 	object.type = "image/svg+xml";
-	var svgDoc = object.contentDocument;
-	anchor.appendChild(svgDoc.documentElement);
+
+	object.onload = function() {
+
+		var svgDoc = object.contentDocument;
+		if (svgDoc) anchor.appendChild(svgDoc.documentElement);
+	};
+
 	anchor.appendChild(object);
 
 	var image = document.createElement("img");
