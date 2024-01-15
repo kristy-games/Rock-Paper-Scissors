@@ -102,21 +102,12 @@ function setHomeButton(anchor) {
 	anchor.href = homeUrl;
 	anchor.title = "Home";
 
-	var dataType = "image/svg+xml"; 
-	var object1 = document.createElement("object");
-	var object2 = document.createElement("object");
-	object1.data = homeSvg;
-	object2.data = svgUrl;
-	object1.type = dataType;
-	object2.type = dataType;
-
-	object1.addEventListener("load", function() {
-		console.log("load1");
-	});
-
-	object2.addEventListener("load", function() {
-		console.log("load2");
-	});
+	var svg = document.createElement("svg");
+	var use = document.createElement("use");
+	var id = "Home1";
+	use.setAttribute("href", `${svgUrl}#${id}`);
+	svg.appendChild(use);
+	anchor.appendChild(svg);
 
 	var image = document.createElement("img");
 	image.src = squareButtonUrl;
