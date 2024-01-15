@@ -77,10 +77,6 @@ a {
     max-width: 128px;
 }
 
-/*.image.button {
-    vertical-align: bottom;
-}*/
-
 .button {
     display: flex;
     flex-direction: column;
@@ -105,17 +101,19 @@ a {
     white-space: nowrap;
 }
 
-.button.home {
-    width: clamp(40px, 15vw, 50px);
-}
-
-.home-svg {
-    stroke: #000;
+.button svg {
+    stroke: black;
     stroke-linecap: square;
     stroke-linejoin: round;
     stroke-width: 10px;
-    fill: #000;
+    fill: black;
     fill-rule: evenodd;
+    width: clamp(40px, 15vw, 50px);
+/*    height: auto;*/
+}
+
+.button.home {
+    width: clamp(40px, 15vw, 50px);
 }
 
 .button.dark {

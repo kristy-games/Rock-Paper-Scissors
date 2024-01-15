@@ -2,6 +2,8 @@ var mainUrl = "https://kristy-games.github.io/";
 var homeUrl = `${mainUrl}Home`
 var localPath = "C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/";
 
+var svgNS = "http://www.w3.org/2000/svg";
+
 var stylePath = "Resources/css/style.css";
 var imagePath = `${mainUrl}Resources/Images/`;
 
@@ -90,16 +92,17 @@ function setTextButton(anchor) {
 	anchor.appendChild(image);
 }
 
-function setHomeButton(button) {
+function setHomeButton(anchor) {
 
 	var id = "Home Button";
-	button.className = "button home";
-	button.href = homeUrl;
-	button.title = "Home";
+	anchor.className = "button home";
+	anchor.href = homeUrl;
+	anchor.title = "Home";
 
+	var svg = document.createElementNS(svgNS, "svg");
+	svg.setAttribute("d", "M575.344,513.924l-65.632-66.651-61.053,66.651,24.586-.131v62.5h77.792v-62.5Z");
+	anchor.appendChild(svg);
 
-
-	// button.setAttribute("data-text", id); //append image
 	var image = document.createElement("img");
 	image.className = "image button";
 	image.src = squareButtonUrl;
