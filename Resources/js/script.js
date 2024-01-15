@@ -2,7 +2,6 @@ var mainUrl = "https://kristy-games.github.io/";
 var homeUrl = `${mainUrl}Home`
 var localPath = "C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/";
 
-var homeSvg = `${mainUrl}Resources/svg/Home.svg`; 
 var svgUrl = `${mainUrl}Resources/svg/SVG.svg`;
 
 var stylePath = "Resources/css/style.css";
@@ -101,10 +100,14 @@ function setHomeButton(anchor) {
 	anchor.title = "Home";
 
 	var svg = document.createElement("svg");
-	var use = document.createElement("use");
+	var image = document.createElement("image");
 	var id = "Home1";
-	use.setAttribute("xlink:href", `${svgUrl}#${id}`);
-	svg.appendChild(use);
+	image.setAttribute("xlink:href", `${svgUrl}#${id}`);
+
+	// use.setAttribute("xlink:href", `${svgUrl}#${id}`);
+	// svg.appendChild(use);
+	
+	svg.appendChild(image);
 	anchor.appendChild(svg);
 
 	var image = document.createElement("img");
