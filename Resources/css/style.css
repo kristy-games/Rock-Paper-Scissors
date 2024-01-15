@@ -101,23 +101,30 @@ a {
     white-space: nowrap;
 }
 
-.button path {
+.button.home {
+    width: clamp(40px, 15vw, 50px);
+}
+
+.button.home svg {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+}
+
+.button.home img {
+/*    width: 50px;
+    height: 50px;*/
+}
+
+.button.home image {
     stroke: black;
     stroke-linecap: square;
     stroke-linejoin: round;
     stroke-width: 10px;
+    /*  NEED STROKE?  */
     fill: black;
     fill-rule: evenodd;
-    width: 50px;
-    height: 50px;
-}
-
-.button.home {
-    width: clamp(40px, 15vw, 50px);
+    width: 100%;
 }
 
 .button.dark {
