@@ -116,7 +116,6 @@ a {
     stroke-linecap: square;
     stroke-linejoin: round;
     stroke-width: 10px;
-    /*  NEED STROKE?  */
     fill: black;
     fill-rule: evenodd;
     width: 100%;
