@@ -111,7 +111,7 @@ a {
     height: 50%;
 }
 
-.button.home image {
+.button.home path {
     stroke: black;
     stroke-linecap: square;
     stroke-linejoin: round;
