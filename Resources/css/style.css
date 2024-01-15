@@ -97,7 +97,7 @@ a {
 }*/
 
 .button.text {
-/*    content: attr(data-text);*/
+    content: attr(data-text);
 /*    position: absolute;*/
     font-size: clamp(0.8em, 10vw, 2em);
     font-weight: bolder;
