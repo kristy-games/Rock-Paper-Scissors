@@ -103,7 +103,7 @@ function setHomeButton(anchor) {
 	var object = document.createElement("object");
 	object.data = homeSvg;
 	object.type = "image/svg+xml";
-	object.onload = function() {
+	object.addEventListener ("load", function() {
 		console.log("Test");
 	};
 
