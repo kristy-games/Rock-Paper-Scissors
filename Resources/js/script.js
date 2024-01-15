@@ -99,16 +99,21 @@ function setHomeButton(anchor) {
 	anchor.href = homeUrl;
 	anchor.title = "Home";
 
-	var svg = document.createElement("svg");
-	var image = document.createElement("image");
-	var id = "Home1";
-	image.setAttribute("xlink:href", `${svgUrl}#${id}`);
+	var object = document.createElement("object");
+	object.data = svgUrl;
+	object.type = "image/svg+xml";
+	anchor.appendChild(object);
+
+	// var svg = document.createElement("svg");
+	// var image = document.createElement("image");
+	// var id = "Home1";
+	// image.setAttribute("xlink:href", `${svgUrl}#${id}`);
 
 	// use.setAttribute("xlink:href", `${svgUrl}#${id}`);
 	// svg.appendChild(use);
-	
-	svg.appendChild(image);
-	anchor.appendChild(svg);
+
+	// svg.appendChild(image);
+	// anchor.appendChild(svg);
 
 	var image = document.createElement("img");
 	image.src = squareButtonUrl;
