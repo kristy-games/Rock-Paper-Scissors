@@ -73,21 +73,21 @@ function setLogo(image) {
 	image.setAttribute("alt", id);
 }
 
-function setTextButton(button) {
+function setTextButton(anchor) {
 
-	var id = button.id;
-	button.title = id;
-	button.href = `${mainUrl}${removeSpaces(id)}`;
+	var id = anchor.id;
+	anchor.title = id;
+	anchor.className = "button";
+	anchor.href = `${mainUrl}${removeSpaces(id)}`;
 
 	var span = document.createElement("span");
 	span.textContent = id;
-	button.appendChild(span);
+	anchor.appendChild(span);
 
 	var image = document.createElement("img");
-	// image.className = "image button";
 	image.src = rectangleButtonUrl;
 	image.setAttribute("alt", `${id} Button`);
-	button.appendChild(image);
+	anchor.appendChild(image);
 }
 
 function setHomeButton(button) {
