@@ -77,9 +77,9 @@ a {
     max-width: 128px;
 }
 
-.image.button {
+/*.image.button {
     vertical-align: bottom;
-}
+}*/
 
 .button {
     display: flex;
@@ -89,31 +89,27 @@ a {
     overflow: hidden;
 }
 
-/*.button.text::before {
-    content: attr(data-text);
-    position: absolute;
-    font-size: clamp(0.8em, 10vw, 2em);
-    font-weight: bolder;
-}*/
-
-.button.text {
-    content: attr(data-text);
-/*    position: absolute;*/
-    font-size: clamp(0.8em, 10vw, 2em);
-    font-weight: bolder;
-}
-
 .button img {
     width: 100%;
     max-width: 250px;
     height: auto;
+    vertical-align: bottom;
+}
+
+.button span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(0.8em, 10vw, 2em);
+    white-space: nowrap;
 }
 
 .button.home {
     width: clamp(40px, 15vw, 50px);
 }
 
-. {
+.home-svg {
     stroke: #000;
     stroke-linecap: square;
     stroke-linejoin: round;

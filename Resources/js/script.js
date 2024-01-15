@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
 			case "Logo":
 				setLogo(element);
 				break;
-			case "PageButton":
-				setPageButton(element);
+			case "TextButton":
+				setTextButton(element);
 				break;
 			case "HomeButton":
 				setHomeButton(element);
@@ -73,17 +73,18 @@ function setLogo(image) {
 	image.setAttribute("alt", id);
 }
 
-function setPageButton(button) {
+function setTextButton(button) {
 
 	var id = button.id;
 	button.title = id;
-	button.className = "button text";
-	//button.textContent = id;
-	button.setAttribute("data-text", id);
 	button.href = `${mainUrl}${removeSpaces(id)}`;
 
+	var span = document.createElement("span");
+	span.textContent = id;
+	button.appendChild(span);
+
 	var image = document.createElement("img");
-	image.className = "image button";
+	// image.className = "image button";
 	image.src = rectangleButtonUrl;
 	image.setAttribute("alt", `${id} Button`);
 	button.appendChild(image);
