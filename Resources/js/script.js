@@ -104,7 +104,7 @@ function setHomeButton(anchor) {
 	object.data = homeSvg;
 	object.type = "image/svg+xml";
 
-	object.onload = function() {
+	object.addEventListener ("load", function() {
 
 		var svgDoc = object.contentDocument;
 		if (svgDoc) anchor.appendChild(svgDoc.documentElement);
