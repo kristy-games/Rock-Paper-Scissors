@@ -95,8 +95,6 @@ function setTextButton(anchor) {
 
 function setHomeButton(anchor) {
 	
-	console.log("Test1");
-
 	var id = "Home Button";
 	anchor.className = "button home";
 	anchor.href = homeUrl;
@@ -113,8 +111,6 @@ function setHomeButton(anchor) {
 	image.src = squareButtonUrl;
 	image.setAttribute("alt", id);
 	anchor.appendChild(image);
-
-	console.log("Test2");
 }
 
 function setGameSection(gameSection)
