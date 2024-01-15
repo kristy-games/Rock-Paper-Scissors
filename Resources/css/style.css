@@ -102,10 +102,10 @@ a {
 }
 
 .button svg {
-    position: absolute;
+/*    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
     stroke: black;
     stroke-linecap: square;
     stroke-linejoin: round;
