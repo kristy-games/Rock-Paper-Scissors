@@ -1,3 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="144" height="144" viewBox="0 0 144 144">
-    <image id="Home_Black" data-name="Home Black" x="1" width="142" height="144" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAACQCAYAAADeIVPjAAAFi0lEQVR4nO2dW4iUZRjH/zu7qRHYmYpOdKBCCqxIEtHKLCiKwFiyvAiESjqQ0EUkHSDqpouCuiuyNhIvii6iLDSKpLToRBAdhYLorCSRGek68cn7buO0p3mc7/3e73t+P/iz7uyMM/P8f7PMzvsdBGPMk/SMpM2SXpB0NaOBqbheUnucPMzkYCIun0CamIeYHHQzbwppYh5kchA5XdLf0xSnyH1MDo6W9FsP0sSsdj85x8yStNUgTczd3gfolQ8OQJqYu7wP0Rsb+iBNzCrvw/TCuj5KE3O796E2nSdKkCZmpffhNpUHSpQm5mbvQ24adySQJmaF92E3hWUJpYm50fvQ686SCqSJWe59+HXl/AqliVnmvYS6cZqkXRmIU2TYexl1oVh/+jUTaWKWei8ld2ZK+iYzaWKu8V5OzryfqTQxV3ovKEf6uf5UZq7wXlROrK2JNDFLvBeWA4/XTJqYxd6Lq5L7aypNzCK/1VXHrTWXJmaB1wKr4LqGSFNkr6T5/ipMz+IGSdMpzzxvRaYkh/WnsrJb0nl+qkzHqZL+arA4Rf6RNNdLoSk4UtLPDZcmpnhxnN38SstnhqSvnEgTs1PSnKYXWzbvOZMm5g9JZzS72vJ4zak0MTvCvu3QA887lyZmu6RTEGd6PIYw+6U4MMJJdSiuSu5FlHHzi6QT/WoxOSsRZNL8KOnYnAusgmHEmFZ+QJ7/uAQhesp34UNR15yLCKZ8K+kIr+IUf2b+iQTmFHt0HJpBj0kpXi0/Uf4B52tJs71Ic5CkLym9b/lc0iEZ9Fo6mym77/lM0sFNlmY9JZeWT8PerI1jhHJLz0fhrUBjeJRSk6U4FO9gE8RZTZnJs0XSQAbdm7mFEivLOzV1RtdSXuV5OwMPeuIiSssmb9ZFmrmUlV02ZuDFpJzM+lO2eT1XaQ4L24t4LyjnvJKBJ/sxFNZMvBdTh7yckTd6l0JqlZcycGbfrz/vRdQxL1YpzbMUUOusq0KaRxh8I7I2pTT3MPBGZSSFNDcx6EZmTZnSLGXAjc5Tvcgw3W03FoUjSEBzKQ4nd4ykV/slzjnhXAm13sYDpsUF4Sw866e68lTiFEdK+Lip27PCuBRHQT18qvWtycQpdvj6hF1OXXJh2Gdrw0RPfiJxiss/DEf8BJ/MD/tsjbtZxkTibArHFgbfLAgH8fzfBmHjiVOsoF7mfWIwxsKwBcRbnRd2i7MmnC8BoJN4tpux7Zg7xSnWn25jXDABF0saDW9jxljFJ6dkmrlT4UO9syR9wcsMemBOS9INTAx6ZHkrbGgO0AuzW3XY7way4434gOpy7m5SffYtQ8Q/x4vzJxwv6czwSaGVdrjdQPjTbTScPnCPpBYr7KXTDrOOc293zLx9gPMvTon0XPycr/s/OkrScV2X7QlfB8KDGe243WjHA4o/676uwr+LDYWuqm6mLtgeFih3hg5a4ZdDfEEPhsvi90Pha7vjuvH7oa6BFQf83KauG0a2df6wz+zw3moCihf51hR31Er4pGYlvC+vtFIdhTSlONAgEAdMIA6YQBwwgThgAnHABOKACcQBE4gDJhAHTCAOmEAcMIE4YAJxwATigAnEAROIAyYQB0wgDphAHDCBOGACccAE4oAJxAETiAMmEAdMIA6YQBwwgThgAnHABOKACcQBE4gDJhAHTCAOmEAcMIE4YAJxwATigAnEAROIAyYQB0wgDphAHDCBOGACccAE4oAJxAETiAMmEAdMIA6YQBwwgThgAnHABOKACcQBE4gDJlKKM0BFzSGlODOaPswMmJnqIaQU5/eE9+WVXSGlk1KcJ723moCnJe1NcUeDCZ/U95J2S7o04X16YqOkFamebxVvWBdKGpZ0gqRRSe0KHkNTGApvATZJGkn2nCT9C/UsUDpKBZNPAAAAAElFTkSuQmCC"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-linecap: square;
+        stroke-linejoin: round;
+        stroke-width: 10px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Home_Black_Small" data-name="Home Black Small" class="cls-1" d="M575.344,513.924l-65.632-66.651-61.053,66.651,24.586-.131v62.5h77.792v-62.5Z" transform="translate(-440 -439.781)"/>
 </svg>
