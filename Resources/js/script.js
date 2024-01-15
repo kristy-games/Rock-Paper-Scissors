@@ -94,6 +94,8 @@ function setTextButton(anchor) {
 }
 
 function setHomeButton(anchor) {
+	
+	console.log("Test1");
 
 	var id = "Home Button";
 	anchor.className = "button home";
@@ -103,14 +105,21 @@ function setHomeButton(anchor) {
 	var object = document.createElement("object");
 	object.data = homeSvg;
 	object.type = "image/svg+xml";
-	object.addEventListener ("load", function() {
-		console.log("Test");
-	};
 
+	object.addEventListener("load", function() {
+		console.log("load");
+	});
+
+	object.onload = function() {
+		console.log("onload");
+	};
+	
 	var image = document.createElement("img");
 	image.src = squareButtonUrl;
 	image.setAttribute("alt", id);
 	anchor.appendChild(image);
+
+	console.log("Test2");
 }
 
 function setGameSection(gameSection)
