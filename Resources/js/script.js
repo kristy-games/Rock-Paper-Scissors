@@ -1,10 +1,10 @@
-var mainUrl = "https://kristy-games.github.io/";
+var mainUrl = 'https://kristy-games.github.io/';
 var homeUrl = `${mainUrl}Home`
-var localPath = "C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/";
+var localPath = 'C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/';
 
 var svgUrl = `${mainUrl}Resources/svg/SVG.svg`;
 
-var stylePath = "Resources/css/style.css";
+var stylePath = 'Resources/css/style.css';
 var imagePath = `${mainUrl}Resources/Images/`;
 
 var logoImageUrl = `${imagePath}Logo/Logo.png`;
@@ -17,48 +17,48 @@ var rpsIconUrl = `${imagePath}AppIcons/RPS_Icon.png`; //maybe don't need up here
 var appleIconUrl = `${imagePath}StoreIcons/Apple_Icon.png`;
 var googleIconUrl = `${imagePath}StoreIcons/Google_Icon.png`;
 
-var appleStorePath = "http://apps.apple.com/app/";
-var googleStorePath = "http://play.google.com/store/apps/details?id="
+var appleStorePath = 'http://apps.apple.com/app/';
+var googleStorePath = 'http://play.google.com/store/apps/details?id=';
 
-var rpsApple = "xcode/id497799835";
-var rpsGoogle = "com.KristyGames.RockPaperScissors";
+var rpsApple = 'xcode/id497799835';
+var rpsGoogle = 'com.KristyGames.RockPaperScissors';
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
 
-	var elements = document.querySelectorAll("[data-type]");
+	var elements = document.querySelectorAll('[data-type]');
 
 	if (elements.length > 0) {
 
 		elements.forEach(function (element) {
 
-			var dataType = element.getAttribute("data-type");
+			var dataType = element.getAttribute('data-type');
 
 			switch (dataType)
 			{
-			case "Logo":
+			case 'Logo':
 				setLogo(element);
 				break;
-			case "TextButton":
+			case 'TextButton':
 				setTextButton(element);
 				break;
-			case "HomeButton":
+			case 'HomeButton':
 				setHomeButton(element);
 				break;
-		// case "GameSection":
+		// case 'GameSection':
 		// 	setGameSection(element);
 		// 	break;
-			case "Redirect":
+			case 'Redirect':
 				redirect(element);
 				break;
 			}
 		});
 	}
 
-	var stylesheet = document.getElementById("stylesheet");
+	var stylesheet = document.getElementById('stylesheet');
 
 	if (stylesheet)
 	{
-		if (window.location.protocol === "file:") {
+		if (window.location.protocol === 'file:') {
 
 			stylesheet.href = `${localPath}${stylePath}`;
 			createDarkButton();
@@ -68,36 +68,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function setLogo(image) {
 
-	var id = "Logo";
+	var id = 'Logo';
 	image.src = logoImageUrl;
-	image.className = "image logo";
+	image.className = 'image logo';
 	image.title = id;
-	image.setAttribute("alt", id);
+	image.setAttribute('alt', id);
 }
 
 function setTextButton(anchor) {
 
 	var id = anchor.id;
 	anchor.title = id;
-	anchor.className = "button";
+	anchor.className = 'button';
 	anchor.href = `${mainUrl}${removeSpaces(id)}`;
 
-	var span = document.createElement("span");
+	var span = document.createElement('span');
 	span.textContent = id;
 	anchor.appendChild(span);
 
-	var image = document.createElement("img");
+	var image = document.createElement('img');
 	image.src = rectangleButtonUrl;
-	image.setAttribute("alt", `${id} Button`);
+	image.setAttribute('alt', `${id} Button`);
 	anchor.appendChild(image);
 }
 
 function setHomeButton(anchor) {
 
-	var id = "Home Button";
-	anchor.className = "button home";
+	var id = 'Home Button';
+	anchor.className = 'button home';
 	anchor.href = homeUrl;
-	anchor.title = "Home";
+	anchor.title = 'Home';
 
 	fetch(svgUrl)
 	.then(response => response.text())
@@ -106,15 +106,14 @@ function setHomeButton(anchor) {
 		var svgDoc = new DOMParser().parseFromString(svgData, 'image/svg+xml');
         var externalSVG = svgDoc.querySelector('svg');
         var clonedSVG = externalSVG.cloneNode(true);
-        var id = 'Home2';
-        var image = clonedSVG.getElementById(id);
+        var image = clonedSVG.getElementById('Home');
         clonedSVG.appendChild(image);
         anchor.appendChild(clonedSVG);
 	});
 
-	var image = document.createElement("img");
+	var image = document.createElement('img');
 	image.src = squareButtonUrl;
-	image.setAttribute("alt", id);
+	image.setAttribute('alt', id);
 	anchor.appendChild(image);
 }
 
@@ -131,11 +130,11 @@ function setDownloadButton(button) {
 
 function createDarkButton() {
 
-	var button = document.createElement("button");
-	button.className = "button dark";
-	button.textContent = "Dark";
+	var button = document.createElement('button');
+	button.className = 'button dark';
+	button.textContent = 'Dark';
 	button.onclick = function() {
-		document.body.classList.toggle("dark");
+		document.body.classList.toggle('dark');
 	};
 	document.body.appendChild(button);
 }
@@ -145,7 +144,7 @@ function redirect(element) {
 // timeout
 // https://apps.apple.com/us/app/xcode/id497799835
 
-	var gameName = element.getAttribute("data-gameName");
+	var gameName = element.getAttribute('data-gameName');
 	var appScheme = `${removeSpaces(gameName)}://`;
 
 // var userAgent = navigator.userAgent || navigator.vendor || window.opera;
@@ -163,7 +162,7 @@ function redirectApple(gameName) {
 
 	switch (gameName)
 	{
-	case "RPS":
+	case 'RPS':
 		window.location.href = `${appleStorePath}${rpsApple}`;
 		break;
 	}
@@ -173,7 +172,7 @@ function redirectGoogle(gameName) {
 
 	switch (gameName)
 	{
-	case "RPS":
+	case 'RPS':
 		window.location.href = `${googleStorePath}${rpsGoogle}`;
 		break;
 	}
