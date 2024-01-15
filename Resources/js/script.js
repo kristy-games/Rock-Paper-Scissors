@@ -100,7 +100,10 @@ function setHomeButton(anchor) {
 	anchor.href = homeUrl;
 	anchor.title = "Home";
 
-	anchor.innerHTML = '<object type="image/svg+xml" data=homeSvg></object>';
+	var object = document.createElement("object");
+	object.data = homeSvg;
+	object.type = "image/svg+xml";
+	anchor.appendChild(object);
 
 	var image = document.createElement("img");
 	image.src = squareButtonUrl;
