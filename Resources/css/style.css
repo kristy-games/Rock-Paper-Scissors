@@ -89,9 +89,16 @@ a {
     overflow: hidden;
 }
 
-.button.text::before {
+/*.button.text::before {
     content: attr(data-text);
     position: absolute;
+    font-size: clamp(0.8em, 10vw, 2em);
+    font-weight: bolder;
+}*/
+
+.button.text {
+/*    content: attr(data-text);*/
+/*    position: absolute;*/
     font-size: clamp(0.8em, 10vw, 2em);
     font-weight: bolder;
 }
@@ -104,7 +111,15 @@ a {
 
 .button.home {
     width: clamp(40px, 15vw, 50px);
-    /* DRAW HOUSE   */
+}
+
+. {
+    stroke: #000;
+    stroke-linecap: square;
+    stroke-linejoin: round;
+    stroke-width: 10px;
+    fill: #000;
+    fill-rule: evenodd;
 }
 
 .button.dark {

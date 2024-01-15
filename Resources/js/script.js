@@ -78,7 +78,8 @@ function setPageButton(button) {
 	var id = button.id;
 	button.title = id;
 	button.className = "button text";
-	button.setAttribute("data-text", id);
+	button.textContent = id;
+	// button.setAttribute("data-text", id);
 	button.href = `${mainUrl}${removeSpaces(id)}`;
 
 	var image = document.createElement("img");
@@ -92,9 +93,11 @@ function setHomeButton(button) {
 
 	var id = "Home Button";
 	button.className = "button home";
-
 	button.href = homeUrl;
 	button.title = "Home";
+
+	
+
 	// button.setAttribute("data-text", id); //append image
 	var image = document.createElement("img");
 	image.className = "image button";
