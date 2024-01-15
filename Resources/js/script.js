@@ -104,10 +104,9 @@ function setHomeButton(anchor) {
 	anchor.appendChild(svg);
 
 	var image = document.createElement("img");
-	image.className = "image button";
 	image.src = squareButtonUrl;
 	image.setAttribute("alt", id);
-	button.appendChild(image);
+	anchor.appendChild(image);
 }
 
 function setGameSection(gameSection)
