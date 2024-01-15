@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	if (elements.length > 0) {
 
 		elements.forEach(function (element) {
-			
+
 			var dataType = element.getAttribute("data-type");
 
 			switch (dataType)
@@ -44,9 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
 			case "HomeButton":
 				setHomeButton(element);
 				break;
-			// case "GameSection":
-			// 	setGameSection(element);
-			// 	break;
+		// case "GameSection":
+		// 	setGameSection(element);
+		// 	break;
 			case "Redirect":
 				redirect(element);
 				break;
@@ -93,27 +93,25 @@ function setTextButton(anchor) {
 }
 
 function setHomeButton(anchor) {
-	
+
 	var id = "Home Button";
 	anchor.className = "button home";
 	anchor.href = homeUrl;
 	anchor.title = "Home";
 
-	var object = document.createElement("object");
-	object.data = svgUrl;
-	object.type = "image/svg+xml";
-	anchor.appendChild(object);
+	fetch(svgUrl)
+	.then(response => response.text())
+	.then(svgData => {
 
-	// var svg = document.createElement("svg");
-	// var image = document.createElement("image");
-	// var id = "Home1";
-	// image.setAttribute("xlink:href", `${svgUrl}#${id}`);
+		var svgDoc = new DOMParser().parseFromString(svgData, 'image/svg+xml');
+        var externalSVG = svgDoc.querySelector('svg');
+        var clonedSVG = externalSVG.cloneNode(true);
+        var id = 'Home1';
+        var image = clonedSVG.getElementById(id);
 
-	// use.setAttribute("xlink:href", `${svgUrl}#${id}`);
-	// svg.appendChild(use);
-
-	// svg.appendChild(image);
-	// anchor.appendChild(svg);
+        clonedSVG.appendChild(image);
+        anchor.appendChild(clonedSVG);
+	});
 
 	var image = document.createElement("img");
 	image.src = squareButtonUrl;
@@ -128,8 +126,8 @@ function setGameSection(gameSection)
 
 function setDownloadButton(button) {
 
-	// var rpsAppleUrl = `${applePath}${rpsApple}`; //set href, src = qrcode
-	// var rpsGoogleUrl = `${googlePath}${rpsGoogle}`;
+// var rpsAppleUrl = `${applePath}${rpsApple}`; //set href, src = qrcode
+// var rpsGoogleUrl = `${googlePath}${rpsGoogle}`;
 }
 
 function createDarkButton() {
@@ -145,24 +143,24 @@ function createDarkButton() {
 
 function redirect(element) {
 
-	// timeout
-	// https://apps.apple.com/us/app/xcode/id497799835
+// timeout
+// https://apps.apple.com/us/app/xcode/id497799835
 
 	var gameName = element.getAttribute("data-gameName");
 	var appScheme = `${removeSpaces(gameName)}://`;
 
-	// var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+// var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-	// if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream)
-	// 	redirectApple(gameName);
+// if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream)
+// 	redirectApple(gameName);
 
-	// else if (/android/i.test(userAgent))
-	// 	redirectGoogle(gameName);
+// else if (/android/i.test(userAgent))
+// 	redirectGoogle(gameName);
 }
 
 function redirectApple(gameName) {
 
-	// window.location.replace
+// window.location.replace
 
 	switch (gameName)
 	{
