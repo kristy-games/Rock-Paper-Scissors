@@ -105,7 +105,7 @@ function setHomeButton(anchor) {
 	object.type = "image/svg+xml";
 	object.onload = function() {
 		console.log("Test");
-	}
+	};
 
 	var image = document.createElement("img");
 	image.src = squareButtonUrl;
