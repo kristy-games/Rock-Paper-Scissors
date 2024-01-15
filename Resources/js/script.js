@@ -101,6 +101,7 @@ function setHomeButton(anchor) {
 
 	var svg = document.createElementNS(svgNS, "svg");
 	svg.setAttribute("d", "M575.344,513.924l-65.632-66.651-61.053,66.651,24.586-.131v62.5h77.792v-62.5Z");
+	svg.setAttribute("viewBox", "0 0 50 50");
 	anchor.appendChild(svg);
 
 	var image = document.createElement("img");
