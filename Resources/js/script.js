@@ -2,23 +2,23 @@ var mainUrl = 'https://kristy-games.github.io/';
 var homeUrl = `${mainUrl}Home`
 var localPath = 'C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/';
 
-var svgUrl = `${mainUrl}Resources/svg/SVG.svg`;
-
 var stylePath = 'Resources/css/style.css';
 var imagePath = `${mainUrl}Resources/Images/`;
 
 var logoImageUrl = `${imagePath}Logo/Logo.png`;
 
+var svgUrl = `${mainUrl}Resources/svg/SVG.svg`;
+
 var squareButtonUrl = `${imagePath}Buttons/SquareButton.png`;
 var rectangleButtonUrl = `${imagePath}Buttons/RectangleButton.png`;
-
-var rpsIconUrl = `${imagePath}AppIcons/RPS_Icon.png`; //maybe don't need up here, switch id?
 
 var appleIconUrl = `${imagePath}StoreIcons/Apple_Icon.png`;
 var googleIconUrl = `${imagePath}StoreIcons/Google_Icon.png`;
 
 var appleStorePath = 'http://apps.apple.com/app/';
 var googleStorePath = 'http://play.google.com/store/apps/details?id=';
+
+var rpsIconUrl = `${imagePath}AppIcons/RPS_Icon.png`;
 
 var rpsApple = 'xcode/id497799835';
 var rpsGoogle = 'com.KristyGames.RockPaperScissors';
@@ -44,9 +44,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			case 'HomeButton':
 				setHomeButton(element);
 				break;
-		// case 'GameSection':
-		// 	setGameSection(element);
-		// 	break;
+			case 'GameSection':
+				setGameSection(element);
+				break;
 			case 'Redirect':
 				redirect(element);
 				break;
@@ -116,6 +116,18 @@ function setHomeButton(anchor) {
 
 function setGameSection(gameSection)
 {
+	var gameIcon = gameSection.querySelector('[data-type="GameIcon"]');
+	var gameTitle = gameSection.querySelector('[data-type="GameTitle"]');
+	var gameQR = gameSection.querySelector('[data-type="GameQR"]');
+	var appleButton = gameSection.querySelector('[data-type="AppleButton"]');
+	var googleButton = gameSection.querySelector('[data-type="GoogleButton"]');
+
+	if (gameIcon)
+	{
+		gameIcon.src = 
+		src='https://kristy-games.github.io/Resources/Images/AppIcons/RPS_Icon.png' title='Rock Paper Scissors' alt='Rock Paper Scissors Icon'
+	}
+	if (gameTitle) gameSection.getAttribute gameName
 
 }
 
@@ -146,32 +158,32 @@ function redirect(element) {
 
 // var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-// if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream)
-// 	redirectApple(gameName);
+	if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream)
+		window.location.href = appleUrl(gameName);
 
-// else if (/android/i.test(userAgent))
-// 	redirectGoogle(gameName);
+	else if (/android/i.test(userAgent))
+		window.location.href = googleUrl(gameName);
 }
 
-function redirectApple(gameName) {
+function appIcon(gameName) {
 
-// window.location.replace
+}
+
+function appleUrl(gameName) {
 
 	switch (gameName)
 	{
 	case 'RPS':
-		window.location.href = `${appleStorePath}${rpsApple}`;
-		break;
+		return `${appleStorePath}${rpsApple}`;
 	}
 }
 
-function redirectGoogle(gameName) {
+function googleUrl(gameName) {
 
 	switch (gameName)
 	{
 	case 'RPS':
-		window.location.href = `${googleStorePath}${rpsGoogle}`;
-		break;
+		return `${googleStorePath}${rpsGoogle}`;
 	}
 }
 
