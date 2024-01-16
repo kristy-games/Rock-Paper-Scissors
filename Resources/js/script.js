@@ -104,10 +104,10 @@ function setHomeButton(anchor) {
 	.then(svgData => {
 
 		var svgDoc = new DOMParser().parseFromString(svgData, 'image/svg+xml');
-        var externalSVG = svgDoc.querySelector('svg');
+        var externalSVG = svgDoc.getElementById('HomeSVG');
         var clonedSVG = externalSVG.cloneNode(true);
-        var path = clonedSVG.getElementById('Home');
-        clonedSVG.appendChild(path);
+        // var path = clonedSVG.querySelector('path');
+        // clonedSVG.appendChild(path);
         anchor.appendChild(clonedSVG);
 	});
 
