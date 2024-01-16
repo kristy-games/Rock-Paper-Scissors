@@ -18,6 +18,9 @@ var googleIconUrl = `${imagePath}StoreIcons/Google_Icon.png`;
 var appleStorePath = 'http://apps.apple.com/app/';
 var googleStorePath = 'http://play.google.com/store/apps/details?id=';
 
+var appleButtonTitle = 'Download on the Apple App Store';
+var googleButtonTitle = 'Download on the Google Play Store';
+
 var rockPaperScissorsApple = 'xcode/id497799835';
 var rockPaperScissorsGoogle = 'com.KristyGames.RockPaperScissors';
 
@@ -77,8 +80,8 @@ function setTextButton(anchor) {
 
 	var id = anchor.id;
 	var idPath = getPath(id);
+	// anchor.className = 'button';
 	anchor.title = id;
-	anchor.className = 'button';
 	anchor.href = `${mainUrl}${idPath}`;
 
 	var span = document.createElement('span');
@@ -113,8 +116,8 @@ function setHomeButton(anchor) {
 	anchor.appendChild(image);
 }
 
-function setGameSection(gameSection)
-{
+function setGameSection(gameSection) {
+	
 	var gameName = gameSection.getAttribute('data-gameName');
 	var gameNamePath = getPath(gameName);
 
@@ -124,28 +127,41 @@ function setGameSection(gameSection)
 	var appleButton = gameSection.querySelector('[data-type="AppleButton"]');
 	var googleButton = gameSection.querySelector('[data-type="GoogleButton"]');
 
-	if (gameIcon)
-	{
+	if (gameIcon) {
 		gameIcon.className = 'image gameIcon';
 		gameIcon.src = `${imagePath}AppIcons/${gameNamePath}_Icon.png`;
 		gameIcon.title = gameName;
 		gameIcon.alt = `${gameName} Icon`;
 	}
 
-	if (gameTitle)
-	{
+	if (gameTitle) {
 		gameTitle.className = 'text gameTitle';
 		gameTitle.title = gameName;
 		gameTitle.textContent = gameName;
 	}
 
-	if (gameQR)
-	{		
+	if (gameQR)	{		
 		gameQR.className = 'image gameQR';
 		gameQR.src = `${imagePath}QRCodes/${gameNamePath}_QR.png`;
 		gameQR.title = `Download ${gameName}`;
 		gameQR.alt = `${gameName} QR Code`;
 	}
+
+	// if (appleButton) {
+
+	// 	appleButton.h
+	// 		href='https://www.example.com' target='_blank' title='Download on the Apple App Store'
+
+	// 		add image
+
+    //         <img class='image button' src='https://kristy-games.github.io/Resources/Images/StoreIcons/Apple_Icon.png' alt='Apple App Store Icon'>
+	// }
+
+	// if (googleButton) {
+
+	// 	 href='https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors' target='_blank' title='Download on the Google Play Store'>
+    //                     <img class='image button' src='https://kristy-games.github.io/Resources/Images/StoreIcons/Google_Icon.png' alt='Google Play Store Icon'>
+	// }
 }
 
 function setDownloadButton(button) {
@@ -185,8 +201,7 @@ function redirect(element) {
 
 function getAppleUrl(gameName) {
 
-	switch (gameName)
-	{
+	switch (gameName) {
 	case 'Rock Paper Scissors':
 		return `${appleStorePath}${rockPaperScissorsApple}`;
 	}
@@ -194,8 +209,7 @@ function getAppleUrl(gameName) {
 
 function getGoogleUrl(gameName) {
 
-	switch (gameName)
-	{
+	switch (gameName) {
 	case 'Rock Paper Scissors':
 		return `${googleStorePath}${rockPaperScissorsGoogle}`;
 	}
