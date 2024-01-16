@@ -193,20 +193,17 @@ function createDarkButton() {
 }
 
 function redirect(element) {
-	
-	console.log(userAgent);
 
 	if (isIOS || isAndroid) {
 
 		var gameName = element.getAttribute('data-gameName');
 		var gameNamePath = getPath(gameName);
-		//var appScheme = `${gameNamePath}://`;
+		var appScheme = `${gameNamePath}://`;
 		//app + joinCode/blank
 
 		var iframe = document.createElement('iframe');
 		iframe.style.display = 'none';
-		// iframe.src = appScheme;
-		iframe.src = "instagram://";
+		iframe.src = appScheme;
 		document.body.appendChild(iframe);
 
 		setTimeout(function() {
@@ -223,7 +220,6 @@ function redirect(element) {
 		setTimeout(function() {
 			document.body.removeChild(iframe);
 		}, 1500);
-
 	}
 }
 
