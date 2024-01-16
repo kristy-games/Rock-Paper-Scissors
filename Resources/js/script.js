@@ -115,7 +115,7 @@ function setHomeButton(anchor) {
 
 function setGameSection(gameSection)
 {
-	var gameName = gameSection.getAttribute('gameName');
+	var gameName = gameSection.getAttribute('data-gameName');
 	var gameNamePath = getPath(gameName);
 
 	var gameIcon = gameSection.querySelector('[data-type="GameIcon"]');
