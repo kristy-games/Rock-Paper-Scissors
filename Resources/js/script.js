@@ -100,16 +100,41 @@ function setHomeButton(anchor) {
 	anchor.title = 'Home';
 
 	fetch(svgUrl)
-	.then(response => response.text())
-	.then(svgData => {
-
-		var svgDoc = new DOMParser().parseFromString(svgData, 'image/svg+xml');
+    .then(response => response.text())
+    .then(svgData => {
+        var svgDoc = new DOMParser().parseFromString(svgData, 'image/svg+xml');
         var externalSVG = svgDoc.getElementById('Home');
-        var clonedSVG = externalSVG.cloneNode();
-        var path = clonedSVG.querySelector('path');
-        path.setAttribute('class', 'path');
-        anchor.appendChild(clonedSVG);
-	});
+
+        if (externalSVG) {
+            var clonedSVG = externalSVG.cloneNode();
+
+            var path = clonedSVG.querySelector('path');
+
+            if (path) {
+                path.setAttribute('class', 'path');
+                anchor.appendChild(clonedSVG);
+            } 
+            else {
+                console.error('Path element not found in cloned SVG.');
+            }
+        } 
+        else {
+            console.error('SVG with ID "Home" not found.');
+        }
+    })
+    .catch(error => console.error('Error fetching or parsing SVG:', error));
+
+	// fetch(svgUrl)
+	// .then(response => response.text())
+	// .then(svgData => {
+
+	// 	var svgDoc = new DOMParser().parseFromString(svgData, 'image/svg+xml');
+    //     var externalSVG = svgDoc.getElementById('Home');
+    //     var clonedSVG = externalSVG.cloneNode();
+    //     var path = clonedSVG.querySelector('path');
+    //     path.setAttribute('class', 'path');
+    //     anchor.appendChild(clonedSVG);
+	// });
 
 	var image = document.createElement('img');
 	image.src = squareButtonUrl;
