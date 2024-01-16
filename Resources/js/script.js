@@ -206,9 +206,10 @@ function redirect(element) {
 	iframe.style.display = 'none';
 		// iframe.src = appScheme;
 	iframe.src = "instagram://";
-	document.body.appendChild(iframe);
 
 	if (isMobile) {
+
+			document.body.appendChild(iframe);
 
 	setTimeout(function() {
 
