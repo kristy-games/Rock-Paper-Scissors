@@ -213,9 +213,9 @@ function redirect(element) {
 
 	}, 1000);
 
-	setTimeout(function() {
-		document.body.removeChild(iframe);
-	}, 1500);
+	// setTimeout(function() {
+	// 	document.body.removeChild(iframe);
+	// }, 1500);
 }
 
 function getAppleUrl(gameNamePath) {
