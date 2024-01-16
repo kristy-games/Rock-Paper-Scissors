@@ -71,7 +71,6 @@ function setLogo(image) {
 	image.src = logoImageUrl;
 	image.title = id;
 	image.alt = id;
-	// image.setAttribute('alt', id);
 }
 
 function setTextButton(anchor) {
@@ -88,7 +87,6 @@ function setTextButton(anchor) {
 
 	var image = document.createElement('img');
 	image.src = rectangleButtonUrl;
-	// image.setAttribute('alt', `${id} Button`);
 	image.alt = `${id} Button`;
 	anchor.appendChild(image);
 }
@@ -97,8 +95,8 @@ function setHomeButton(anchor) {
 
 	var id = 'Home Button';
 	anchor.className = 'button home';
-	anchor.href = homeUrl;
 	anchor.title = 'Home';
+	anchor.href = homeUrl;
 
 	fetch(svgUrl)
 	.then(response => response.text())
@@ -111,7 +109,6 @@ function setHomeButton(anchor) {
 
 	var image = document.createElement('img');
 	image.src = squareButtonUrl;
-	// image.setAttribute('alt', id);
 	image.alt = id;
 	anchor.appendChild(image);
 }
@@ -131,7 +128,6 @@ function setGameSection(gameSection)
 	{
 		gameIcon.className = 'image gameIcon';
 		gameIcon.src = `${imagePath}AppIcons/${gameNamePath}_Icon.png`;
-
 		gameIcon.title = gameName;
 		gameIcon.alt = `${gameName} Icon`;
 	}
@@ -148,7 +144,7 @@ function setGameSection(gameSection)
 		gameQR.className = 'image gameQR';
 		gameQR.src = `${imagePath}QRCodes/${gameNamePath}_QR.png`;
 		gameQR.title = `Download ${gameName}`;
-		gameQR.alt = `${gameQR.title} QR Code`;
+		gameQR.alt = `${gameName} QR Code`;
 	}
 }
 
