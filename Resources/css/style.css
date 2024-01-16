@@ -73,7 +73,7 @@ a {
     padding: 0 20px 10px;
 }
 
-.image.qrCode {
+.image.gameQR {
     max-width: 128px;
 }
 
@@ -98,12 +98,15 @@ a {
     font-size: clamp(0.8em, 10vw, 2em);
 }
 
+.button svg {
+    position: absolute;
+}
+
 .button.home {
     width: clamp(40px, 15vw, 50px);
 }
 
 .button.home svg {
-    position: absolute;
     width: 50%;
     height: 50%;
 }
@@ -118,7 +121,7 @@ a {
     font-weight: 700;
 }
 
-.gameTitle {
+.text.gameTitle {
     padding-inline: 20px;
     font-size: clamp(1.25em, 10vw, 2em);
 }

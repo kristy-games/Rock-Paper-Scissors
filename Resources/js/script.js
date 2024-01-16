@@ -18,10 +18,8 @@ var googleIconUrl = `${imagePath}StoreIcons/Google_Icon.png`;
 var appleStorePath = 'http://apps.apple.com/app/';
 var googleStorePath = 'http://play.google.com/store/apps/details?id=';
 
-var rpsIconUrl = `${imagePath}AppIcons/RPS_Icon.png`;
-
-var rpsApple = 'xcode/id497799835';
-var rpsGoogle = 'com.KristyGames.RockPaperScissors';
+var rockPaperScissorsApple = 'xcode/id497799835';
+var rockPaperScissorsGoogle = 'com.KristyGames.RockPaperScissors';
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -68,19 +66,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function setLogo(image) {
 
-	var id = 'Logo';
-	image.src = logoImageUrl;
+	var id = 'KristyGames Logo';
 	image.className = 'image logo';
+	image.src = logoImageUrl;
 	image.title = id;
-	image.setAttribute('alt', id);
+	image.alt = id;
+	// image.setAttribute('alt', id);
 }
 
 function setTextButton(anchor) {
 
 	var id = anchor.id;
+	var idPath = getPath(id);
 	anchor.title = id;
 	anchor.className = 'button';
-	anchor.href = `${mainUrl}${removeSpaces(id)}`;
+	anchor.href = `${mainUrl}${idPath}`;
 
 	var span = document.createElement('span');
 	span.textContent = id;
@@ -88,7 +88,8 @@ function setTextButton(anchor) {
 
 	var image = document.createElement('img');
 	image.src = rectangleButtonUrl;
-	image.setAttribute('alt', `${id} Button`);
+	// image.setAttribute('alt', `${id} Button`);
+	image.alt = `${id} Button`;
 	anchor.appendChild(image);
 }
 
@@ -110,12 +111,16 @@ function setHomeButton(anchor) {
 
 	var image = document.createElement('img');
 	image.src = squareButtonUrl;
-	image.setAttribute('alt', id);
+	// image.setAttribute('alt', id);
+	image.alt = id;
 	anchor.appendChild(image);
 }
 
 function setGameSection(gameSection)
 {
+	var gameName = gameSection.getAttribute('gameName');
+	var gameNamePath = getPath(gameName);
+
 	var gameIcon = gameSection.querySelector('[data-type="GameIcon"]');
 	var gameTitle = gameSection.querySelector('[data-type="GameTitle"]');
 	var gameQR = gameSection.querySelector('[data-type="GameQR"]');
@@ -124,11 +129,27 @@ function setGameSection(gameSection)
 
 	if (gameIcon)
 	{
-		gameIcon.src = 
-		src='https://kristy-games.github.io/Resources/Images/AppIcons/RPS_Icon.png' title='Rock Paper Scissors' alt='Rock Paper Scissors Icon'
-	}
-	if (gameTitle) gameSection.getAttribute gameName
+		gameIcon.className = 'image gameIcon';
+		gameIcon.src = `${imagePath}AppIcons/${gameNamePath}_Icon.png`;
 
+		gameIcon.title = gameName;
+		gameIcon.alt = `${gameName} Icon`;
+	}
+
+	if (gameTitle)
+	{
+		gameTitle.className = 'text gameTitle';
+		gameTitle.title = gameName;
+		gameTitle.textContent = gameName;
+	}
+
+	if (gameQR)
+	{		
+		gameQR.className = 'image gameQR';
+		gameQR.src = `${imagePath}QRCodes/${gameNamePath}_QR.png`;
+		gameQR.title = `Download ${gameName}`;
+		gameQR.alt = `${gameQR.title} QR Code`;
+	}
 }
 
 function setDownloadButton(button) {
@@ -154,39 +175,36 @@ function redirect(element) {
 // https://apps.apple.com/us/app/xcode/id497799835
 
 	var gameName = element.getAttribute('data-gameName');
-	var appScheme = `${removeSpaces(gameName)}://`;
+	var gameNamePath = getPath(gameName);
+	var appScheme = `${gameNamePath}://`;
 
 // var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
 	if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream)
-		window.location.href = appleUrl(gameName);
+		window.location.href = getAppleUrl(gameName);
 
 	else if (/android/i.test(userAgent))
-		window.location.href = googleUrl(gameName);
+		window.location.href = getGoogleUrl(gameName);
 }
 
-function appIcon(gameName) {
-
-}
-
-function appleUrl(gameName) {
+function getAppleUrl(gameName) {
 
 	switch (gameName)
 	{
-	case 'RPS':
-		return `${appleStorePath}${rpsApple}`;
+	case 'Rock Paper Scissors':
+		return `${appleStorePath}${rockPaperScissorsApple}`;
 	}
 }
 
-function googleUrl(gameName) {
+function getGoogleUrl(gameName) {
 
 	switch (gameName)
 	{
-	case 'RPS':
-		return `${googleStorePath}${rpsGoogle}`;
+	case 'Rock Paper Scissors':
+		return `${googleStorePath}${rockPaperScissorsGoogle}`;
 	}
 }
 
-function removeSpaces (string) {
+function getPath (string) {
 	return string.split(' ').join('');
 }
