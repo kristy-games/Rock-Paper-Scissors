@@ -1,28 +1,32 @@
-var mainUrl = 'https://kristy-games.github.io/';
-var homeUrl = `${mainUrl}Home`
-var localPath = 'C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/';
+const companyName = 'KristyGames';
 
-var stylePath = 'Resources/css/style.css';
-var imagePath = `${mainUrl}Resources/Images/`;
+const mainUrl = 'https://kristy-games.github.io/';
+const homeUrl = `${mainUrl}Home`
+const localPath = 'C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/';
 
-var logoImageUrl = `${imagePath}Logo/Logo.png`;
+const stylePath = 'Resources/css/style.css';
+const imagePath = `${mainUrl}Resources/Images/`;
 
-var svgUrl = `${mainUrl}Resources/svg/SVG.svg`;
+const logoImageUrl = `${imagePath}Logo/Logo.png`;
 
-var squareButtonUrl = `${imagePath}Buttons/SquareButton.png`;
-var rectangleButtonUrl = `${imagePath}Buttons/RectangleButton.png`;
+const svgUrl = `${mainUrl}Resources/svg/SVG.svg`;
 
-var appleIconUrl = `${imagePath}StoreIcons/Apple_Icon.png`;
-var googleIconUrl = `${imagePath}StoreIcons/Google_Icon.png`;
+const squareButtonUrl = `${imagePath}Buttons/SquareButton.png`;
+const rectangleButtonUrl = `${imagePath}Buttons/RectangleButton.png`;
 
-var appleStorePath = 'http://apps.apple.com/app/';
-var googleStorePath = 'http://play.google.com/store/apps/details?id=';
+const appleIconUrl = `${imagePath}StoreIcons/Apple_Icon.png`;
+const googleIconUrl = `${imagePath}StoreIcons/Google_Icon.png`;
 
-var appleButtonTitle = 'Download on the Apple App Store';
-var googleButtonTitle = 'Download on the Google Play Store';
+const appleStorePath = 'http://apps.apple.com/app/';
+const googleStorePath = `http://play.google.com/store/apps/details?id=com.${companyName}.`;
 
-var rockPaperScissorsApple = 'xcode/id497799835';
-var rockPaperScissorsGoogle = 'com.KristyGames.RockPaperScissors';
+const appleButtonTitle = 'Download on the Apple App Store';
+const appleButtonAlt = 'Apple App Store Icon';
+const googleButtonTitle = 'Download on the Google Play Store';
+const googleButtonAlt = 'Google Play Store Icon';
+
+const rockPaperScissorsApple = 'xcode/id497799835';
+//const rockPaperScissorsAppleId ? '{gameNamePath}/id{rockPaperScissorsAppleId}'
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -69,11 +73,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function setLogo(image) {
 
-	var id = 'KristyGames Logo';
 	image.className = 'image logo';
 	image.src = logoImageUrl;
-	image.title = id;
-	image.alt = id;
+	image.title = companyName;
+	image.alt = ``;
 }
 
 function setTextButton(anchor) {
@@ -147,27 +150,31 @@ function setGameSection(gameSection) {
 		gameQR.alt = `${gameName} QR Code`;
 	}
 
-	// if (appleButton) {
+	if (appleButton) {
 
-	// 	appleButton.h
-	// 		href='https://www.example.com' target='_blank' title='Download on the Apple App Store'
+		appleButton.className = 'button';
+		appleButton.title = appleButtonTitle;
+		appleButton.target = '_blank';
+		appleButton.href = getAppleUrl(gameNamePath);
 
-	// 		add image
+		var image = document.createElement('img');
+		image.src = appleIconUrl;
+		image.alt = appleButtonAlt;
+		appleButton.appendChild(image);
+	}
 
-    //         <img class='image button' src='https://kristy-games.github.io/Resources/Images/StoreIcons/Apple_Icon.png' alt='Apple App Store Icon'>
-	// }
+	if (googleButton) {
 
-	// if (googleButton) {
-
-	// 	 href='https://play.google.com/store/apps/details?id=com.KristyGames.RockPaperScissors' target='_blank' title='Download on the Google Play Store'>
-    //                     <img class='image button' src='https://kristy-games.github.io/Resources/Images/StoreIcons/Google_Icon.png' alt='Google Play Store Icon'>
-	// }
-}
-
-function setDownloadButton(button) {
-
-// var rpsAppleUrl = `${applePath}${rpsApple}`; //set href, src = qrcode
-// var rpsGoogleUrl = `${googlePath}${rpsGoogle}`;
+		googleButton.className = 'button';
+		googleButton.title = googleButtonTitle;
+		googleButton.target = '_blank';
+		googleButton.href = getGoogleUrl(gameNamePath);
+		
+		var image = document.createElement('img');
+		image.src = googleIconUrl;
+		image.alt = googleButtonAlt;
+		googleButton.appendChild(image);
+	}
 }
 
 function createDarkButton() {
@@ -190,29 +197,27 @@ function redirect(element) {
 	var gameNamePath = getPath(gameName);
 	var appScheme = `${gameNamePath}://`;
 
-// var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
 	if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream)
-		window.location.href = getAppleUrl(gameName);
+		window.location.href = getAppleUrl(gameNamePath);
 
 	else if (/android/i.test(userAgent))
-		window.location.href = getGoogleUrl(gameName);
+		window.location.href = getGoogleUrl(gameNamePath);
 }
 
-function getAppleUrl(gameName) {
+function getAppleUrl(gameNamePath) {
 
-	switch (gameName) {
-	case 'Rock Paper Scissors':
+	switch (gameNamePath) {
+
+	case 'RockPaperScissors':
 		return `${appleStorePath}${rockPaperScissorsApple}`;
 	}
 }
 
-function getGoogleUrl(gameName) {
+function getGoogleUrl(gameNamePath) {
 
-	switch (gameName) {
-	case 'Rock Paper Scissors':
-		return `${googleStorePath}${rockPaperScissorsGoogle}`;
-	}
+	return `${googleStorePath}${gameNamePath}`;
 }
 
 function getPath (string) {

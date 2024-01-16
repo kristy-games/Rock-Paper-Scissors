@@ -85,6 +85,10 @@ a {
     overflow: hidden;
 }
 
+.button.home {
+    width: clamp(40px, 15vw, 50px);
+}
+
 .button img {
     width: 100%;
     max-width: 250px;
@@ -100,10 +104,6 @@ a {
 
 .button svg {
     position: absolute;
-}
-
-.button.home {
-    width: clamp(40px, 15vw, 50px);
 }
 
 .button.home svg {
