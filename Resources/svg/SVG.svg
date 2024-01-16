@@ -5,7 +5,7 @@
         stroke-linecap: square;
         stroke-linejoin: round;
         stroke-width: 10px;
-        fill-rule: evenodd;
+        fill-rule: nonzero;
       }
     </style>
   <path class="cls-1" d="M573.041,514.232l-63.218-64.569-58.807,64.569,23.682-.127v60.547h74.929V514.105Z" transform="translate(-444.531 -444.656)"/>
