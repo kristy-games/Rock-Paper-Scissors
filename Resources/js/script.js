@@ -201,12 +201,13 @@ function redirect(element) {
 
 	if (isIOS || isAndroid) {
 
+		window.location.href = appScheme;
 		//app + joinCode/blank
 
-		var iframe = document.createElement('iframe');
-		iframe.style.display = 'none';
-		iframe.src = appScheme;
-		document.body.appendChild(iframe);
+		// var iframe = document.createElement('iframe');
+		// iframe.style.display = 'none';
+		// iframe.src = appScheme;
+		// document.body.appendChild(iframe);
 
 		setTimeout(function() {
 
@@ -219,9 +220,9 @@ function redirect(element) {
 
 		}, 1000);
 
-		setTimeout(function() {
-			document.body.removeChild(iframe);
-		}, 1500);
+		// setTimeout(function() {
+		// 	document.body.removeChild(iframe);
+		// }, 1500);
 	}
 }
 
