@@ -99,15 +99,21 @@ function setHomeButton(anchor) {
 	anchor.href = homeUrl;
 	anchor.title = 'Home';
 
-	fetch(svgUrl)
-	.then(response => response.text())
-	.then(svgData => {
+	var svg = document.createElement('svg');
+	var use = document.createElement('use');
+	svg.appendChild(use);
+	use.setAttribute('xlink:href', svgUrl);
+	anchor.appendChild(svg);
 
-		var svgDoc = new DOMParser().parseFromString(svgData, 'image/svg+xml');
-		var externalSVG = svgDoc.getElementById('Home');
-		var clonedSVG = externalSVG.cloneNode(true);
-		anchor.appendChild(clonedSVG);
-	});
+	// fetch(svgUrl)
+	// .then(response => response.text())
+	// .then(svgData => {
+
+	// 	var svgDoc = new DOMParser().parseFromString(svgData, 'image/svg+xml');
+	// 	var externalSVG = svgDoc.getElementById('Home');
+	// 	var clonedSVG = externalSVG.cloneNode(true);
+	// 	anchor.appendChild(clonedSVG);
+	// });
 
 	var image = document.createElement('img');
 	image.src = squareButtonUrl;
