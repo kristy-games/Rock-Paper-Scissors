@@ -101,8 +101,8 @@ function setHomeButton(anchor) {
 
 	var svg = document.createElement('svg');
 	var use = document.createElement('use');
+	use.setAttribute('href', svgUrl);
 	svg.appendChild(use);
-	use.setAttribute('xlink:href', svgUrl);
 	anchor.appendChild(svg);
 
 	// fetch(svgUrl)
