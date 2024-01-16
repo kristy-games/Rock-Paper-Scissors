@@ -196,7 +196,8 @@ function redirect(element) {
 
 	var gameName = element.getAttribute('data-gameName');
 	var gameNamePath = getPath(gameName);
-	var appScheme = `${gameNamePath}://`;
+	// var appScheme = `${gameNamePath}://`;
+	var appScheme = 'unitydl://';
 	console.log(`KristyTest: Scheme ${appScheme}`);
 
 	if (isIOS || isAndroid) {
