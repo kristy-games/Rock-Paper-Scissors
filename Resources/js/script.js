@@ -195,36 +195,36 @@ function createDarkButton() {
 
 function redirect(element) {
 	
+	console.log(userAgent);
+	
 	// if (isMobile) {
 
-		// var gameName = element.getAttribute('data-gameName');
-		// var gameNamePath = getPath(gameName);
-		// //var appScheme = `${gameNamePath}://`;
-		// //app + joinCode/blank
+	// 	var gameName = element.getAttribute('data-gameName');
+	// 	var gameNamePath = getPath(gameName);
+	// 	//var appScheme = `${gameNamePath}://`;
+	// 	//app + joinCode/blank
 
-		// var iframe = document.createElement('iframe');
-		// iframe.style.display = 'none';
-		// // iframe.src = appScheme;
-		// iframe.src = "instagram://";
-		// document.body.appendChild(iframe);
+	// 	var iframe = document.createElement('iframe');
+	// 	iframe.style.display = 'none';
+	// 	// iframe.src = appScheme;
+	// 	iframe.src = "instagram://";
+	// 	document.body.appendChild(iframe);
 
-		setTimeout(function() {
+	// 	setTimeout(function() {
 
-			var targetUrl;
+	// 		var targetUrl;
 
-			if (isIOS) targetUrl = getAppleUrl(gameNamePath);
-			else if (isAndroid) targetUrl = getGoogleUrl(gameNamePath);
-			else targetUrl = 'https://example.com';
+	// 		if (isIOS) targetUrl = getAppleUrl(gameNamePath);
+	// 		else if (isAndroid) targetUrl = getGoogleUrl(gameNamePath);
 
-			window.target = '_blank';
-			window.location.href = targetUrl;
+	// 		window.location.href = targetUrl;
 
-		}, 1000);
+	// 	}, 1000);
 
 	// 	setTimeout(function() {
 	// 		document.body.removeChild(iframe);
 	// 	}, 1500);
-		
+
 	// }
 }
 
