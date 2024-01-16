@@ -1,11 +1,3 @@
-<!-- <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
    <path id='Home' d='M132.041,75.232 L68.823,10.663 L10.016,75.232 L33.698,75.105 L33.698,135.652 L108.627,135.652 L108.627,75.105 L132.041,75.232 Z'/>
-</svg> -->
-
-<svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="148px" height="151px">
-<path id='Home' fill-rule="evenodd"  stroke="rgb(0, 0, 0)" stroke-width="10px" stroke-linecap="square" stroke-linejoin="round" fill="rgb(0, 0, 0)"
-    d="M573.041,514.232l-63.218-64.569-58.807,64.569,23.682-.127v60.547h74.929V514.105Z" transform="translate(-444.531 -444.656)"/>
 </svg>
