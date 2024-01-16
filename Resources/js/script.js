@@ -196,6 +196,7 @@ function createDarkButton() {
 function redirect(element) {
 	
 	// if (isMobile) {
+
 	var gameName = element.getAttribute('data-gameName');
 	var gameNamePath = getPath(gameName);
 		//var appScheme = `${gameNamePath}://`;
@@ -206,6 +207,8 @@ function redirect(element) {
 		// iframe.src = appScheme;
 	iframe.src = "instagram://";
 	document.body.appendChild(iframe);
+
+	if (isMobile) {
 
 	setTimeout(function() {
 
@@ -222,8 +225,8 @@ function redirect(element) {
 	setTimeout(function() {
 		document.body.removeChild(iframe);
 	}, 1500);
-	
-	//}
+
+	}
 }
 
 function getAppleUrl(gameNamePath) {
