@@ -82,9 +82,9 @@ function setTextButton(anchor) {
 	anchor.className = 'button';
 	anchor.href = `${mainUrl}${removeSpaces(id)}`;
 
-	var span = document.createElement('span');
-	span.textContent = id;
-	anchor.appendChild(span);
+	// var span = document.createElement('span');
+	// span.textContent = id;
+	// anchor.appendChild(span);
 
 	var image = document.createElement('img');
 	image.src = rectangleButtonUrl;
