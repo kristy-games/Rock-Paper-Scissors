@@ -25,7 +25,7 @@ const appleButtonAlt = 'Apple App Store Icon';
 const googleButtonTitle = 'Download on the Google Play Store';
 const googleButtonAlt = 'Google Play Store Icon';
 
-const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+const userAgent = navigator.userAgent|navigator.vendor|window.opera;
 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
 const isAndroid = /Android/i.test(userAgent);
 const isIOS = /iPhone|iPad|iPod/i.test(userAgent);
@@ -197,37 +197,35 @@ function redirect(element) {
 	
 	// if (isMobile) {
 
-	var gameName = element.getAttribute('data-gameName');
-	var gameNamePath = getPath(gameName);
-		//var appScheme = `${gameNamePath}://`;
-		//app + joinCode/blank
+		// var gameName = element.getAttribute('data-gameName');
+		// var gameNamePath = getPath(gameName);
+		// //var appScheme = `${gameNamePath}://`;
+		// //app + joinCode/blank
 
-	var iframe = document.createElement('iframe');
-	iframe.style.display = 'none';
-		// iframe.src = appScheme;
-	iframe.src = "instagram://";
+		// var iframe = document.createElement('iframe');
+		// iframe.style.display = 'none';
+		// // iframe.src = appScheme;
+		// iframe.src = "instagram://";
+		// document.body.appendChild(iframe);
 
-	if (isMobile) {
+		setTimeout(function() {
 
-			document.body.appendChild(iframe);
+			var targetUrl;
 
-	setTimeout(function() {
+			if (isIOS) targetUrl = getAppleUrl(gameNamePath);
+			else if (isAndroid) targetUrl = getGoogleUrl(gameNamePath);
+			else targetUrl = 'https://example.com';
 
-		var targetUrl;
+			window.target = '_blank';
+			window.location.href = targetUrl;
 
-		if (isIOS) targetUrl = getAppleUrl(gameNamePath);
-		else if (isAndroid) targetUrl = getGoogleUrl(gameNamePath);
+		}, 1000);
 
-		window.target = '_blank';
-		window.location.href = targetUrl;
-
-	}, 1000);
-
-	setTimeout(function() {
-		document.body.removeChild(iframe);
-	}, 1500);
-
-	}
+	// 	setTimeout(function() {
+	// 		document.body.removeChild(iframe);
+	// 	}, 1500);
+		
+	// }
 }
 
 function getAppleUrl(gameNamePath) {
