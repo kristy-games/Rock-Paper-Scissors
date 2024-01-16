@@ -108,7 +108,7 @@ function setHomeButton(anchor) {
         var externalPath = externalSVG.querySelector('path');
         var clonedSVG = externalSVG.cloneNode();
         var clonedPath = externalPath.cloneNode();
-        path.setAttribute('class', 'path');
+        clonedPath.setAttribute('class', 'path');
         clonedSVG.appendChild(clonedPath);
         anchor.appendChild(clonedSVG);
 	});
