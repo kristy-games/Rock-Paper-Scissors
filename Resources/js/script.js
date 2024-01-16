@@ -196,33 +196,34 @@ function createDarkButton() {
 function redirect(element) {
 	
 	// if (isMobile) {
-		var gameName = element.getAttribute('data-gameName');
-		var gameNamePath = getPath(gameName);
+	var gameName = element.getAttribute('data-gameName');
+	var gameNamePath = getPath(gameName);
 		//var appScheme = `${gameNamePath}://`;
 		//app + joinCode/blank
 
-		var iframe = document.createElement('iframe');
-		iframe.style.display = 'none';
+	var iframe = document.createElement('iframe');
+	iframe.style.display = 'none';
 		// iframe.src = appScheme;
-		iframe.src = "instagram://";
-		document.body.appendChild(iframe);
+	iframe.src = "instagram://";
+	document.body.appendChild(iframe);
 
-		setTimeout(function() {
+	setTimeout(function() {
 
-			var targetUrl;
+		var targetUrl;
 
-			if (isIOS) targetUrl = getAppleUrl(gameNamePath);
-			else if (isAndroid) targetUrl = getGoogleUrl(gameNamePath);
+		if (isIOS) targetUrl = getAppleUrl(gameNamePath);
+		else if (isAndroid) targetUrl = getGoogleUrl(gameNamePath);
 
-			window.target = '_blank';
-			window.location.href = targetUrl;
+		window.target = '_blank';
+		window.location.href = targetUrl;
 
-		}, 1000);
+	}, 1000);
 
-	// setTimeout(function() {
-	// 	document.body.removeChild(iframe);
-	// }, 1500);
-	// }
+	setTimeout(function() {
+		document.body.removeChild(iframe);
+	}, 1500);
+	
+	//}
 }
 
 function getAppleUrl(gameNamePath) {
