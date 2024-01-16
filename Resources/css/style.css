@@ -111,14 +111,14 @@ a {
     height: 50%;
 }
 
-.button.home path {
+/*.button.home path {
     stroke: #000;
     stroke-linecap: square;
     stroke-linejoin: round;
     stroke-width: 10px;
     fill: #000;
     fill-rule: evenodd;
-}
+}*/
 
 .button.home img {
 /*    width: 50px;
