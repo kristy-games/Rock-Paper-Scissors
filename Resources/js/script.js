@@ -193,11 +193,13 @@ function redirect(element) {
 	var gameName = element.getAttribute('data-gameName');
 	var gameNamePath = getPath(gameName);
 	//var appScheme = `${gameNamePath}://`;
-	var appScheme = 'instagram://user?username=kristygames.ig';
+	//app + joinCode/blank
 
 	var iframe = document.createElement('iframe');
 	iframe.style.display = 'none';
-	iframe.src = appScheme;
+	// iframe.src = appScheme;
+	iframe.src = "instagram://";
+	document.body.appendChild(iframe);
 
 	setTimeout(function() {
 		
@@ -208,10 +210,8 @@ function redirect(element) {
 
 		else if (/android/i.test(userAgent))
 			window.location.href = getGoogleUrl(gameNamePath);
-		
-	}, 1000);
 
-	document.body.appendChild(iframe);
+	}, 1000);
 
 	setTimeout(function() {
 		document.body.removeChild(iframe);
