@@ -189,50 +189,34 @@ function createDarkButton() {
 }
 
 function redirect(element) {
+	
+	var gameName = element.getAttribute('data-gameName');
+	var gameNamePath = getPath(gameName);
+	//var appScheme = `${gameNamePath}://`;
+	var appScheme = 'instagram://user?username=kristygames.ig';
 
-	var appScheme = 'twitter://';
-	window.location.href = appScheme;
-	// var gameName = element.getAttribute('data-gameName');
-	// var gameNamePath = getPath(gameName);
-	// var appScheme = `${gameNamePath}://`;
+	var iframe = document.createElement('iframe');
+	iframe.style.display = 'none';
+	iframe.src = appScheme;
 
-	// var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+	setTimeout(function() {
+		
+		var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-	// if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream) {
+		if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream)
+			window.location.href = getAppleUrl(gameNamePath);
 
-	// 	window.location.href = getAppleUrl(gameNamePath);
-	// }
+		else if (/android/i.test(userAgent))
+			window.location.href = getGoogleUrl(gameNamePath);
+		
+	}, 1000);
 
-	// else if (/android/i.test(userAgent)) {
+	document.body.appendChild(iframe);
 
-	// 	window.location.href = getGoogleUrl(gameNamePath);
-	// }
+	setTimeout(function() {
+		document.body.removeChild(iframe);
+	}, 1500);
 }
-
-// var appScheme = 'exampleapp://';
-
-//     var iframe = document.createElement('iframe');
-//     iframe.style.display = 'none';
-//     iframe.src = appScheme;
-
-//     var timeout = setTimeout(function() {
-//         window.location.href = 'https://apps.apple.com/us/app/your-app-id';
-//     }, 1000);
-
-//     document.body.appendChild(iframe);
-
-//     setTimeout(function() {
-//         document.body.removeChild(iframe);
-//     }, 1500);
-
-// function launchApp() {
-//     window.location.replace("myapp://");
-//     setTimeout(() => openWebApp(), 1000);
-// }
-
-// function openWebApp() {
-//     window.location.replace("http://itunesstorelink/");
-// }
 
 function getAppleUrl(gameNamePath) {
 
