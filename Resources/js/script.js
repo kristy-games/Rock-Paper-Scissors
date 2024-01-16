@@ -25,10 +25,9 @@ const appleButtonAlt = 'Apple App Store Icon';
 const googleButtonTitle = 'Download on the Google Play Store';
 const googleButtonAlt = 'Google Play Store Icon';
 
-const userAgent = navigator.userAgent|navigator.vendor|window.opera;
-const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
-const isAndroid = /Android/i.test(userAgent);
+const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 const isIOS = /iPhone|iPad|iPod/i.test(userAgent);
+const isAndroid = /Android/i.test(userAgent);
 
 const rockPaperScissorsApple = 'xcode/id497799835';
 //const rockPaperScissorsAppleId ? '{gameNamePath}/id{rockPaperScissorsAppleId}'
@@ -196,36 +195,36 @@ function createDarkButton() {
 function redirect(element) {
 	
 	console.log(userAgent);
-	
-	// if (isMobile) {
 
-	// 	var gameName = element.getAttribute('data-gameName');
-	// 	var gameNamePath = getPath(gameName);
-	// 	//var appScheme = `${gameNamePath}://`;
-	// 	//app + joinCode/blank
+	if (isIOS || isAndroid) {
 
-	// 	var iframe = document.createElement('iframe');
-	// 	iframe.style.display = 'none';
-	// 	// iframe.src = appScheme;
-	// 	iframe.src = "instagram://";
-	// 	document.body.appendChild(iframe);
+		var gameName = element.getAttribute('data-gameName');
+		var gameNamePath = getPath(gameName);
+		//var appScheme = `${gameNamePath}://`;
+		//app + joinCode/blank
 
-	// 	setTimeout(function() {
+		var iframe = document.createElement('iframe');
+		iframe.style.display = 'none';
+		// iframe.src = appScheme;
+		iframe.src = "instagram://";
+		document.body.appendChild(iframe);
 
-	// 		var targetUrl;
+		setTimeout(function() {
 
-	// 		if (isIOS) targetUrl = getAppleUrl(gameNamePath);
-	// 		else if (isAndroid) targetUrl = getGoogleUrl(gameNamePath);
+			var targetUrl;
 
-	// 		window.location.href = targetUrl;
+			if (isIOS) targetUrl = getAppleUrl(gameNamePath);
+			else if (isAndroid) targetUrl = getGoogleUrl(gameNamePath);
 
-	// 	}, 1000);
+			window.location.href = targetUrl;
 
-	// 	setTimeout(function() {
-	// 		document.body.removeChild(iframe);
-	// 	}, 1500);
+		}, 1000);
 
-	// }
+		setTimeout(function() {
+			document.body.removeChild(iframe);
+		}, 1500);
+
+	}
 }
 
 function getAppleUrl(gameNamePath) {
