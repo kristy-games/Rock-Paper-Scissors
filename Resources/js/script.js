@@ -104,16 +104,10 @@ function setHomeButton(anchor) {
 	.then(svgData => {
 
 		var svgDoc = new DOMParser().parseFromString(svgData, 'image/svg+xml');
-        var externalSVG = svgDoc.getElementById('Home');
-        var externalPath = externalSVG.querySelector('path');
-        externalPath.setAttribute('class', 'path');
-        var clonedSVG = externalSVG.cloneNode();
-        var clonedPath = externalPath.cloneNode();
-        clonedSVG.appendChild(clonedPath);
-        anchor.appendChild(clonedSVG);
+		var externalSVG = svgDoc.getElementById('Home');
+		var clonedSVG = externalSVG.cloneNode(true);
+		anchor.appendChild(clonedSVG);
 	});
-
-	// apply style here?
 
 	var image = document.createElement('img');
 	image.src = squareButtonUrl;

@@ -111,14 +111,6 @@ a {
     height: 50%;
 }
 
-.path {
-    stroke: #000;
-    stroke-linecap: square;
-    stroke-linejoin: round;
-    stroke-width: 10px;
-    fill-rule: evenodd;
-}
-
 .button.dark {
     position: absolute;
     top: 20px;
