@@ -198,7 +198,7 @@ function redirect(element) {
 
 		var gameName = element.getAttribute('data-gameName');
 		var gameNamePath = getPath(gameName);
-		var appScheme = `${gameNamePath}://`;
+		var appScheme = `${gameNamePath}://*`;
 		console.log(`KristyTest: Scheme ${appScheme}`);
 		//app + joinCode/blank
 
