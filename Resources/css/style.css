@@ -112,11 +112,11 @@ a {
 }
 
 .button.home path {
-    stroke: black;
+    stroke: #000;
     stroke-linecap: square;
     stroke-linejoin: round;
     stroke-width: 10px;
-    fill: black;
+    fill: #000;
     fill-rule: evenodd;
 }
 
