@@ -80,7 +80,7 @@ function setTextButton(anchor) {
 
 	var id = anchor.id;
 	var idPath = getPath(id);
-	// anchor.className = 'button';
+	anchor.className = 'button';
 	anchor.title = id;
 	anchor.href = `${mainUrl}${idPath}`;
 
@@ -117,7 +117,7 @@ function setHomeButton(anchor) {
 }
 
 function setGameSection(gameSection) {
-	
+
 	var gameName = gameSection.getAttribute('data-gameName');
 	var gameNamePath = getPath(gameName);
 
