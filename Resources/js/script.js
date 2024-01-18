@@ -30,7 +30,6 @@ const isIOS = /iPhone|iPad|iPod/i.test(userAgent);
 const isAndroid = /Android/i.test(userAgent);
 
 const rockPaperScissorsApple = 'xcode/id497799835';
-//const rockPaperScissorsAppleId ? '{gameNamePath}/id{rockPaperScissorsAppleId}'
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -194,20 +193,19 @@ function createDarkButton() {
 
 function redirect(element) {
 
+	var urlParams = new URLSearchParams(window.location.search);
+	var joinCode = urlParams.get(name);
+	console.log(`Join code: ${joinCode}`);
+
 	var gameName = element.getAttribute('data-gameName');
 	var gameNamePath = getPath(gameName);
-	// var appScheme = `${gameNamePath}://`;
-	var appScheme = 'unitydl://mylink';
+
+	//if no join code, app scheme without ?, or will it work either way
+	var appScheme = `${gameNamePath}://JoinCode?${joinCode}`;
 
 	if (isIOS || isAndroid) {
 
 		window.location.href = appScheme;
-		//app + joinCode/blank
-
-		// var iframe = document.createElement('iframe');
-		// iframe.style.display = 'none';
-		// iframe.src = appScheme;
-		// document.body.appendChild(iframe);
 
 		setTimeout(function() {
 
@@ -219,10 +217,6 @@ function redirect(element) {
 			window.location.href = targetUrl;
 
 		}, 1000);
-
-		// setTimeout(function() {
-		// 	document.body.removeChild(iframe);
-		// }, 1500);
 	}
 }
 
