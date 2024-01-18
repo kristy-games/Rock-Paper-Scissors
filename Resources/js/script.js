@@ -195,15 +195,15 @@ function redirect(element) {
 
 	if (isIOS || isAndroid) {
 
-	var urlParams = new URLSearchParams(window.location.search);
-	var joinCode = urlParams.get('joincode');
-	var gameName = element.getAttribute('data-gameName');
-	var gameNamePath = getPath(gameName);
+		var urlParams = new URLSearchParams(window.location.search);
+		var joinCode = urlParams.get('joincode');
+		var gameName = element.getAttribute('data-gameName');
+		var gameNamePath = getPath(gameName);
 
 	//if no join code, app scheme without ?, or will it work either way
-	var appScheme = `${lowerCase(gameNamePath)}://joincode?${joinCode}`;
+		var appScheme = `${lowerCase(gameNamePath)}://joincode?${joinCode}`;
 
-		window.location.href = appScheme;
+		// window.location.href = appScheme;
 
 		setTimeout(function() {
 
