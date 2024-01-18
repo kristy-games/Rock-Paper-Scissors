@@ -194,7 +194,7 @@ function createDarkButton() {
 function redirect(element) {
 
 	var urlParams = new URLSearchParams(window.location.search);
-	var joinCode = urlParams.get(name);
+	var joinCode = urlParams.get('joincode');
 	console.log(`Join code: ${joinCode}`);
 
 	var gameName = element.getAttribute('data-gameName');
