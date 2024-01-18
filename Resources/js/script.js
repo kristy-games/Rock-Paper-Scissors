@@ -197,6 +197,7 @@ function redirect(element) {
 	var joinCode = urlParams.get('joincode');
 	var gameName = element.getAttribute('data-gameName');
 	var gameNamePath = getPath(gameName);
+	console.log(getGoogleUrl(gameNamePath));
 
 	if (isIOS || isAndroid) {
 
@@ -221,8 +222,6 @@ function redirect(element) {
 
 		}, 1000);
 	}
-
-	console.log(getGoogleUrl(gameNamePath));
 }
 
 function getAppleUrl(gameNamePath) {
