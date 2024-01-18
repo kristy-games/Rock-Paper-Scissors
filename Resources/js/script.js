@@ -216,6 +216,8 @@ function redirect(element) {
 
 		}, 500);
 	}
+
+	console.log('Test1');
 }
 
 function getAppleUrl(gameNamePath) {
