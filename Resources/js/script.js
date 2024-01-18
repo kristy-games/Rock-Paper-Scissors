@@ -201,7 +201,7 @@ function redirect(element) {
 		var gameNamePath = getPath(gameName);
 
 	//if no join code, app scheme without ?, or will it work either way
-		var appScheme = `${lowerCase(gameNamePath)}://joincode?${joinCode}`;
+		// var appScheme = `${lowerCase(gameNamePath)}://joincode?${joinCode}`;
 
 		// window.location.href = appScheme;
 
