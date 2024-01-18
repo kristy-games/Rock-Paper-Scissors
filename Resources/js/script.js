@@ -195,8 +195,8 @@ function redirect(element) {
 
 	if (isIOS || isAndroid) {
 
-		var urlParams = new URLSearchParams(window.location.search);
-		var joinCode = urlParams.get('joincode');
+		// var urlParams = new URLSearchParams(window.location.search);
+		// var joinCode = urlParams.get('joincode');
 		var gameName = element.getAttribute('data-gameName');
 		var gameNamePath = getPath(gameName);
 
@@ -214,7 +214,7 @@ function redirect(element) {
 
 			window.location.href = targetUrl;
 
-		}, 1000);
+		}, 500);
 	}
 }
 
