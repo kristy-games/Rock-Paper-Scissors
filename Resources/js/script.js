@@ -195,6 +195,8 @@ function redirect(element) {
 
 	if (isIOS || isAndroid) {
 
+		document.body.style.display = 'none';
+
 		var urlParams = new URLSearchParams(window.location.search);
 		var joinCode = urlParams.get('joincode');
 		var gameName = element.getAttribute('data-gameName');
