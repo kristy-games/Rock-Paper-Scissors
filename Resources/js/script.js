@@ -193,16 +193,12 @@ function createDarkButton() {
 
 function redirect(element) {
 
-	console.log('Test2');
-
 	if (isIOS || isAndroid) {
 
 		var urlParams = new URLSearchParams(window.location.search);
 		var joinCode = urlParams.get('joincode');
 		var gameName = element.getAttribute('data-gameName');
 		var gameNamePath = getPath(gameName);
-
-		//if no join code, app scheme without ?, or will it work either way
 		var appScheme = `${lowerCase(gameNamePath)}://joincode?${joinCode}`;
 
 		window.location.href = appScheme;
@@ -216,7 +212,7 @@ function redirect(element) {
 
 			window.location.href = targetUrl;
 
-		}, 500);
+		}, 1000);
 	}
 }
 
