@@ -4,11 +4,15 @@
     "target": {
       "namespace": "android_app",
       "package_name": "com.KristyGames.RockPaperScissors",
-      "sha256_cert_fingerprints":
-        [
-          "BF:6D:6B:39:2F:AE:86:A0:42:CA:6B:E6:57:23:5B:DE:79:CD:6E:5C:94:D9:6E:BE:42:51:7F:43:E2:01:97:1F",
-          "67:00:D7:0C:E3:1F:E3:49:1E:46:A1:01:66:1D:BA:D1:90:BE:09:94:48:2F:5A:81:F2:52:4B:1B:E4:20:D7:18"
-        ]
+      "sha256_cert_fingerprints": ["BF:6D:6B:39:2F:AE:86:A0:42:CA:6B:E6:57:23:5B:DE:79:CD:6E:5C:94:D9:6E:BE:42:51:7F:43:E2:01:97:1F"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.KristyGames.RockPaperScissors",
+      "sha256_cert_fingerprints": ["67:00:D7:0C:E3:1F:E3:49:1E:46:A1:01:66:1D:BA:D1:90:BE:09:94:48:2F:5A:81:F2:52:4B:1B:E4:20:D7:18"]
     }
   }
 ]
