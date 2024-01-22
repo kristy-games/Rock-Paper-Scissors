@@ -5,8 +5,9 @@
       "namespace": "android_app",
       "package_name": "com.KristyGames.RockPaperScissors",
       "sha256_cert_fingerprints": [
-        "67:00:D7:0C:E3:1F:E3:49:1E:46:A1:01:66:1D:BA:D1:90:BE:09:94:48:2F:5A:81:F2:52:4B:1B:E4:20:D7:18",
-        "41:A9:97:60:98:C5:46:CD:B6:79:D3:CA:26:34:B6:EB:C7:23:07:8A:C2:8E:6E:C1:40:C6:EF:00:D6:88:D8:F8"
+        "BF:6D:6B:39:2F:AE:86:A0:42:CA:6B:E6:57:23:5B:DE:79:CD:6E:5C:94:D9:6E:BE:42:51:7F:43:E2:01:97:1F", //Google
+        "67:00:D7:0C:E3:1F:E3:49:1E:46:A1:01:66:1D:BA:D1:90:BE:09:94:48:2F:5A:81:F2:52:4B:1B:E4:20:D7:18", //Debug
+        "41:A9:97:60:98:C5:46:CD:B6:79:D3:CA:26:34:B6:EB:C7:23:07:8A:C2:8E:6E:C1:40:C6:EF:00:D6:88:D8:F8"  //Release
       ]
     }
   }
