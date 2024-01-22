@@ -205,7 +205,7 @@ function redirect(element) {
 
 		window.location.href = appScheme;
 
-		setTimeout(function() {
+		// setTimeout(function() {
 
 			var targetUrl;
 
@@ -214,7 +214,7 @@ function redirect(element) {
 
 			window.location.href = targetUrl;
 
-		}, 100);
+	// 	}, 100);
 	}
 }
 
