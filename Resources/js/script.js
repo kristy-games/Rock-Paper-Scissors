@@ -209,8 +209,8 @@ function redirect(element) {
 
 			var targetUrl;
 
-			if (isIOS) targetUrl = `${getAppleUrl(gameNamePath)}://joincode?${joinCode}`;
-			else if (isAndroid) targetUrl = `${getGoogleUrl(gameNamePath)}://joincode?${joinCode}`;
+			if (isIOS) targetUrl = getAppleUrl(gameNamePath);
+			else if (isAndroid) targetUrl = getGoogleUrl(gameNamePath);
 
 			window.location.href = targetUrl;
 
