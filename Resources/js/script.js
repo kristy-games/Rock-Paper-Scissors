@@ -195,7 +195,7 @@ function redirect(element) {
 
 	if (isIOS || isAndroid) {
 
-		// document.body.style.display = 'none';
+		document.body.style.display = 'none';
 
 		var urlParams = new URLSearchParams(window.location.search);
 		var joinCode = urlParams.get('joincode');
@@ -205,16 +205,12 @@ function redirect(element) {
 
 		window.location.href = appScheme;
 
-		// setTimeout(function() {
+		var targetUrl;
 
-			var targetUrl;
+		if (isIOS) targetUrl = getAppleUrl(gameNamePath);
+		else if (isAndroid) targetUrl = getGoogleUrl(gameNamePath);
 
-			if (isIOS) targetUrl = getAppleUrl(gameNamePath);
-			else if (isAndroid) targetUrl = getGoogleUrl(gameNamePath);
-
-			window.location.href = targetUrl;
-
-	// 	}, 100);
+		window.location.href = targetUrl;
 	}
 }
 
