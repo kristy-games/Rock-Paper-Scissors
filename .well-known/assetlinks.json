@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.KristyGames.RockPaperScissors",
+      "sha256_cert_fingerprints": ["41:A9:97:60:98:C5:46:CD:B6:79:D3:CA:26:34:B6:EB:C7:23:07:8A:C2:8E:6E:C1:40:C6:EF:00:D6:88:D8:F8"]
+    }
+  }
+]
