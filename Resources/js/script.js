@@ -195,6 +195,7 @@ function redirect(element) {
 
 	if (isIOS || isAndroid) {
 
+		console.log("KristyTest - Mobile")
 		document.body.style.display = 'none';
 
 		var urlParams = new URLSearchParams(window.location.search);
@@ -207,6 +208,7 @@ function redirect(element) {
 
 		var targetUrl;
 
+		//if join code, pass referrer parameter
 		if (isIOS) targetUrl = getAppleUrl(gameNamePath);
 		else if (isAndroid) targetUrl = getGoogleUrl(gameNamePath);
 
