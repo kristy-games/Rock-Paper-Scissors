@@ -201,15 +201,18 @@ function redirect(element) {
 		var joinCode = urlParams.get('joincode');
 		var gameName = element.getAttribute('data-gameName');
 		var gameNamePath = getPath(gameName);
-		// var appScheme = `${lowerCase(gameNamePath)}://joincode?${joinCode}`;
+		var appScheme = `${lowerCase(gameNamePath)}://joincode?${joinCode}`;
 
 		window.location.href = appScheme;
 
 		var targetUrl;
 
-		//if join code, pass referrer parameter
 		if (isIOS) targetUrl = getAppleUrl(gameNamePath);
-		else if (isAndroid) targetUrl = getGoogleUrl(gameNamePath);
+		else if (isAndroid) 
+		{
+			if (joinCode) //pass referrer parameter
+				targetUrl = getGoogleUrl(gameNamePath);
+		}
 
 		window.location.href = targetUrl;
 	}
