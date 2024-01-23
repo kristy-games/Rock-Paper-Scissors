@@ -195,14 +195,13 @@ function redirect(element) {
 
 	if (isIOS || isAndroid) {
 
-		console.log("KristyTest - Mobile")
 		document.body.style.display = 'none';
 
 		var urlParams = new URLSearchParams(window.location.search);
 		var joinCode = urlParams.get('joincode');
 		var gameName = element.getAttribute('data-gameName');
 		var gameNamePath = getPath(gameName);
-		var appScheme = `${lowerCase(gameNamePath)}://joincode?${joinCode}`;
+		// var appScheme = `${lowerCase(gameNamePath)}://joincode?${joinCode}`;
 
 		window.location.href = appScheme;
 
