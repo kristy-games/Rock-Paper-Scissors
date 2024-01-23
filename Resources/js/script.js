@@ -201,9 +201,9 @@ function redirect(element) {
 		var joinCode = urlParams.get('joincode');
 		var gameName = element.getAttribute('data-gameName');
 		var gameNamePath = getPath(gameName);
-		var appScheme = `${lowerCase(gameNamePath)}://joincode?${joinCode}`;
+		// var appScheme = `${lowerCase(gameNamePath)}://joincode?${joinCode}`;
 
-		window.location.href = appScheme;
+		// window.location.href = appScheme;
 
 		var targetUrl;
 
