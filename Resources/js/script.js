@@ -208,9 +208,10 @@ function redirect(element) {
 		var targetUrl;
 
 		if (isIOS) targetUrl = getAppleUrl(gameNamePath);
+		
 		else if (isAndroid) 
 		{
-			if (joinCode) //pass referrer parameter
+			// if (joinCode) //pass referrer parameter
 				targetUrl = getGoogleUrl(gameNamePath);
 		}
 
