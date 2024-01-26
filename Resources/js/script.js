@@ -217,7 +217,9 @@ function redirect(element) {
 			targetUrl = `${getGoogleUrl(gameNamePath)}${referrer}`;
 		}
 
-		window.location.href = targetUrl;
+		if (testing)
+			window.open(targetUrl, "_blank");
+		else window.location.href = targetUrl;
 	}
 }
 
