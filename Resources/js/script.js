@@ -193,7 +193,7 @@ function createDarkButton() {
 
 function redirect(element) {
 
-	var testing = true;
+	var testing = false;
 
 	if (isIOS || isAndroid || testing) {
 
