@@ -214,7 +214,7 @@ function redirect(element) {
 			if (joinCode)
 				referrer = `&referrer=joincode%3D${joinCode}`;
 
-			targetUrl = `${getGoogleUrl(gameNamePath)referrer}`;
+			targetUrl = `${getGoogleUrl(gameNamePath)}${referrer}`;
 		}
 
 		window.location.href = targetUrl;
