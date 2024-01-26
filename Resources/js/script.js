@@ -218,7 +218,10 @@ function redirect(element) {
 		}
 
 		if (testing)
+		{
+			console.log(targetUrl);
 			window.open(targetUrl, "_blank");
+		}
 		else window.location.href = targetUrl;
 	}
 }
