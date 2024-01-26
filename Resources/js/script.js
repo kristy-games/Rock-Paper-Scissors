@@ -193,7 +193,9 @@ function createDarkButton() {
 
 function redirect(element) {
 
-	if (isIOS || isAndroid) {
+	var testing = true;
+
+	if (isIOS || isAndroid || testing) {
 
 		document.body.style.display = 'none';
 
@@ -201,18 +203,18 @@ function redirect(element) {
 		var joinCode = urlParams.get('joincode');
 		var gameName = element.getAttribute('data-gameName');
 		var gameNamePath = getPath(gameName);
-		// var appScheme = `${lowerCase(gameNamePath)}://joincode?${joinCode}`;
-
-		// window.location.href = appScheme;
-
-		var targetUrl;
+		var targetUrl;	
 
 		if (isIOS) targetUrl = getAppleUrl(gameNamePath);
-		
-		else if (isAndroid) 
+
+		else if (isAndroid || testing) 
 		{
-			// if (joinCode) //pass referrer parameter
-				targetUrl = getGoogleUrl(gameNamePath);
+			var referrer = '';
+
+			if (joinCode)
+				referrer = `&referrer=joincode%3D${joinCode}`;
+
+			targetUrl = `${getGoogleUrl(gameNamePath)referrer}`;
 		}
 
 		window.location.href = targetUrl;
