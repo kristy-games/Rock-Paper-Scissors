@@ -188,3 +188,4 @@ sharethrough.com, iBAzay96, RESELLER, d53b998a7bd4ecd2
 tredio.io, 357a6fdf7642bf815a88822c447d9dc433546, RESELLER
 lunamedia.io, 2fdb16a1-5025-4c41-9b17-e01e47ebc8b4, RESELLER, 524ecb396915caaf
 bidease.com, bidease_seller_20, RESELLER
+kidoz.net, 14260, RESELLER, a109366414b7335e
