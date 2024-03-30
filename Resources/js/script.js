@@ -187,7 +187,13 @@ function setGameSection(gameSection) {
 function setTextSection(textSection) {
 	var id = textSection.id;
 	var idPath = getPath(id);
-	console.log(idPath);
+	var textUrl = `${textPath}${idPath}.txt`;
+
+	fetch(textUrl)
+	.then(response => response.text())
+	.then(text => {
+		textSection.innerText = text;
+	});
 }
 
 function createDarkButton() {
@@ -198,6 +204,7 @@ function createDarkButton() {
 	button.onclick = function() {
 		document.body.classList.toggle('dark');
 	};
+
 	document.body.appendChild(button);
 }
 
