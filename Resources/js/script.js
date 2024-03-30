@@ -6,6 +6,7 @@ const localPath = 'C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/';
 
 const stylePath = 'Resources/css/style.css';
 const imagePath = `${mainUrl}Resources/Images/`;
+const textPath = `${mainUrl}Resources/Text/`;
 
 const logoImageUrl = `${imagePath}Logo/Logo.png`;
 
@@ -149,7 +150,7 @@ function setGameSection(gameSection) {
 		gameTitle.textContent = gameName;
 	}
 
-	if (gameQR)	{		
+	if (gameQR)	{
 		gameQR.className = 'image gameQR';
 		gameQR.src = `${imagePath}QRCodes/${gameNamePath}_QR.png`;
 		gameQR.title = `Download ${gameName}`;
