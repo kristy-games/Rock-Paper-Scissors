@@ -185,7 +185,9 @@ function setGameSection(gameSection) {
 }
 
 function setTextSection(textSection) {
-	console.log("setTextSection");
+	var id = textSection.id;
+	var idPath = getPath(id);
+	console.log(idPath);
 }
 
 function createDarkButton() {
