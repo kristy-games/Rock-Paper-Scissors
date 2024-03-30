@@ -4,10 +4,6 @@ const mainUrl = 'https://kristy-games.github.io/';
 const homeUrl = `${mainUrl}Home`
 const localPath = 'C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/';
 
-const markedScript = document.createElement('script');
-markedScript.src = 'https://cdn.jsdelivr.net/npm/marked/marked.min.js';
-document.head.appendChild(markedScript);
-
 const stylePath = 'Resources/css/style.css';
 const imagePath = `${mainUrl}Resources/Images/`;
 const textPath = `${mainUrl}Resources/Text/`;
@@ -189,6 +185,10 @@ function setGameSection(gameSection) {
 }
 
 function setTextSection(textSection) {
+	const markedScript = document.createElement('script');
+	markedScript.src = 'https://cdn.jsdelivr.net/npm/marked/marked.min.js';
+	document.head.appendChild(markedScript);
+
 	var id = textSection.id;
 	var idPath = getPath(id);
 	var textUrl = `${textPath}${idPath}.md`;
@@ -196,7 +196,7 @@ function setTextSection(textSection) {
 	fetch(textUrl)
 	.then(response => response.text())
 	.then(markdown => {
-		var html = marked(markdown);
+		var html = marked.parse(markdown);
 		textSection.innerHTML = html;
 	});
 }
