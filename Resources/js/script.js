@@ -4,6 +4,10 @@ const mainUrl = 'https://kristy-games.github.io/';
 const homeUrl = `${mainUrl}Home`
 const localPath = 'C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/';
 
+const markedScript = document.createElement('script');
+markedScript.src = 'https://cdn.jsdelivr.net/npm/marked/marked.min.js';
+document.head.appendChild(markedScript);
+
 const stylePath = 'Resources/css/style.css';
 const imagePath = `${mainUrl}Resources/Images/`;
 const textPath = `${mainUrl}Resources/Text/`;
