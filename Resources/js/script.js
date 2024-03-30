@@ -190,20 +190,20 @@ function setTextSection(textSection) {
 
 	textSection.className = 'container text';
 
-	// const markedScript = document.createElement('script');
-	// markedScript.src = 'https://cdn.jsdelivr.net/npm/marked/marked.min.js';
-	// document.head.appendChild(markedScript);
+	const markedScript = document.createElement('script');
+	markedScript.src = 'https://cdn.jsdelivr.net/npm/marked/marked.min.js';
+	document.head.appendChild(markedScript);
 
-	// var id = textSection.id;
-	// var idPath = getPath(id);
-	// var textUrl = `${textPath}${idPath}.md`;
+	var id = textSection.id;
+	var idPath = getPath(id);
+	var textUrl = `${textPath}${idPath}.md`;
 
-	// fetch(textUrl)
-	// .then(response => response.text())
-	// .then(markdown => {
-	// 	var html = marked.parse(markdown);
-	// 	textSection.innerHTML = html;
-	// });
+	fetch(textUrl)
+	.then(response => response.text())
+	.then(markdown => {
+		var html = marked.parse(markdown);
+		textSection.innerHTML = html;
+	});
 }
 
 function createDarkButton() {
