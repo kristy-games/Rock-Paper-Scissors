@@ -55,6 +55,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			case 'GameSection':
 				setGameSection(element);
 				break;
+			case 'TextSection':
+				setTextSection(element);
+				break;
 			case 'Redirect':
 				redirect(element);
 				break;
@@ -178,6 +181,10 @@ function setGameSection(gameSection) {
 		image.alt = googleButtonAlt;
 		googleButton.appendChild(image);
 	}
+}
+
+function setTextSection(textSection) {
+	console.log("setTextSection");
 }
 
 function createDarkButton() {
