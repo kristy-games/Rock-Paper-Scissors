@@ -201,9 +201,8 @@ function setTextSection(textSection) {
 	fetch(textUrl)
 	.then(response => response.text())
 	.then(markdown => {
-		var text = marked.parse(markdown);
-		textSection.innerText = text;
-		// textSection.innerHTML = html;
+		var html = marked.parse(markdown);
+		textSection.innerHTML = html;
 	});
 }
 
