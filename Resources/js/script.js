@@ -193,7 +193,7 @@ function setTextSection(textSection) {
 	.then(response => response.text())
 	.then(markdown => {
 		var html = marked(markdown);
-		textSection.innerText = html;
+		textSection.innerHTML = html;
 	});
 }
 
