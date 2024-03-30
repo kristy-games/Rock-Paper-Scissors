@@ -201,8 +201,9 @@ function setTextSection(textSection) {
 	fetch(textUrl)
 	.then(response => response.text())
 	.then(markdown => {
-		var html = marked.parse(markdown);
-		textSection.innerHTML = html;
+		var text = marked.parse(markdown);
+		textSection.innerText = text;
+		// textSection.innerHTML = html;
 	});
 }
 
@@ -211,7 +212,7 @@ function createDarkButton() {
 	var button = document.createElement('button');
 	button.className = 'button dark';
 	button.textContent = 'Dark';
-	
+
 	button.onclick = function() {
 		document.body.classList.toggle('dark');
 	};
