@@ -129,7 +129,7 @@ function setHomeButton(anchor) {
 function setGameSection(gameSection) {
 
 	gameSection.className = 'container game';
-	
+
 	var gameName = gameSection.getAttribute('data-gameName');
 	var gameNamePath = getPath(gameName);
 
@@ -188,6 +188,7 @@ function setGameSection(gameSection) {
 
 function setTextSection(textSection) {
 
+	textSection.className = 'container text';
 	const markedScript = document.createElement('script');
 	markedScript.src = 'https://cdn.jsdelivr.net/npm/marked/marked.min.js';
 	document.head.appendChild(markedScript);

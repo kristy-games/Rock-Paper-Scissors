@@ -57,6 +57,10 @@ a {
 
 }
 
+.container.text {
+    text-align: left;
+}
+
 .image {
     width: 100%;
     max-width: 250px;
