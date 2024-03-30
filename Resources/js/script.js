@@ -187,7 +187,7 @@ function setGameSection(gameSection) {
 function setTextSection(textSection) {
 	var id = textSection.id;
 	var idPath = getPath(id);
-	var textUrl = `${textPath}${idPath}.txt`;
+	var textUrl = `${textPath}${idPath}.md`;
 
 	fetch(textUrl)
 	.then(response => response.text())
