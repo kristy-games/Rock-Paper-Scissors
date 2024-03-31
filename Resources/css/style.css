@@ -53,8 +53,8 @@ body.dark {
 
 }
 
-.container.text {
-/*    .container.text **/
+.container.text, 
+.container.text *{
     align-self: start;
     justify-self: left;
     text-align: left;
