@@ -23,8 +23,7 @@ body.dark {
 }
 
 ul {
-    display: inline-flex;
-    flex-direction: column;
+    display: inline;
     list-style-position: inside;
 }
 
