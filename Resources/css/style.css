@@ -23,10 +23,9 @@ body.dark {
 }
 
 ul {
-    padding: 0;
-    margin: 0;
-    list-style-position: outside;
-    text-align: left;
+    /*padding: 0;
+    margin: 0;*/
+    align-items: start;
 }
 
 .header {
