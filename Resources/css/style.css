@@ -58,6 +58,7 @@ body.dark {
 
 .container.text
 {
+    text-align: left;
     padding-top: 50px;
     font-weight: 400;
 }
@@ -84,7 +85,7 @@ body.dark {
 
 .button {
     text-align: center;
-    
+
     display: flex;
     flex-direction: column;
     position: relative;
