@@ -23,16 +23,12 @@ body.dark {
 }
 
 ul {
-/*    padding: 0;
-    margin: 0;
-    margin-block-start: 0;
-    padding-inline-start: 0;*/
-    display: flex;
+    display: inline-flex;
     list-style-position: inside;
 }
 
 .header {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     padding-bottom: 10px;
 }
