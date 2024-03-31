@@ -7,7 +7,6 @@
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
-/*    text-align: center;*/
 /*    text-decoration: none;*/
 }
 
@@ -41,6 +40,7 @@ body.dark {
 }
 
 .container.vertical {
+    text-align: center;
     gap: 20px;
 }
 
@@ -107,7 +107,6 @@ body.dark {
 .button span {
     position: absolute;
     white-space: nowrap;
-    text-align: center;
     font-size: clamp(0.8em, 10vw, 2em);
 }
 
