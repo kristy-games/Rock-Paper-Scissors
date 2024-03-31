@@ -24,7 +24,7 @@ body.dark {
 
 ul {
 /*    display: inline;*/
-    align-self: left;
+    align-items: left;
     list-style-position: inside;
 }
 
