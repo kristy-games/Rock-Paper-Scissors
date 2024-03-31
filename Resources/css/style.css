@@ -7,6 +7,7 @@
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+    text-align: center;
 /*    text-decoration: none;*/
 }
 
@@ -40,7 +41,6 @@ body.dark {
 }
 
 .container.vertical {
-    text-align: center;
     gap: 20px;
 }
 
