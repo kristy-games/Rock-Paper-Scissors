@@ -25,6 +25,7 @@ body.dark {
 ul {
     padding: 0;
     margin: 0;
+    padding-inline-start: 0;
 }
 
 .header {
