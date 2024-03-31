@@ -7,11 +7,10 @@
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
-/*    text-align: center;*/
 }
 
 body {
-    display: flex;
+/*    display: flex;*/
     min-width: 150px;
     padding: 20px;
     color: black;
@@ -41,6 +40,7 @@ body.dark {
 }
 
 .container.vertical {
+    display: flex;
     gap: 20px;
 }
 
