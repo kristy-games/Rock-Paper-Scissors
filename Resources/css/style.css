@@ -24,7 +24,7 @@ body.dark {
 
 ul {
 /*    display: inline;*/
-    
+
     list-style-position: inside;
 }
 
@@ -74,6 +74,7 @@ ul {
 .image.logo {
     min-width: 150px;
     padding-inline: 30px;
+    box-sizing: border-box;
 }
 
 .image.gameIcon {

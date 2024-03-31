@@ -17,7 +17,6 @@ Please be aware that our services may integrate services and features provided b
 <b>How We Use Your Information</b>
 <br>
 We use the information collected to:
-<br>
 * Improve our services' performance, features, and content
 * Provide customer support and address user inquiries or issues
 * Personalize your experience and offer relevant content
