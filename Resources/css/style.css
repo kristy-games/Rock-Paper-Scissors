@@ -23,7 +23,8 @@ body.dark {
 }
 
 ul {
-    display: inline;
+/*    display: inline;*/
+    align-self: left;
     list-style-position: inside;
 }
 
