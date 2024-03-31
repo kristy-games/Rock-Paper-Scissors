@@ -54,7 +54,7 @@ body.dark {
 }
 
 .container.text {
-/*    display: flex;*/
+    display: block;
     align-items: start;
 /*    justify-content: left;*/
 /*    text-align: left;*/
