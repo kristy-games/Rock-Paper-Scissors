@@ -196,14 +196,20 @@ function setTextSection(textSection) {
 
 	var id = textSection.id;
 	var idPath = getPath(id);
-	var textUrl = `${textPath}${idPath}.md`;
+	var textUrl = `${textPath}${idPath}.txt`;
 
 	fetch(textUrl)
 	.then(response => response.text())
-	.then(markdown => {
-		var html = marked.parse(markdown);
-		textSection.innerHTML = html;
+	.then(text => {
+		textSection.innerHTML = text;
 	});
+
+	// fetch(textUrl)
+	// .then(response => response.text())
+	// .then(markdown => {
+	// 	var html = marked.parse(markdown);
+	// 	textSection.innerHTML = html;
+	// });
 }
 
 function createDarkButton() {
