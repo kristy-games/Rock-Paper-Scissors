@@ -24,6 +24,7 @@ body.dark {
 
 ul {
     display: inline-flex;
+    flex-direction: column;
     list-style-position: inside;
 }
 
