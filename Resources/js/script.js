@@ -201,7 +201,7 @@ function setTextSection(textSection) {
 	fetch(textUrl)
 	.then(response => response.text())
 	.then(text => {
-		textSection.innerHTML = text;
+		textSection.innerText = text;
 	});
 
 	// fetch(textUrl)
