@@ -54,10 +54,11 @@ body.dark {
 }
 
 .container.text {
-    display: block;
+/*    display: block;*/
+    
     align-items: start;
     justify-content: left;
-/*    text-align: left;*/
+    text-align: left;
 /*    padding: 20px;*/
     font-weight: 300;
 
