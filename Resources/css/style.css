@@ -54,6 +54,7 @@ body.dark {
 }
 
 .container.text {
+    display: inline;
     align-items: start;
     justify-content: left;
 /*    text-align: left;*/
