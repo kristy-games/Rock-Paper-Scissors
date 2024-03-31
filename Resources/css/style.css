@@ -54,12 +54,12 @@ body.dark {
 }
 
 .container.text
-/*,.container.text * */
 {
-    align-items: start;
-    justify-content: left;
+    display: block;
+    align-items: initial;
+    justify-content: initial;
+    flex-direction: initial;
     text-align: left;
-    text-indent: 0;
 /*    padding: 20px;*/
     font-weight: 300;
 }
