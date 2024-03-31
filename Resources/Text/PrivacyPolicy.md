@@ -18,11 +18,11 @@ Please be aware that our services may integrate services and features provided b
 <br>
 We use the information collected to:
 <br>
-- Improve our services' performance, features, and content.
-- Provide customer support and address user inquiries or issues.
-- Personalize your experience and offer relevant content.
-- Analyze user behavior and trends to make informed decisions on future updates and improvements.
-- Ensure the security and integrity of our services.
+* Improve our services' performance, features, and content.
+* Provide customer support and address user inquiries or issues.
+* Personalize your experience and offer relevant content.
+* Analyze user behavior and trends to make informed decisions on future updates and improvements.
+* Ensure the security and integrity of our services.
 
 Data Sharing and Disclosure
 
