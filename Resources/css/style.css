@@ -59,6 +59,7 @@ body.dark {
     align-items: start;
     justify-content: left;
     text-align: left;
+    text-indent: 0;
 /*    padding: 20px;*/
     font-weight: 300;
 }
