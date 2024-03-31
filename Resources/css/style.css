@@ -67,11 +67,11 @@ a {
 }
 
 a.container.text {
-
+    color: blue;
 }
 
 *.container.text {
-    
+
 }
 
 .image {
