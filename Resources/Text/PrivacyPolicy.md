@@ -3,6 +3,7 @@
 Welcome to KristyGames ("KristyGames" or "the Company"). This Privacy Policy outlines how we collect, use, and protect personal information of users across all our services. By accessing or using any of KristyGames' services, you agree to the terms outlined in this Privacy Policy.
 <br><br>
 <b>Information We Collect</b>
+<br>
 We may collect the following types of information:
 <br>
 Personal Information: We do not collect any personally identifiable information such as your name, address, or contact details.
@@ -12,16 +13,17 @@ Device Information: We may collect information about the device you are using, i
 Usage Data: We collect data on how you use KristyGames' services, including user interactions, gameplay statistics, and error reports.
 <br>
 Please be aware that our services may integrate services and features provided by third parties for enhanced functionality and user experience. These third-party services may have their own privacy policies and data handling practices that are distinct from ours. For further details, please contact us at [kristygames@mail.com](mailto:kristygames@mail.com)
+<br><br>
+<b>How We Use Your Information</b>
 <br>
-How We Use Your Information
-
 We use the information collected to:
+<br>
+- Improve our services' performance, features, and content.
+- Provide customer support and address user inquiries or issues.
+- Personalize your experience and offer relevant content.
+- Analyze user behavior and trends to make informed decisions on future updates and improvements.
+- Ensure the security and integrity of our services.
 
-Improve our services' performance, features, and content.
-Provide customer support and address user inquiries or issues.
-Personalize your experience and offer relevant content.
-Analyze user behavior and trends to make informed decisions on future updates and improvements.
-Ensure the security and integrity of our services.
 Data Sharing and Disclosure
 
 We do not sell, trade, or rent your personal or non-personal information to third parties. However, we may share your data with third-party service providers who assist us in delivering our services or performing necessary services (e.g., cloud storage, analytics). These third parties are obligated to maintain the confidentiality of your information and adhere to their own privacy policies.
