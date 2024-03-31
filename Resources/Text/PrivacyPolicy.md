@@ -1,6 +1,6 @@
 <b>Introduction</b>
 <br>
-Welcome to KristyGames ("KristyGames" or "the Company"). This Privacy Policy outlines how we collect, use, and protect personal information of users across all our services. By accessing or using any of KristyGames' services, you agree to the terms outlined in this Privacy Policy.
+Welcome to KristyGames (or "The Company"). This Privacy Policy outlines how we collect, use, and protect personal information of users across all our services. By accessing or using any of The Company's services, you agree to the terms outlined in this Privacy Policy.
 <br><br>
 <b>Information We Collect</b>
 <br>
@@ -10,7 +10,7 @@ Personal Information: We do not collect any personally identifiable information 
 <br>
 Device Information: We may collect information about the device you are using, including device type, operating system, and unique device identifiers.
 <br>
-Usage Data: We collect data on how you use KristyGames' services, including user interactions, gameplay statistics, and error reports.
+Usage Data: We collect data on how you use The Company's services, including user interactions, gameplay statistics, and error reports.
 <br>
 Please be aware that our services may integrate services and features provided by third parties for enhanced functionality and user experience. These third-party services may have their own privacy policies and data handling practices that are distinct from ours. For further details, please contact us at [kristygames@mail.com](mailto:kristygames@mail.com)
 <br><br>
@@ -34,7 +34,7 @@ We are committed to complying with relevant privacy regulations, including but n
 
 COPPA Compliance
 
-KristyGames' services are not intended for children under the age of 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided us with their personal information, please contact us, and we will take steps to delete such information in compliance with COPPA.
+The Company's services are not intended for children under the age of 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided us with their personal information, please contact us, and we will take steps to delete such information in compliance with COPPA.
 
 Security
 
@@ -46,7 +46,7 @@ We may update this Privacy Policy from time to time, and any changes will be com
 
 Contact Us
 
-If you have any questions or concerns regarding this Privacy Policy or your privacy rights, please contact us. By accessing or using KristyGames' services, you agree to the terms and conditions outlined in this Privacy Policy. If you do not agree with these terms, please discontinue the use of our services.
+If you have any questions or concerns regarding this Privacy Policy or your privacy rights, please contact us. By accessing or using The Company's services, you agree to the terms and conditions outlined in this Privacy Policy. If you do not agree with these terms, please discontinue the use of our services.
 
 1\. Introduction
 
@@ -81,6 +81,8 @@ e. Ensure the security and integrity of The Game.
 4\. Data Sharing and Disclosure
 
 We do not sell, trade, or rent your personal or non-personal information to third parties. However, we may share your data with third-party service providers who assist us in delivering The Game or performing necessary services (e.g., cloud storage, analytics). These third parties are obligated to maintain the confidentiality of your information and adhere to their own privacy policies.
+
+TODO more generic version, minimal emails
 
 5\. Compliance with Privacy Regulations
 
