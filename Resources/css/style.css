@@ -54,7 +54,7 @@ body.dark {
 }
 
 .container.text {
-/*    align-items: start;*/
+    align-items: start;
     justify-content: left;
     text-align: left;
 /*    padding: 20px;*/
