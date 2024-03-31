@@ -31,9 +31,9 @@ body.dark {
 }
 
 .container {
-    display: inline-flex;
+/*    display: inline-flex;
     flex-direction: column;
-    max-width: 100%;
+    max-width: 100%;*/
 }
 
 .container.body {
