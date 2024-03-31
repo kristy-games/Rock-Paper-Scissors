@@ -67,7 +67,7 @@ a {
 }
 
 .container.text a {
-    color: blue;
+    color: blue !important;
 }
 
 *.container.text {
