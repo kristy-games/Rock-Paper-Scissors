@@ -1,8 +1,8 @@
-<b>Introduction:</b>
+<b>Introduction</b>
 
 Welcome to KristyGames ("KristyGames" or "the Company"). This Privacy Policy outlines how we collect, use, and protect personal information of users across all our services. By accessing or using any of KristyGames' services, you agree to the terms outlined in this Privacy Policy.
 
-Information We Collect:
+Information We Collect
 
 We may collect the following types of information:
 
