@@ -55,7 +55,7 @@ body.dark {
 
 .container.text, 
 .container.text *{
-/*    text-align: left;*/
+    text-align: left;
 /*    padding: 20px;*/
     font-weight: 300;
 
