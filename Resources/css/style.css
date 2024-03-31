@@ -55,6 +55,7 @@ body.dark {
 
 .container.text, 
 .container.text *{
+    display: flex;
     align-self: start;
     justify-self: left;
     text-align: left;
