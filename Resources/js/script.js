@@ -208,7 +208,8 @@ function setTextSection(textSection) {
 	.then(response => response.text())
 	.then(markdown => {
 		var html = marked.parse(markdown);
-		textSection.innerHTML = html;
+		// textSection.innerHTML = html;
+		textSection.innerText = html;
 	});
 }
 
