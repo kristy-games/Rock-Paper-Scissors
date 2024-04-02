@@ -8,7 +8,6 @@ By accessing or using The Company's services, including downloading, installing 
 <br><br>
 <b>Information We Collect</b>
 <br>
-
 * Personal Information: We do not collect any personally identifiable information such as your name, address, or contact details.
 * Device Information: We may collect information about the device you are using, including device type, operating system, and unique device identifiers.
 * Game Progress: We may collect data related to in-game progress, such as scores, achievements, and in-game purchases.
@@ -19,7 +18,6 @@ Please be aware that our games may integrate services and features provided by t
 <b>How We Use Your Information</b>
 <br>
 We use the information collected to:
-
 * Improve the performance, features, and content of our games.
 * Provide customer support and address user inquiries or issues.
 * Personalize your gaming experience and offer relevant in-game content.
