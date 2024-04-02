@@ -4,7 +4,7 @@
 /*    padding: 0;*/
 /*    margin: 0;*/
 /*    border: 0;*/
-    box-sizing: border-box;
+/*    box-sizing: border-box;*/
 /*    justify-content: center;*/
 /*    align-items: center;*/
 }
@@ -89,6 +89,7 @@ ul {
 .button {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     position: relative;
     cursor: pointer;
     overflow: hidden;
