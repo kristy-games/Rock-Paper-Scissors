@@ -23,6 +23,7 @@ We use the information collected to:
 * Personalize your gaming experience and offer relevant in-game content.
 * Analyze user behavior and trends to make informed decisions on future updates and improvements.
 * Ensure the security and integrity of our games.
+&nbsp
 <br><br>
 <b>Data Sharing and Disclosure</b>
 <br>
@@ -45,6 +46,6 @@ We take reasonable measures to protect the information collected from unauthoriz
 We may update this Privacy Policy from time to time, and any changes will be posted in our games and on our Privacy Policy web page. It is your responsibility to review this Privacy Policy periodically to stay informed about our data handling practices.
 <br><br>
 <b>Contact Us</b>
-<br>
 
-If you have any questions or concerns regarding this Privacy Policy, please contact us at kristygames@mail.com <!-------------------------------------------------------------------------------------------------------------------->
+%nbsp
+If you have any questions or concerns regarding this Privacy Policy, please contact us at kristygames@mail.com
