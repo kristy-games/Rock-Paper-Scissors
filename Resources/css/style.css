@@ -41,6 +41,7 @@ ul {
 }
 
 .container.body {
+    box-sizing: border-box;
     display: flex;
     gap: 100px;
 }
@@ -90,6 +91,7 @@ ul {
 .button {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     position: relative;
     cursor: pointer;
     overflow: hidden;
