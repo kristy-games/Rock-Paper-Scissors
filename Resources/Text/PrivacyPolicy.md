@@ -9,7 +9,7 @@ We may collect the following types of information:
 * Device Information: We may collect information about the device you are using, including device type, operating system, and unique device identifiers.
 * Usage Data: We collect data on how you use The Company's services, including user interactions, gameplay statistics, and error reports.
 <br><br>
-Please be aware that our services may integrate services and features provided by third parties for enhanced functionality and user experience. These third-party services may have their own privacy policies and data handling practices that are distinct from ours. For further details, please contact us at [kristygames@mail.com](mailto:kristygames@mail.com)
+Please be aware that our services may integrate services and features provided by third parties for enhanced functionality and user experience. These third-party services may have their own privacy policies and data handling practices that are distinct from ours.
 <br><br>
 <b>How We Use Your Information</b>
 <br>
@@ -42,4 +42,4 @@ We may update this Privacy Policy from time to time, and any changes will be com
 <br><br>
 <b>Contact Us</b>
 <br>
-If you have any questions or concerns regarding this Privacy Policy, please contact us at [kristygames@mail.com](mailto:kristygames@mail.com). By accessing or using The Company's services, you agree to the terms and conditions outlined in this Privacy Policy. If you do not agree with these terms, please discontinue the use of our services.
+If you have any questions or concerns regarding this Privacy Policy, please contact us at [kristygames@mail.com.](mailto:kristygames@mail.com) By accessing or using The Company's services, you agree to the terms and conditions outlined in this Privacy Policy. If you do not agree with these terms, please discontinue the use of our services.
