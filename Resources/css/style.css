@@ -7,7 +7,7 @@
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
-/*    text-decoration: none;*/
+    text-decoration: none;
 }
 
 body {
@@ -23,10 +23,10 @@ body.dark {
     color: #e5e0d8;
 }
 
-.container.text a {
+/*.container.text a {
     border-bottom: 1px solid;
     text-decoration: none;
-}
+}*/
 
 ul {
     align-self: flex-start;
