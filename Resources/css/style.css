@@ -7,7 +7,7 @@
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
+/*    text-decoration: none;*/
 }
 
 body {
@@ -24,8 +24,8 @@ body.dark {
 }
 
 a.container.text{
-/*    text-decoration: none;*/
     border-bottom: 1px solid;
+    text-decoration: none;
 }
 
 ul {
