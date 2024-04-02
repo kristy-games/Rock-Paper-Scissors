@@ -1,6 +1,10 @@
 <b>Introduction</b>
 <br>
-Welcome to KristyGames ("The Company"). This Privacy Policy outlines how we collect, use, and protect personal information of users while they play our games. By accessing or using The Company's services, including downloading, installing or playing our games, you agree to the terms outlined in this Privacy Policy.
+Welcome to KristyGames ("The Company"). This Privacy Policy outlines how we collect, use, and protect personal information of users while they play our games.
+<br><br>
+<b>Acceptance Of Terms</b>
+<br>
+By accessing or using The Company's services, including downloading, installing and/or using our games, you agree to the terms and conditions outlined in this Privacy Policy. If you do not agree with these terms, please uninstall our games and discontinue their use.
 <br><br>
 <b>Information We Collect</b>
 <br>
@@ -44,5 +48,3 @@ We may update this Privacy Policy from time to time, and any changes will be pos
 <br>
 
 If you have any questions or concerns regarding this Privacy Policy, please contact us at [kristygames@mail.com](mailto:kristygames@mail.com)
-<br><br>
-By accessing or using The Company's services, you agree to the terms and conditions outlined in this Privacy Policy. If you do not agree with these terms, please uninstall our games and discontinue their use.
