@@ -26,7 +26,7 @@ We do not sell, trade, or rent your personal or non-personal information to thir
 <br><br>
 <b>Compliance with Privacy Regulations</b>
 <br>
-We are committed to complying with relevant privacy regulations, including but not limited to GDPR, CCPA, VCDPA, CPA, CTDPA, QCLAW25, and PIPL. Users have specific rights under these regulations, including the right to access, correct, or erase personal data. For inquiries regarding your personal data, please contact us.
+We are committed to complying with relevant privacy regulations, including but not limited to GDPR, CCPA, VCDPA, CPA, CTDPA, QCLAW25, and PIPL. Users have specific rights under these regulations, including the right to access, correct, or erase personal data.
 <br><br>
 <b>COPPA Compliance</b>
 <br>
@@ -42,4 +42,4 @@ We may update this Privacy Policy from time to time, and any changes will be com
 <br><br>
 <b>Contact Us</b>
 <br>
-By accessing or using The Company's services, you agree to the terms and conditions outlined in this Privacy Policy. If you do not agree with these terms, please discontinue the use of our services. If you have any questions or concerns regarding this Privacy Policy, please contact us at [kristygames@mail.com](mailto:kristygames@mail.com)
+If you have any questions or concerns regarding this Privacy Policy, please contact us at [kristygames@mail.com](mailto:kristygames@mail.com) By accessing or using The Company's services, you agree to the terms and conditions outlined in this Privacy Policy. If you do not agree with these terms, please discontinue the use of our services. For further details, please contact us at [kristygames@mail.com](mailto:kristygames@mail.com)
