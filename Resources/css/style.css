@@ -64,7 +64,7 @@ ul {
 }
 
 .container.text.center {
-    align-self: center;
+    display: inline;
     text-align: center;
 }
 
