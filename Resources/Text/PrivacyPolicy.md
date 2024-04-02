@@ -25,23 +25,23 @@ We use the information collected to:
 We do not sell, trade, or rent your personal or non-personal information to third parties. However, we may share your data with third-party service providers who assist us in delivering our services or performing necessary services (e.g., cloud storage, analytics). These third parties are obligated to maintain the confidentiality of your information and adhere to their own privacy policies.
 <br><br>
 <b>Compliance with Privacy Regulations</b>
-
+<br>
 We are committed to complying with relevant privacy regulations, including but not limited to GDPR, CCPA, VCDPA, CPA, CTDPA, QCLAW25, and PIPL. Users have specific rights under these regulations, including the right to access, correct, or erase personal data. For inquiries regarding your personal data, please contact us.
-
-COPPA Compliance
-
+<br><br>
+<b>COPPA Compliance</b>
+<br>
 The Company's services are not intended for children under the age of 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided us with their personal information, please contact us, and we will take steps to delete such information in compliance with COPPA.
-
-Security
-
+<br><br>
+<b>Security</b>
+<br>
 We take reasonable measures to protect the information collected from unauthorized access, disclosure, alteration, and destruction. However, no method of data transmission over the internet or electronic storage is completely secure.
-
-Changes to this Privacy Policy
-
+<br><br>
+<b>Changes to this Privacy Policy</b>
+<br>
 We may update this Privacy Policy from time to time, and any changes will be communicated through our services or on our Privacy Policy web page. It is your responsibility to review this Privacy Policy periodically to stay informed about our data handling practices.
-
-Contact Us
-
+<br><br>
+<b>Contact Us</b>
+<br>
 If you have any questions or concerns regarding this Privacy Policy, please contact us at [kristygames@mail.com](mailto:kristygames@mail.com). By accessing or using The Company's services, you agree to the terms and conditions outlined in this Privacy Policy. If you do not agree with these terms, please discontinue the use of our services.
 
 1\. Introduction
