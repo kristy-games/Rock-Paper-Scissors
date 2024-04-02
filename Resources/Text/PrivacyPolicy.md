@@ -5,13 +5,10 @@ Welcome to KristyGames (or "The Company"). This Privacy Policy outlines how we c
 <b>Information We Collect</b>
 <br>
 We may collect the following types of information:
-<br>
-Personal Information: We do not collect any personally identifiable information such as your name, address, or contact details.
-<br>
-Device Information: We may collect information about the device you are using, including device type, operating system, and unique device identifiers.
-<br>
-Usage Data: We collect data on how you use The Company's services, including user interactions, gameplay statistics, and error reports.
-<br>
+* Personal Information: We do not collect any personally identifiable information such as your name, address, or contact details.
+* Device Information: We may collect information about the device you are using, including device type, operating system, and unique device identifiers.
+* Usage Data: We collect data on how you use The Company's services, including user interactions, gameplay statistics, and error reports.
+<br><br>
 Please be aware that our services may integrate services and features provided by third parties for enhanced functionality and user experience. These third-party services may have their own privacy policies and data handling practices that are distinct from ours. For further details, please contact us at [kristygames@mail.com](mailto:kristygames@mail.com)
 <br><br>
 <b>How We Use Your Information</b>
