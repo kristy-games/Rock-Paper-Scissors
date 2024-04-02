@@ -22,6 +22,10 @@ body.dark {
     color: #e5e0d8;
 }
 
+a {
+    border-bottom: 1px solid;
+}
+
 ul {
     align-self: flex-start;
     list-style-position: inside;
