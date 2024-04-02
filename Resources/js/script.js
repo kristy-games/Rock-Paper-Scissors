@@ -198,18 +198,11 @@ function setTextSection(textSection) {
 	var idPath = getPath(id);
 	var textUrl = `${textPath}${idPath}.md`;
 
-	// fetch(textUrl)
-	// .then(response => response.text())
-	// .then(text => {
-	// 	textSection.innerText = text;
-	// });
-
 	fetch(textUrl)
 	.then(response => response.text())
 	.then(markdown => {
 		var html = marked.parse(markdown);
 		textSection.innerHTML = html;
-		// textSection.innerText = html;
 	});
 }
 
