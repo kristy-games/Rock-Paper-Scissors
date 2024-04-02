@@ -47,5 +47,4 @@ We may update this Privacy Policy from time to time, and any changes will be pos
 <b>Contact Us</b>
 <br>
 
-If you have any questions or concerns regarding this Privacy Policy, please contact us at kristygames@mail.com <!--  
--->
+If you have any questions or concerns regarding this Privacy Policy, please contact us at kristygames@mail.com <!-------------------------------------------------------------------------------------------------------------------->
