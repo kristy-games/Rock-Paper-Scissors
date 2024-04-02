@@ -20,11 +20,11 @@ We use the information collected to:
 * Analyze user behavior and trends to make informed decisions on future updates and improvements.
 * Ensure the security and integrity of our services.
 <br><br>
-<b>Data Sharing and Disclosure<b>
+<b>Data Sharing and Disclosure</b>
 <br>
 We do not sell, trade, or rent your personal or non-personal information to third parties. However, we may share your data with third-party service providers who assist us in delivering our services or performing necessary services (e.g., cloud storage, analytics). These third parties are obligated to maintain the confidentiality of your information and adhere to their own privacy policies.
 <br><br>
-<b>Compliance with Privacy Regulations<b>
+<b>Compliance with Privacy Regulations</b>
 
 We are committed to complying with relevant privacy regulations, including but not limited to GDPR, CCPA, VCDPA, CPA, CTDPA, QCLAW25, and PIPL. Users have specific rights under these regulations, including the right to access, correct, or erase personal data. For inquiries regarding your personal data, please contact us.
 
