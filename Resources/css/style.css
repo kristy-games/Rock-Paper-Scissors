@@ -23,9 +23,6 @@ body.dark {
 }
 
 ul {
-    justify-content: left;
-    justify-items: left;
-    align-items: flex-start;
     align-self: flex-start;
     list-style-position: inside;
 }
