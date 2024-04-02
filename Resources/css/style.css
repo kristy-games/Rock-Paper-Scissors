@@ -22,7 +22,8 @@ body.dark {
     color: #e5e0d8;
 }
 
-a {
+a.container.text{
+/*    text-decoration: none;*/
     border-bottom: 1px solid;
 }
 
