@@ -59,9 +59,9 @@ ul {
 
 .container.text {
     text-align: left;
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
     font-weight: 400;
 }
 
