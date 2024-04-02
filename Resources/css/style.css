@@ -23,8 +23,8 @@ body.dark {
     color: #e5e0d8;
 }
 
-a.container.text{
-    border-bottom: 3px solid;
+.container.text a {
+    border-bottom: 1px solid;
     text-decoration: none;
 }
 
