@@ -14,17 +14,17 @@ Please be aware that our services may integrate services and features provided b
 <b>How We Use Your Information</b>
 <br>
 We use the information collected to:
-* Improve our services' performance, features, and content
-* Provide customer support and address user inquiries or issues
-* Personalize your experience and offer relevant content
-* Analyze user behavior and trends to make informed decisions on future updates and improvements
-* Ensure the security and integrity of our services
-
-Data Sharing and Disclosure
-
+* Improve our services' performance, features, and content.
+* Provide customer support and address user inquiries or issues.
+* Personalize your experience and offer relevant content.
+* Analyze user behavior and trends to make informed decisions on future updates and improvements.
+* Ensure the security and integrity of our services.
+<br><br>
+<b>Data Sharing and Disclosure<b>
+<br>
 We do not sell, trade, or rent your personal or non-personal information to third parties. However, we may share your data with third-party service providers who assist us in delivering our services or performing necessary services (e.g., cloud storage, analytics). These third parties are obligated to maintain the confidentiality of your information and adhere to their own privacy policies.
-
-Compliance with Privacy Regulations
+<br><br>
+<b>Compliance with Privacy Regulations<b>
 
 We are committed to complying with relevant privacy regulations, including but not limited to GDPR, CCPA, VCDPA, CPA, CTDPA, QCLAW25, and PIPL. Users have specific rights under these regulations, including the right to access, correct, or erase personal data. For inquiries regarding your personal data, please contact us.
 
@@ -42,7 +42,7 @@ We may update this Privacy Policy from time to time, and any changes will be com
 
 Contact Us
 
-If you have any questions or concerns regarding this Privacy Policy or your privacy rights, please contact us. By accessing or using The Company's services, you agree to the terms and conditions outlined in this Privacy Policy. If you do not agree with these terms, please discontinue the use of our services.
+If you have any questions or concerns regarding this Privacy Policy, please contact us at [kristygames@mail.com](mailto:kristygames@mail.com). By accessing or using The Company's services, you agree to the terms and conditions outlined in this Privacy Policy. If you do not agree with these terms, please discontinue the use of our services.
 
 1\. Introduction
 
