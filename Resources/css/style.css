@@ -22,11 +22,8 @@ body.dark {
     color: #e5e0d8;
 }
 
-p {
-    justify-content: left;
-}
-
 ul {
+    text-align: left;
     list-style-position: inside;
 }
 
