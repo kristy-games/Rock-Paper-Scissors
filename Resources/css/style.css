@@ -23,11 +23,6 @@ body.dark {
     color: #e5e0d8;
 }
 
-/*.container.text a {
-    border-bottom: 1px solid;
-    text-decoration: none;
-}*/
-
 ul {
     align-self: flex-start;
     list-style-position: inside;
