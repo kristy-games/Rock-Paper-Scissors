@@ -1,10 +1,9 @@
 const companyName = 'KristyGames';
 
 const mainUrl = 'https://kristy-games.github.io/';
-const homeUrl = `${mainUrl}Home`
-const localPath = 'C:/Users/Kristy/Documents/GitHub/kristy-games.github.io/';
+const homeUrl = `${mainUrl}Home`;
 
-const stylePath = 'Resources/css/style.css';
+const stylePath = `${mainUrl}Resources/css/style.css`;
 const imagePath = `${mainUrl}Resources/Images/`;
 const textPath = `${mainUrl}Resources/Text/`;
 
@@ -72,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	{
 		if (window.location.protocol === 'file:') {
 
-			stylesheet.href = `${localPath}${stylePath}`;
+			stylesheet.href = stylePath;
 			createDarkButton();
 		}
 	}
