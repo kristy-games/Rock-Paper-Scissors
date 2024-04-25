@@ -202,6 +202,8 @@ function setTextSection(textSection) {
 		var html = marked.parse(markdown);
 		textSection.innerHTML = html;
 	});
+
+	markedScript.parentNode.removeChild(markedScript);
 };
 }
 
