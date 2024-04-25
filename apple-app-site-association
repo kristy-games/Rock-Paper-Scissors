@@ -4,7 +4,7 @@
         "details": [
             {
                 "appID": "95CHRDM6EP.com.KristyGames.RockPaperScissors",
-                "paths": [ "/RockPaperScissors" ]
+                "paths": ["/RockPaperScissors*", "/RockPaperScissors?*"]
             }
         ]
     }
