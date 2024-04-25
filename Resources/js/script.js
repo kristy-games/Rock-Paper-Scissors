@@ -191,7 +191,8 @@ function setTextSection(textSection) {
 	markedScript.src = 'https://cdn.jsdelivr.net/npm/marked/marked.min.js';
 	document.head.appendChild(markedScript);
 
-	var id = textSection.id;
+	markedScript.onload = function() {
+    var id = textSection.id;
 	var idPath = getPath(id);
 	var textUrl = `${textPath}${idPath}.md`;
 
@@ -201,6 +202,7 @@ function setTextSection(textSection) {
 		var html = marked.parse(markdown);
 		textSection.innerHTML = html;
 	});
+};
 }
 
 function createDarkButton() {
