@@ -29,7 +29,7 @@ const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 const isIOS = /iPhone|iPad|iPod/i.test(userAgent);
 const isAndroid = /Android/i.test(userAgent);
 
-const rockPaperScissorsApple = 'xcode/id497799835';
+const rockPaperScissorsApple = 'rock-paper-scissors-rps/id6482983071';
 
 document.addEventListener('DOMContentLoaded', function () {
 
