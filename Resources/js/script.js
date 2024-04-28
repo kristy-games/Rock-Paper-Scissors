@@ -224,6 +224,7 @@ function redirect(element) {
 
 	var iOSTesting = true;
 	var androidTesting = false;
+	var redirect = false;
 
 	if (isIOS || isAndroid || iOSTesting || androidTesting) {
 
@@ -255,6 +256,9 @@ function redirect(element) {
 
 			targetUrl = `${getGoogleUrl(gameNamePath)}${referrer}`;
 		}
+
+		if (!redirect)
+			return;
 
 		if (isIOS || isAndroid)
 			window.location.href = targetUrl;
