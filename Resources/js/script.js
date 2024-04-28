@@ -232,23 +232,21 @@ function redirect(element) {
 		var joinCode = urlParams.get('joincode');
 		var gameName = element.getAttribute('data-gameName');
 		var gameNamePath = getPath(gameName);
+		var referrer = '';
 		var targetUrl;
 
-		var referrer = '';
+		if (isIOS)
+		{
+			if (joinCode)
+				referrer = `?referrer=joincode%3D${joinCode}`;
 
-		if (joinCode)
-			referrer = `&referrer=joincode%3D${joinCode}`;
-
-		// if (isIOS) targetUrl = getAppleUrl(gameNamePath);
-
-		if (isIOS) targetUrl = `${getAppleUrl(gameNamePath)}${referrer}`;
+			targetUrl = `${getAppleUrl(gameNamePath)}${referrer}`;
+		}
 
 		else if (isAndroid || testing) 
 		{
-			// var referrer = '';
-
-			// if (joinCode)
-			// 	referrer = `&referrer=joincode%3D${joinCode}`;
+			if (joinCode)
+				referrer = `&referrer=joincode%3D${joinCode}`;
 
 			targetUrl = `${getGoogleUrl(gameNamePath)}${referrer}`;
 		}
