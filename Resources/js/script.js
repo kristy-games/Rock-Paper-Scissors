@@ -256,12 +256,12 @@ function redirect(element) {
 			targetUrl = `${getGoogleUrl(gameNamePath)}${referrer}`;
 		}
 
-		// if (testing)
-		// {
-		// 	console.log(targetUrl);
-		// 	window.open(targetUrl, "_blank");
-		// }
-		// else window.location.href = targetUrl;
+		if (iOSTesting || androidTesting)
+		{
+			console.log(targetUrl);
+			window.open(targetUrl, "_blank");
+		}
+		else window.location.href = targetUrl;
 	}
 }
 
