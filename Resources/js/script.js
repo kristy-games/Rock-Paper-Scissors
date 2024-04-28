@@ -232,16 +232,23 @@ function redirect(element) {
 		var joinCode = urlParams.get('joincode');
 		var gameName = element.getAttribute('data-gameName');
 		var gameNamePath = getPath(gameName);
-		var targetUrl;	
+		var targetUrl;
 
-		if (isIOS) targetUrl = getAppleUrl(gameNamePath);
+		var referrer = '';
+
+		if (joinCode)
+			referrer = `&referrer=joincode%3D${joinCode}`;
+
+		// if (isIOS) targetUrl = getAppleUrl(gameNamePath);
+
+		if (isIOS) targetUrl = `${getAppleUrl(gameNamePath)}${referrer}`;
 
 		else if (isAndroid || testing) 
 		{
-			var referrer = '';
+			// var referrer = '';
 
-			if (joinCode)
-				referrer = `&referrer=joincode%3D${joinCode}`;
+			// if (joinCode)
+			// 	referrer = `&referrer=joincode%3D${joinCode}`;
 
 			targetUrl = `${getGoogleUrl(gameNamePath)}${referrer}`;
 		}
@@ -260,7 +267,8 @@ function getAppleUrl(gameNamePath) {
 	switch (gameNamePath) {
 
 	case 'RockPaperScissors':
-		return `${appleStorePath}${rockPaperScissorsApple}`;
+		// return `${appleStorePath}${rockPaperScissorsApple}`;
+		return "https://testflight.apple.com/join/wgRxwuMV";
 	}
 }
 
