@@ -222,7 +222,8 @@ function createDarkButton() {
 
 function redirect(element) {
 
-	var testing = false;
+	var iOSTesting = true;
+	var androidTesting = false;
 
 	if (isIOS || isAndroid || testing) {
 
@@ -235,7 +236,7 @@ function redirect(element) {
 		var referrer = '';
 		var targetUrl;
 
-		if (isIOS)
+		if (isIOS || iOSTesting)
 		{
 			if (joinCode)
 			{
@@ -247,7 +248,7 @@ function redirect(element) {
 			targetUrl = `${getAppleUrl(gameNamePath)}${referrer}`;
 		}
 
-		else if (isAndroid || testing) 
+		else if (isAndroid || androidTesting) 
 		{
 			if (joinCode)
 				referrer = `&referrer=joincode%3D${joinCode}`;
@@ -255,12 +256,12 @@ function redirect(element) {
 			targetUrl = `${getGoogleUrl(gameNamePath)}${referrer}`;
 		}
 
-		if (testing)
-		{
-			console.log(targetUrl);
-			window.open(targetUrl, "_blank");
-		}
-		else window.location.href = targetUrl;
+		// if (testing)
+		// {
+		// 	console.log(targetUrl);
+		// 	window.open(targetUrl, "_blank");
+		// }
+		// else window.location.href = targetUrl;
 	}
 }
 
