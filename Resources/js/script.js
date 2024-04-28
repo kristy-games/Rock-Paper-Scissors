@@ -238,16 +238,7 @@ function redirect(element) {
 		var targetUrl;
 
 		if (isIOS || iOSTesting)
-		{
-			if (joinCode)
-			{
-				//= instead of %3D?
-				referrer = `?joincode=${joinCode}`;
-				console.log(joinCode);
-			}
-
-			targetUrl = `${getAppleUrl(gameNamePath)}${referrer}`;
-		}
+			targetUrl = `${getAppleUrl(gameNamePath)}`;
 
 		else if (isAndroid || androidTesting) 
 		{
