@@ -256,7 +256,7 @@ function redirect(element) {
 			targetUrl = `${getGoogleUrl(gameNamePath)}${referrer}`;
 		}
 
-		if (iOSTesting || androidTesting)
+		if ((iOSTesting || androidTesting) && !isIOS && !isAndroid)
 		{
 			console.log(targetUrl);
 			window.open(targetUrl, "_blank");
