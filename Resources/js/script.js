@@ -240,8 +240,8 @@ function redirect(element) {
 		{
 			if (joinCode)
 			{
-				//need "referrer"?
-				referrer = `?joincode%3D${joinCode}`;
+				//= instead of %3D?
+				referrer = `?joincode=${joinCode}`;
 				console.log(joinCode);
 			}
 
