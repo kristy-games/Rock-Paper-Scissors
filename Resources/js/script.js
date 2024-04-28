@@ -257,7 +257,7 @@ function redirect(element) {
 			targetUrl = `${getGoogleUrl(gameNamePath)}${referrer}`;
 		}
 
-		if (!redirect)
+		if (redirect === false)
 			return;
 
 		if (isIOS || isAndroid)
