@@ -238,7 +238,10 @@ function redirect(element) {
 		if (isIOS)
 		{
 			if (joinCode)
+			{
 				referrer = `?referrer=joincode%3D${joinCode}`;
+				console.log(joinCode);
+			}
 
 			targetUrl = `${getAppleUrl(gameNamePath)}${referrer}`;
 		}
