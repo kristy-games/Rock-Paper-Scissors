@@ -225,7 +225,7 @@ function redirect(element) {
 	var iOSTesting = true;
 	var androidTesting = false;
 
-	if (isIOS || isAndroid || testing) {
+	if (isIOS || isAndroid || iOSTesting || androidTesting) {
 
 		document.body.style.display = 'none';
 
