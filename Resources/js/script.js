@@ -58,9 +58,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			case 'TextSection':
 				setTextSection(element);
 				break;
-			case 'Redirect':
-				redirect(element);
-				break;
+			// case 'Redirect':
+			// 	redirect(element);
+			// 	break;
 			}
 		});
 	}
