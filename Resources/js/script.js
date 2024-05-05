@@ -58,9 +58,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			case 'TextSection':
 				setTextSection(element);
 				break;
-			// case 'Redirect':
-			// 	redirect(element);
-			// 	break;
 			}
 		});
 	}
@@ -218,50 +215,6 @@ function createDarkButton() {
 	};
 
 	document.body.appendChild(button);
-}
-
-function redirect(element) {
-
-	var iOSTesting = true;
-	var androidTesting = false;
-	var redirect = true;
-
-	if (isIOS || isAndroid || iOSTesting || androidTesting) {
-
-		document.body.style.display = 'none';
-
-		var urlParams = new URLSearchParams(window.location.search);
-		var joinCode = urlParams.get('joincode');
-		var gameName = element.getAttribute('data-gameName');
-		var gameNamePath = getPath(gameName);
-		var referrer = '';
-		var targetUrl;
-
-		if (isIOS || iOSTesting)
-			targetUrl = `${getAppleUrl(gameNamePath)}`;
-
-		else if (isAndroid || androidTesting) 
-		{
-			if (joinCode)
-				referrer = `&referrer=joincode%3D${joinCode}`;
-
-			targetUrl = `${getGoogleUrl(gameNamePath)}${referrer}`;
-		}
-
-		if (redirect === false)
-			return;
-
-		if (isIOS || isAndroid)
-			window.location.href = targetUrl;
-		else
-		{
-			if (iOSTesting || androidTesting)
-			{
-				console.log(targetUrl);
-				window.open(targetUrl, "_blank");
-			}
-		}
-	}
 }
 
 function getAppleUrl(gameNamePath) {
