@@ -14,7 +14,7 @@ By accessing or using the Company's services, including downloading, installing 
 * Usage Data: We may collect data on how you use our games, including user interactions, gameplay statistics, and error reports.
 <br><br>
 
-Please be aware that our games may integrate services and features provided by third parties for enhanced functionality and user experience. These third-party services may have their own privacy policies and data handling practices that are distinct from ours.
+Our games utilize advertising services from Google AdMob and Unity Ads, as well as deep linking services from Branch.io, to enhance your gaming experience and support our services. Each of these services is a third-party provider with its own privacy policy regarding the collection and use of data for advertising and deep linking purposes. You can review AdMob's privacy policy [here](https://policies.google.com/privacy), Unity Ads' privacy policy [here](https://unity.com/legal/game-player-and-app-user-privacy-policy), and Branch.io's privacy policy [here](https://legal.branch.io/#branchio-privacypolicy-introduction). Please note that their privacy practices may differ from ours, and we encourage you to familiarize yourself with their policies to understand how your information is handled when interacting with ads and deep linking features in our game.
 <br><br>
 <b>How We Use Your Information</b>
 <br>
