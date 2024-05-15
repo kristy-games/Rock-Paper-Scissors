@@ -33,7 +33,7 @@ We do not sell, trade, or rent your personal or non-personal information to thir
 <br><br>
 <b>Compliance with Privacy Regulations</b>
 <br>
-We are committed to complying with relevant privacy regulations, including but not limited to GDPR, CCPA, VCDPA, CPA, CTDPA, PIPL and QCLAW25. Users have specific rights under these regulations, including the right to access, correct, and erase personal data.
+We are committed to complying with relevant privacy regulations, including but not limited to GDPR, CPRA, CPA, CTDPA, VCDPA, UCPA, PIPL and QCLAW25. Users have specific rights under these regulations, including the right to access, correct, and erase personal data.
 <br><br>
 <b>COPPA Compliance</b>
 <br>
