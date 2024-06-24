@@ -29,7 +29,7 @@ const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 const isIOS = /iPhone|iPad|iPod/i.test(userAgent);
 const isAndroid = /Android/i.test(userAgent);
 
-const rockPaperScissorsApple = 'rock-paper-scissors-rps/id6482983071';
+const rockPaperScissorsApple = 'rock-paper-scissors-online/id6482983071';
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -222,8 +222,7 @@ function getAppleUrl(gameNamePath) {
 	switch (gameNamePath) {
 
 	case 'RockPaperScissors':
-		// return `${appleStorePath}${rockPaperScissorsApple}`;
-		return "https://testflight.apple.com/join/wgRxwuMV";
+		return `${appleStorePath}${rockPaperScissorsApple}`;
 	}
 }
 
