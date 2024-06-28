@@ -135,7 +135,7 @@ function setGameSection(gameSection) {
 
 	if (gameIcon) {
 		gameIcon.className = 'image gameIcon';
-		gameIcon.src = `${imagePath}AppIcon/${gameNamePath}_Icon.png`;
+		gameIcon.src = `${imagePath}AppIcons/${gameNamePath}_Icon.png`;
 		gameIcon.title = gameName;
 		gameIcon.alt = `${gameName} Icon`;
 	}
