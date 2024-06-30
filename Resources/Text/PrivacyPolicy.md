@@ -38,13 +38,12 @@ We are committed to complying with relevant privacy regulations, including but n
 <b>COPPA Compliance</b>
 <br>
 Our games are not intended for children under the age of 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided us with their personal information, please contact us and we will take steps to delete such information in compliance with COPPA.
-<br><br>
-<b>Security</b>
-<br>
-We take reasonable measures to protect the information collected from unauthorized access, disclosure, alteration, and destruction. However, no method of data transmission over the internet or electronic storage is completely secure. We cannot guarantee the absolute security of your information.  
 
-<b>Changes to this Privacy Policy</b> 
-We may update this Privacy Policy from time to time, and any changes will be posted in our games and on our Privacy Policy web page. It is your responsibility to review this Privacy Policy periodically to stay informed about our data handling practices.  
+<b>Security</b>\
+We take reasonable measures to protect the information collected from unauthorized access, disclosure, alteration, and destruction. However, no method of data transmission over the internet or electronic storage is completely secure. We cannot guarantee the absolute security of your information.\
 
-<b>Contact Us</b> 
+<b>Changes to this Privacy Policy</b>\
+We may update this Privacy Policy from time to time, and any changes will be posted in our games and on our Privacy Policy web page. It is your responsibility to review this Privacy Policy periodically to stay informed about our data handling practices.\
+\
+<b>Contact Us</b>\
 If you have any questions or concerns regarding this Privacy Policy, please contact us at [kristygames@mail.com](<mailto:kristygames@mail.com?subject=Privacy Policy>)
