@@ -39,6 +39,7 @@ We are committed to complying with relevant privacy regulations, including but n
 \
 \
 <b>COPPA Compliance</b>
+\
 Our games are not intended for children under the age of 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided us with their personal information, please contact us and we will take steps to delete such information in compliance with COPPA.
 \
 \
