@@ -47,4 +47,4 @@ We take reasonable measures to protect the information collected from unauthoriz
 We may update this Privacy Policy from time to time, and any changes will be posted in our games and on our Privacy Policy web page. It is your responsibility to review this Privacy Policy periodically to stay informed about our data handling practices.  
 
 <b>Contact Us</b> 
-If you have any questions or concerns regarding this Privacy Policy, please contact us at [kristygames@mail.com](mailto:kristygames@mail.com?subject=Privacy Policy)
+If you have any questions or concerns regarding this Privacy Policy, please contact us at [kristygames@mail.com](<mailto:kristygames@mail.com?subject=Privacy Policy>)
